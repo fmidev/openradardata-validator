@@ -109,7 +109,7 @@
                 },
                 "period": {
                     "type": "string",
-                    "description": "Aggregation period for the measurement. Must be provided in ISO8601 duration format. https://www.iso.org/iso-8601-date-and-time-format.html"
+                    "description": "Aggregation period for the measurement. For example PVOL and SCAN: dataset/enddate - dataset/startdate. Must be provided in ISO8601 duration format. https://www.iso.org/iso-8601-date-and-time-format.html"
                 },
                 "function": {
                     "type": "string",

@@ -11,7 +11,7 @@ import wradlib as wrl
 
 from src.radar_cf import radar_cf
 
-odr_validator_dir = os.getenv("ORD_VALIDATOR_DIR", "")
+odr_validator_dir = os.getenv("ORD_VALIDATOR_DIR", ".")
 schema_dir = os.getenv("ORD_SCHEMA_DIR", odr_validator_dir + "/schemas")
 radardb_dir = os.getenv("ORD_STATIONS_DIR", odr_validator_dir + "/stations")
 

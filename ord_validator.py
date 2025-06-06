@@ -6,7 +6,7 @@ import sys
 if __name__ == "__main__":
 
     schema_list = []
-    odr_validator_dir = os.getenv("ORD_VALIDATOR_DIR", "")
+    odr_validator_dir = os.getenv("ORD_VALIDATOR_DIR", ".")
     schema_dir = os.getenv("ORD_SCHEMA_DIR", odr_validator_dir + "/schemas")
     # print("Add validator schemas")
     schema_list.append(schema_dir + "/openradardata-spec.json")

@@ -1,0 +1,56 @@
+[
+{
+  "id": "",
+  "version": "v4.0",
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "coordinates": {
+      "lon": 9.315660033646026,
+      "lat": 49.5944338661502,
+      "hei": 0.0
+    }
+  },
+  "properties": {
+    "datetime": "2024-08-21T03:50:01Z",
+    "Conventions": "CF-1.8",
+    "summary": "Radar data from OPERA network.",
+    "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
+    "radar_meta": "{'format': 'ODIM', 'format_version': 'H5rad 2.4', 'object': 'COMP', 'LL_lat': '31.7462153182675', 'LL_lon': '-10.4345768386404', 'LR_lat': '31.987650276733', 'LR_lon': '29.421038635578', 'UL_lat': '67.0228327624372', 'UL_lon': '-39.5357864125034', 'UR_lat': '67.6210371071631', 'UR_lon': '57.8119647501499', 'projdef': '+proj=laea +lat_0=55.0 +lon_0=10.0 +x_0=1950000.0 +y_0=-2100000.0 +units=m +ellps=WGS84', 'xscale': '1000.0', 'xsize': '3800', 'yscale': '1000.0', 'ysize': '4400', 'product': 'MAX'}",
+    "naming_authority": "eu.eumetnet",
+    "level": 0,
+    "function": "point",
+    "period": "PT599S",
+    "period_int": 599,
+    "platform": "0-20010-0-OPERA",
+    "platform_name": "OPERA",
+    "content": {
+      "encoding": "utf-8",
+      "standard_name": "DBZH",
+      "unit": "text",
+      "size": 91,
+      "value": "https://My-Data-Server.com/My-S3-Bucket/2024/08/21/OPERA/COMP/OPERA@20240821T0400@0@DBZH.h5"
+    }
+  },
+  "links": [
+    {
+      "href": "https://My-default-URL",
+      "rel": "canonical",
+      "type": "text/html",
+      "title": "EUMETNET Website"
+    },
+    {
+      "href": "https://www.eumetnet.eu/observations/weather-radar-network/",
+      "rel": "canonical",
+      "type": "text/html",
+      "title": "OPERA Website"
+    },
+    {
+      "href": "http://radar.meteogate.eu:8008/",
+      "rel": "service-desc",
+      "type": "application/vnd.oai.openapi+json;version=3.0",
+      "title": "Open Radar Data"
+    }
+  ]
+}
+]

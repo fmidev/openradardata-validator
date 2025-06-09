@@ -14,6 +14,14 @@ There are three types of data available via ORD.
 2. European composite products — including maximum reflectivity factor, instantaneous rain rate, and 1-hour rainfall accumulation — are available both as a 24-hour rolling cache and as a long-term archive dating back to 2012. These products are provided by the EUMETNET OPERA programme in ODIM HDF5 and cloud-optimized GeoTIFF formats.
 3. National radar product, e.g. national radar composites, rain rate composites, accumulation products, and echo tops. These are provided as aöonk to be downloaded from the national interfaces, and typically in ODIM HDF5 or cloud-optimized GeoTiffs.
 
+### Requirements for sharing national products via ORD API:
+•	National radar volume data is not shared via ORD API, only products. The data sharing is happening via OPERA to ORD API (if data sharing is authorized) 
+•	Product format needs to be either ODIM H5 or cloud optimized GeoTiff 
+•	Products are locally hosted in a national data store
+•	Products can be accessible via an api or a public data store
+•	Your interface to ORD is posting a json structured file with the required metadata and a link to the file for each ready product
+
+
 ## OpenRadarData Validator
 
 The ORD system includes three endpoints for ingesting and sharing data:

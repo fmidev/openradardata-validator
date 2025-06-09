@@ -27,12 +27,14 @@ The ORD system includes three endpoints for ingesting and sharing data:
 
 ### 2. ODIM Endpoint
 - Processes **ODIM files**.
+- For **OPERA to ingest the European single site data and OPERA composites** to European Weather Cloud S3 storage
 - The ingester module:
   - Extracts metadata from ODIM files and stores it in the database.
   - Uploads the original (or renamed) ODIM file to the ORD S3 bucket.
 
 ### 3. JSON Endpoint
 - Enables sharing **locally stored radar data**.
+- For **National Meteorological Services (NMSs) to provide national products** via ORD
 - Users provide radar metadata through the JSON endpoint.
 
 

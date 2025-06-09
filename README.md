@@ -20,6 +20,7 @@ The ORD system includes three endpoints for ingesting and sharing data:
 
 ### 1. BUFR Endpoint
 - Used for uploading and sharing **BUFR files**.
+- For **OPERA to ingest the European single site data** to European Weather Cloud S3 storage
 - The ingester module:
   - Extracts metadata from BUFR files and stores it in the database.
   - Uploads the original (or renamed) BUFR file to the ORD S3 bucket.

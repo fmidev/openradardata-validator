@@ -4,9 +4,15 @@
 The [RODEO project](https://rodeo-project.eu/) develops a user interface and Application Programming Interfaces (API) for accessing meteorological datasets declared as High Value Datasets (HVD) by the EU Implementing Regulation (EU) 2023/138 under the EU Open Data Directive (EU) 2019/1024. The project also fosters the engagement between data providers and data users for enhancing the understanding of technical solutions being available for sharing and accessing the HVD datasets.
 This project provides a sustainable and standardized system for sharing real-time surface weather observations in line with the HVD regulation and WMO WIS 2.0 strategy. The real-time surface weather observations are made available through open web services, so that they can be accessed by anyone.
 
-# OpenRadarData
+# Open Radar Data (ORD)
 
-ORD part of the RODEO project. The goal for this project is to make near real-time weather radar observations. The data will be published on both a message queue using [MQTT](https://mqtt.org/) and [EDR](https://ogcapi.ogc.org/edr/) compliant APIs. Metadata will also be made available through [OGC Records](https://ogcapi.ogc.org/records/) APIs. The system architecture is portable, scalable and modular for taking into account possible future extensions to existing networks and datasets.
+The weather radar data is also considered as HVDs, and therefore, one of the goals of RODEO is to supply near real-time weather radar observations. The radar data will be published on both a message queue using [MQTT](https://mqtt.org/) and [EDR](https://ogcapi.ogc.org/edr/) compliant APIs. Metadata will also be made available through [OGC Records](https://ogcapi.ogc.org/records/) APIs. The system architecture is portable, scalable and modular for taking into account possible future extensions to existing networks and datasets.
+
+## Published datasets in ORD
+There are three types of data available via ORD. 
+1. European single-site radar data are available through the EUMETNET OPERA programme, both as a 24-hour rolling cache and as an extensive archive. The data are provided in BUFR format for older datasets and in ODIM HDF5 format for more recent ones.
+2.European composite products — including maximum reflectivity factor, instantaneous rain rate, and 1-hour rainfall accumulation — are available both as a 24-hour rolling cache and as a long-term archive dating back to 2012. These products are provided by the EUMETNET OPERA programme in ODIM HDF5 and cloud-optimized GeoTIFF formats.
+3. National radar product, e.g. national radar composites, rain rate composites, accumulation products, and echo tops. These are provided as aöonk to be downloaded from the national interfaces, and typically in ODIM HDF5 or cloud-optimized GeoTiffs.
 
 ## OpenRadarData Validator
 

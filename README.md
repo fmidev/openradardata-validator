@@ -1,12 +1,27 @@
 
-## EURODEO
+## RODEO
 
-The RODEO project develops a user interface and Application Programming Interfaces (API) for accessing meteorological datasets declared as High Value Datasets (HVD) by the EU Implementing Regulation (EU) 2023/138 under the EU Open Data Directive (EU) 2019/1024. The project also fosters the engagement between data providers and data users for enhancing the understanding of technical solutions being available for sharing and accessing the HVD datasets.
+The [RODEO project](https://rodeo-project.eu/) develops a user interface and Application Programming Interfaces (API) for accessing meteorological datasets declared as High Value Datasets (HVD) by the EU Implementing Regulation (EU) 2023/138 under the EU Open Data Directive (EU) 2019/1024. The project also fosters the engagement between data providers and data users for enhancing the understanding of technical solutions being available for sharing and accessing the HVD datasets.
 This project provides a sustainable and standardized system for sharing real-time surface weather observations in line with the HVD regulation and WMO WIS 2.0 strategy. The real-time surface weather observations are made available through open web services, so that they can be accessed by anyone.
 
-# OpenRadarData
+# Open Radar Data (ORD)
 
-ORD part of the RODEO project. The goal for this project is to make near real-time weather radar observations. The data will be published on both a message queue using [MQTT](https://mqtt.org/) and [EDR](https://ogcapi.ogc.org/edr/) compliant APIs. Metadata will also be made available through [OGC Records](https://ogcapi.ogc.org/records/) APIs. The system architecture is portable, scalable and modular for taking into account possible future extensions to existing networks and datasets.
+The weather radar data is also considered as HVDs, and therefore, one of the goals of RODEO is to supply near real-time weather radar observations. The radar data will be published on both a message queue using [MQTT](https://mqtt.org/) and [EDR](https://ogcapi.ogc.org/edr/) compliant APIs. Metadata will also be made available through [OGC Records](https://ogcapi.ogc.org/records/) APIs. The system architecture is portable, scalable and modular for taking into account possible future extensions to existing networks and datasets.
+
+## Published datasets in ORD
+There are three types of data available via ORD. 
+1. European single-site radar data are available through the EUMETNET OPERA programme, both as a 24-hour rolling cache and as an extensive archive. The data are provided in BUFR format for older datasets and in ODIM HDF5 format for more recent ones.
+2. European composite products — including maximum reflectivity factor, instantaneous rain rate, and 1-hour rainfall accumulation — are available both as a 24-hour rolling cache and as a long-term archive dating back to 2012. These products are provided by the EUMETNET OPERA programme in ODIM HDF5 and cloud-optimized GeoTIFF formats.
+3. National radar product, e.g. national radar composites, rain rate composites, accumulation products, and echo tops. These are provided as a link to be downloaded from the national interfaces, and typically in ODIM HDF5 or cloud-optimized GeoTiffs.
+
+### Requirements for sharing national products via ORD API:
+* The interface to ORD is posting a json structured file with the required metadata and a link to the file for each ready product
+
+* National radar volume data is not shared via ORD API, only products. The data sharing is happening via OPERA to ORD API (if data sharing is authorized) 
+* Product format needs to be either ODIM H5 or cloud optimized GeoTiff 
+* Products are locally hosted in a national data store
+* Products can be accessible via an api or a public data store
+
 
 ## OpenRadarData Validator
 
@@ -14,18 +29,21 @@ The ORD system includes three endpoints for ingesting and sharing data:
 
 ### 1. BUFR Endpoint
 - Used for uploading and sharing **BUFR files**.
+- For **OPERA to ingest the European single site data** to European Weather Cloud S3 storage
 - The ingester module:
   - Extracts metadata from BUFR files and stores it in the database.
   - Uploads the original (or renamed) BUFR file to the ORD S3 bucket.
 
 ### 2. ODIM Endpoint
 - Processes **ODIM files**.
+- For **OPERA to ingest the European single site data and OPERA composites** to European Weather Cloud S3 storage
 - The ingester module:
   - Extracts metadata from ODIM files and stores it in the database.
   - Uploads the original (or renamed) ODIM file to the ORD S3 bucket.
 
 ### 3. JSON Endpoint
 - Enables sharing **locally stored radar data**.
+- For **National Meteorological Services (NMSs) to provide national products** via ORD
 - Users provide radar metadata through the JSON endpoint.
 
 

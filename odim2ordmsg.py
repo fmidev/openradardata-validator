@@ -211,7 +211,8 @@ def odim_openradar_msgmem(odim_content, size, test_schema_path):
 
         coords["lat"] /= 4
         coords["lon"] /= 4
-        coords["hei"] = 0.0
+        def_msg["properties"]["hamsl"] = 0.0
+        # coords["hei"] = 0.0
         def_msg["geometry"]["coordinates"] = coords
         add_attrs = ["projdef", "xscale", "xsize", "yscale", "ysize"]
         set_meta(def_msg["properties"]["radar_meta"], odim["where"], add_attrs)

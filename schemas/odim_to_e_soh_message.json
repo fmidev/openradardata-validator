@@ -11,7 +11,7 @@
         "radar_meta": {},
         "naming_authority": "eu.eumetnet",
         "level": 0,
-        "hmsl": 0.0,
+        "hamsl": 0.0,
         "function": "point",
         "period": "PT0S",
         "period_int": 0,

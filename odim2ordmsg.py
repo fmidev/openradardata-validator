@@ -226,7 +226,7 @@ def odim_openradar_msgmem(odim_content, size, test_schema_path):
             coords["lon"] = get_attr(odim["where"], "lon")
             # coords["hei"] = get_attr(odim["where"], "height")
             def_msg["geometry"]["coordinates"] = coords
-            def_msg["properties"]["hmsl"] = get_attr(odim["where"], "height")
+            def_msg["properties"]["hamsl"] = get_attr(odim["where"], "height")
 
             # what attibutes => radar_meta
             if "how" in odim:

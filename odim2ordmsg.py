@@ -143,18 +143,18 @@ def odim_openradar_msgmem(odim_content, size, test_schema_path):
     #             break
 
     # Fill WIGOS, WMO, Station when missing
-    for i in range(1, len(radars)):
-        if nod == radars["ODIM code"][i]:
-            # print("FOUND: {0} ".format(nod))
-            if isinstance(wmo, str) and len(wmo) == 0:
-                wmo = radars["WMO Code"][i]
-            if len(wigos) == 0:
-                rad_wigos = radars["WIGOS Station Identifier"][i]
-                if len(rad_wigos) != 0:
-                    wigos = rad_wigos
-            if len(station) == 0:
-                station = radars["Location"][i]
-            break
+    # for i in range(1, len(radars)):
+    #     if nod == radars["ODIM code"][i]:
+    #         # print("FOUND: {0} ".format(nod))
+    #         if isinstance(wmo, str) and len(wmo) == 0:
+    #             wmo = radars["WMO Code"][i]
+    #         if len(wigos) == 0:
+    #             rad_wigos = radars["WIGOS Station Identifier"][i]
+    #             if len(rad_wigos) != 0:
+    #                 wigos = rad_wigos
+    #         if len(station) == 0:
+    #             station = radars["Location"][i]
+    #         break
 
     if len(wigos):
         def_msg["properties"]["platform"] = wigos

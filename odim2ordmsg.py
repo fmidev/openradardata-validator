@@ -29,6 +29,14 @@ radars = None
 # radars_format = {"WMO Code": "Int32" }
 radars_format = {"WIGOS Station Identifier": "str"}
 
+default_data_link = {
+    "href": "",
+    "length": 0,
+    "rel": "items",
+    "title": "Default link, to data.",
+    "type": "application/x-odim",
+}
+
 
 def init_radars(fname=radardb_dir + "/OPERA_RADARS.csv"):
     # print("Init OPERA Radar database")
@@ -75,11 +83,17 @@ def odim_datetime(odate, otime: bytes) -> datetime:
     return dt
 
 
-def set_meta(m_dest: object, m_src: str, m_attrs: list):
+def set_meta(m_dest: object, m_src: str, m_attrs: list, fmt: str = "str"):
     for meta in m_attrs:
         meta_val = get_attr_str(m_src, meta)
         if meta_val is not None and len(meta_val):
-            m_dest[meta] = meta_val
+            match fmt:
+                case "str":
+                    m_dest[meta] = str(meta_val)
+                case "int":
+                    m_dest[meta] = int(meta_val)
+                case "float":
+                    m_dest[meta] = float(meta_val)
 
 
 def odim_openradar_msgmem(odim_content, size, test_schema_path):
@@ -190,7 +204,7 @@ def odim_openradar_msgmem(odim_content, size, test_schema_path):
 
     object = get_attr_str(odim["what"], "object")
     form_version = get_attr_str(odim["what"], "version")
-    def_msg["properties"]["radar_meta"]["format"] = "ODIM"
+    def_msg["properties"]["format"] = "ODIM"
     def_msg["properties"]["radar_meta"]["format_version"] = form_version
     def_msg["properties"]["radar_meta"]["object"] = str(object)
 
@@ -214,8 +228,12 @@ def odim_openradar_msgmem(odim_content, size, test_schema_path):
         def_msg["properties"]["hamsl"] = 0.0
         # coords["hei"] = 0.0
         def_msg["geometry"]["coordinates"] = coords
-        add_attrs = ["projdef", "xscale", "xsize", "yscale", "ysize"]
-        set_meta(def_msg["properties"]["radar_meta"], odim["where"], add_attrs)
+        add_str_attrs = ["projdef"]
+        set_meta(def_msg["properties"]["radar_meta"], odim["where"], add_str_attrs, "str")
+        add_int_attrs = ["xsize", "ysize"]
+        set_meta(def_msg["properties"]["radar_meta"], odim["where"], add_int_attrs, "int")
+        add_float_attrs = ["xscale", "yscale"]
+        set_meta(def_msg["properties"]["radar_meta"], odim["where"], add_float_attrs, "float")
     else:
         if object == "PVOL" or object == "SCAN":
             def_msg["properties"]["period_int"] = 300
@@ -238,9 +256,12 @@ def odim_openradar_msgmem(odim_content, size, test_schema_path):
                     "beamwH",
                     "beamwV",
                     "hiprf",
+                    "midprf",
                     "lowprf",
+                    "antspeed",
+                    "pulsewidth",
                 ]
-                set_meta(def_msg["properties"]["radar_meta"], odim["how"], add_attrs)
+                set_meta(def_msg["properties"]["radar_meta"], odim["how"], add_attrs, "float")
                 if "beamwidth" in def_msg["properties"]["radar_meta"]:
                     bw = def_msg["properties"]["radar_meta"]["beamwidth"]
                     def_msg["properties"]["radar_meta"]["beamwH"] = bw
@@ -279,7 +300,7 @@ def odim_openradar_msgmem(odim_content, size, test_schema_path):
             # print("DATASET WHERE: {0}".format(odim[dataset_key + "/where"]))
             elangle = get_attr(odim[dataset_key + "/where"], "elangle")
             if elangle is not None:
-                dataset_msg["properties"]["radar_meta"]["elangle"] = str(elangle)
+                dataset_msg["properties"]["radar_meta"]["elangle"] = float(elangle)
 
         # if dataset_key + "/how" in odim:
         #     print("DATASET HOW: {0}".format(odim[dataset_key + "/how"]))
@@ -290,16 +311,21 @@ def odim_openradar_msgmem(odim_content, size, test_schema_path):
                 if elangle not in s3_key_level:
                     s3_key_level.append(elangle)
 
-            # what attibutes => radar_meta
-            for meta in ["nbins", "nrays", "rscale"]:
+            # what attibutes => radar_meta int
+            for meta in ["nbins", "nrays", "a1gate"]:
                 meta_val = get_attr(odim[dataset_key + "/where"], meta)
                 if meta_val is not None:
-                    dataset_msg["properties"]["radar_meta"][meta] = str(meta_val)
+                    dataset_msg["properties"]["radar_meta"][meta] = int(meta_val)
+            # what attibutes => radar_meta float
+            for meta in ["rstart", "rscale"]:
+                meta_val = get_attr(odim[dataset_key + "/where"], meta)
+                if meta_val is not None:
+                    dataset_msg["properties"]["radar_meta"][meta] = float(meta_val)
 
         product = get_attr_str(odim[dataset_key + "/what"], "product")
         if len(product):
             dataset_msg["properties"]["radar_meta"]["product"] = product
-        prodpar = float(get_attr(odim[dataset_key + "/what"], "prodpar"))
+        prodpar = get_attr(odim[dataset_key + "/what"], "prodpar")
         if prodpar is not None:
             dataset_msg["properties"]["radar_meta"]["prodpar"] = str(prodpar)
 
@@ -386,16 +412,14 @@ def odim_openradar_msgmem(odim_content, size, test_schema_path):
     s3_key = s3_key_dir + s3_key_fil + ".h5"
 
     for msg in ret:
-        data_link = S3_ENDPOINT_URL
-        if len(data_link) > 1 and data_link[-1] != "/":
-            data_link += "/"
-        data_link += S3_BUCKET_NAME + "/" + s3_key
-        msg["properties"]["content"]["value"] = data_link
-        msg["properties"]["content"]["unit"] = "text"
-        msg["properties"]["content"]["size"] = len(data_link)
-
-        radar_meta = msg["properties"]["radar_meta"]
-        msg["properties"]["radar_meta"] = str(radar_meta)
+        data_link_href = S3_ENDPOINT_URL
+        if len(data_link_href) > 1 and data_link_href[-1] != "/":
+            data_link_href += "/"
+        data_link_href += S3_BUCKET_NAME + "/" + s3_key
+        data_link = default_data_link
+        data_link["href"] = data_link_href
+        data_link["length"] = len(data_link_href)
+        msg["links"].append(data_link)
 
     # S3 upload + error check
 

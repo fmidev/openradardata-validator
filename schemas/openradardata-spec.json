@@ -196,9 +196,193 @@
                     "type": "string",
                     "description": "The URL of the person (or other creator type specified by the creator_type attribute) principally responsible for creating this data."
                 },
-                "radar_meta": {
+                "format": {
                     "type": "string",
-                    "description": "Radar/measure parameters, ODIM"
+                    "description": "File format"
+                },
+                "radar_meta": {
+                    "type": "object",
+                    "properties": {
+                        "format_version": {
+                            "type": "string",
+                            "description": "File format version"
+                        },
+                        "object": {
+                            "type": "string",
+                            "description": "Type of data",
+                            "enum": [
+                                "COMP",
+                                "PVOL",
+                                "SCAN"
+                            ]
+                        },
+                        "projdef": {
+                            "type": "string",
+                            "description": "The projection definition arguments, described above, which can be used with PROJ.4. See the PROJ.4 documentation for usage. Longitude/Latitude coordinates are normalized to the WGS-84 ellipsoid and geodetic datum."
+                        },
+                        "xsize": {
+                            "type": ["string", "number"],
+                            "description": "Number of pixels in the X dimension"
+                        },
+                        "ysize": {
+                            "type": ["string", "number"],
+                            "description": "Number of pixels in the Y dimension"
+                        },
+                        "zsize": {
+                            "type": ["string", "number"],
+                            "description": "Number of vertical layers. Only used for three-dimensional products."
+                        },
+                        "xscale": {
+                            "type": ["string", "number"],
+                            "description": "Pixel size in the X dimension, in projection-specific coordinates"
+                        },
+                        "yscale": {
+                            "type": ["string", "number"],
+                            "description": "Pixel size in the Y dimension, in projection-specific coordinates"
+                        },
+                        "ztop": {
+                            "type": ["string", "number"],
+                            "description": "Layer top heights above mean sea level. The size of this one-dimensional array corresponds with the number of vertical layers. Only used for three-dimensional products."
+                        },
+                        "zbottom": {
+                            "type": ["string", "number"],
+                            "description": "Layer bottom heights above mean sea level. The size of this one-dimensional array corresponds with the number of vertical layers. Only used for three-dimensional products."
+                        },
+                        "LL_lat": {
+                            "type": ["string", "number"],
+                            "description": "Latitude of the lower left corner of the lower left pixel"
+                        },
+                        "LL_lon": {
+                            "type": ["string", "number"],
+                            "description": "Longitude of the lower left corner of the lower left pixel"
+                        },
+                        "UL_lat": {
+                            "type": ["string", "number"],
+                            "description": "Latitude of the upper left corner of the upper left pixe"
+                        },
+                        "UL_lon": {
+                            "type": ["string", "number"],
+                            "description": "Longitude of the upper left corner of the upper left pixel"
+                        },
+                        "UR_lat": {
+                            "type": ["string", "number"],
+                            "description": "Latitude of the upper right corner of the upper right pixel"
+                        },
+                        "UR_lon": {
+                            "type": ["string", "number"],
+                            "description": "Longitude of the upper right corner of the upper right pixel"
+                        },
+                        "LR_lat": {
+                            "type": ["string", "number"],
+                            "description": "Latitude of the lower right corner of the lower right pixel"
+                        },
+                        "LR_lon": {
+                            "type": ["string", "number"],
+                            "description": "Longitude of the lower right corner of the lower right pixel"
+                        },
+                        "elangle": {
+                            "type": ["string", "number"],
+                            "description": "Antenna elevation angle above the horizon"
+                        },
+                        "nbins": {
+                            "type": ["string", "number"],
+                            "description": "Number of range bins in each ra"
+                        },
+                        "rstart": {
+                            "type": ["string", "number"],
+                            "description": "The range of the start of the first range bin"
+                        },
+                        "rscale": {
+                            "type": ["string", "number"],
+                            "description": "The distance between two successive range bins"
+                        },
+                        "nrays": {
+                            "type": ["string", "number"],
+                            "description": "Number of azimuth or elevation gates (rays) in the object"
+                        },
+                        "a1gate": {
+                            "type": ["string", "number"],
+                            "description": "Index of the first azimuth gate radiated in the scan"
+                        },
+                        "product": {
+                            "type": "string",
+                            "description": "Product.",
+                            "enum": [
+                                "SCAN",
+                                "PPI",
+                                "CAPPI",
+                                "PCAPPI",
+                                "ETOP",
+                                "EBASE",
+                                "MAX",
+                                "RR",
+                                "VIL",
+                                "SURF",
+                                "COMP",
+                                "VP",
+                                "RHI",
+                                "XSEC",
+                                "VSP",
+                                "HSP",
+                                "RAY",
+                                "AZIM",
+                                "QUAL"
+                            ]
+                        },
+                        "zr_a": {
+                            "type": ["string", "number"],
+                            "description": "Z-R constant a in Z = a Rb , applicable to any product containing reflectivity or precipitation data"
+                        },
+                        "zr_b": {
+                            "type": ["string", "number"],
+                            "description": "Z-R exponent b in Z = a Rb , applicable to any product containing reflectivity or precipitation data"
+                        },
+                        "frequency": {
+                            "type": ["string", "number"],
+                            "description": "Radar frequency"
+                        },
+                        "lowprf": {
+                            "type": ["string", "number"],
+                            "description": "Low pulse repetition frequency"
+                        },
+                        "midprf": {
+                            "type": ["string", "number"],
+                            "description": "Intermediate pulse repetition frequency"
+                        },
+                        "highrf": {
+                            "type": ["string", "number"],
+                            "description": ""
+                        },
+                        "beamwH": {
+                            "type": ["string", "number"],
+                            "description": "Geometrical horizontal half-power (-3 dB) beamwidth"
+                        },
+                        "beamwV": {
+                            "type": ["string", "number"],
+                            "description": "Geometrical vertical half-power (-3 dB) beamwidth"
+                        },
+                        "pulsewidth": {
+                            "type": ["string", "number"],
+                            "description": "Pulsewidth in seconds"
+                        }
+                    },
+                    "additionalProperties": {
+                        "type": "string"
+                    },
+                    "if": {"properties": {"object": {"const": "COMP"}}},
+                    "then": {"required": ["LL_lat", "LL_lon", "UL_lat", "UL_lon", "UR_lat", "UR_lon", "LR_lat", "LR_lon"]},
+                    "oneOf": [
+                        {
+                        "required": [
+                            "object"
+                        ]
+                        },
+                        {
+                        "required": [
+                            "profuct"
+                        ]
+                        }
+                    ]
                 },
                 "institution": {
                     "type": "string",
@@ -338,7 +522,8 @@
                 "naming_authority",
                 "Conventions",
                 "license",
-                "radar_meta"
+                "radar_meta",
+                "format"
             ],
             "oneOf": [
                 {
@@ -374,6 +559,15 @@
             "type": "array",
             "minItems": 1,
             "description": "This section contains links relevant for the timeseries. A link to the data providers data services where the entire timeseries can be downloaded is encouraged.",
+            "contains": {
+                "type": "object",
+                "properties": {
+                    "rel": {
+                        "type": "string",
+                        "enum": ["item", "items"]
+                    }
+                }
+            },
             "items": {
                 "type": "object",
                 "required": [

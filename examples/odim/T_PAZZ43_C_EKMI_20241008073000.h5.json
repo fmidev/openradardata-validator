@@ -15,22 +15,37 @@
     "Conventions": "CF-1.8",
     "summary": "Radar data from OPERA network.",
     "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
-    "radar_meta": "{'format': 'ODIM', 'format_version': 'H5rad 3.0', 'object': 'PVOL', 'beamwH': '0.95', 'beamwV': '0.95', 'frequency': '5624624484.052533', 'elangle': '0.48339799999999655', 'nbins': '475', 'nrays': '360', 'rscale': '500.0', 'product': 'SCAN'}",
     "naming_authority": "eu.eumetnet",
     "level": 48,
+    "hamsl": 109.0,
     "function": "point",
     "period": "PT0S",
-    "period_int": 0,
     "platform": "0-20000-0-06036",
     "platform_name": "[dksin] Sindal",
+    "format": "ODIM",
+    "radar_meta": {
+      "format_version": "H5rad 3.0",
+      "object": "PVOL",
+      "beamwH": 0.95,
+      "beamwV": 0.95,
+      "pulsewidth": 0.8,
+      "frequency": "5624624484.052533",
+      "elangle": 0.48339799999999655,
+      "nbins": 475,
+      "nrays": 360,
+      "a1gate": 0,
+      "rstart": 0.5,
+      "rscale": 500.0,
+      "product": "SCAN"
+    },
     "content": {
       "encoding": "utf-8",
       "standard_name": "DBZH",
       "unit": "text",
-      "size": 177,
-      "value": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5"
+      "size": 1,
+      "value": "0"
     },
-    "hmsl": 109.0
+    "period_int": 0
   },
   "links": [
     {
@@ -50,6 +65,13 @@
       "rel": "service-desc",
       "type": "application/vnd.oai.openapi+json;version=3.0",
       "title": "Open Radar Data"
+    },
+    {
+      "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5",
+      "length": 177,
+      "rel": "items",
+      "title": "Default link, to data.",
+      "type": "application/x-odim"
     }
   ]
 }
@@ -70,22 +92,37 @@
     "Conventions": "CF-1.8",
     "summary": "Radar data from OPERA network.",
     "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
-    "radar_meta": "{'format': 'ODIM', 'format_version': 'H5rad 3.0', 'object': 'PVOL', 'beamwH': '0.95', 'beamwV': '0.95', 'frequency': '5624624484.052533', 'elangle': '0.48339799999999655', 'nbins': '475', 'nrays': '360', 'rscale': '500.0', 'product': 'SCAN'}",
     "naming_authority": "eu.eumetnet",
     "level": 48,
+    "hamsl": 109.0,
     "function": "point",
     "period": "PT0S",
-    "period_int": 0,
     "platform": "0-20000-0-06036",
     "platform_name": "[dksin] Sindal",
+    "format": "ODIM",
+    "radar_meta": {
+      "format_version": "H5rad 3.0",
+      "object": "PVOL",
+      "beamwH": 0.95,
+      "beamwV": 0.95,
+      "pulsewidth": 0.8,
+      "frequency": "5624624484.052533",
+      "elangle": 0.48339799999999655,
+      "nbins": 475,
+      "nrays": 360,
+      "a1gate": 0,
+      "rstart": 0.5,
+      "rscale": 500.0,
+      "product": "SCAN"
+    },
     "content": {
       "encoding": "utf-8",
       "standard_name": "VRAD",
       "unit": "text",
-      "size": 177,
-      "value": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5"
+      "size": 1,
+      "value": "0"
     },
-    "hmsl": 109.0
+    "period_int": 0
   },
   "links": [
     {
@@ -105,6 +142,13 @@
       "rel": "service-desc",
       "type": "application/vnd.oai.openapi+json;version=3.0",
       "title": "Open Radar Data"
+    },
+    {
+      "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5",
+      "length": 177,
+      "rel": "items",
+      "title": "Default link, to data.",
+      "type": "application/x-odim"
     }
   ]
 }
@@ -125,22 +169,37 @@
     "Conventions": "CF-1.8",
     "summary": "Radar data from OPERA network.",
     "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
-    "radar_meta": "{'format': 'ODIM', 'format_version': 'H5rad 3.0', 'object': 'PVOL', 'beamwH': '0.95', 'beamwV': '0.95', 'frequency': '5624624484.052533', 'elangle': '0.48339799999999655', 'nbins': '475', 'nrays': '360', 'rscale': '500.0', 'product': 'SCAN'}",
     "naming_authority": "eu.eumetnet",
     "level": 48,
+    "hamsl": 109.0,
     "function": "point",
     "period": "PT0S",
-    "period_int": 0,
     "platform": "0-20000-0-06036",
     "platform_name": "[dksin] Sindal",
+    "format": "ODIM",
+    "radar_meta": {
+      "format_version": "H5rad 3.0",
+      "object": "PVOL",
+      "beamwH": 0.95,
+      "beamwV": 0.95,
+      "pulsewidth": 0.8,
+      "frequency": "5624624484.052533",
+      "elangle": 0.48339799999999655,
+      "nbins": 475,
+      "nrays": 360,
+      "a1gate": 0,
+      "rstart": 0.5,
+      "rscale": 500.0,
+      "product": "SCAN"
+    },
     "content": {
       "encoding": "utf-8",
       "standard_name": "TH",
       "unit": "text",
-      "size": 177,
-      "value": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5"
+      "size": 1,
+      "value": "0"
     },
-    "hmsl": 109.0
+    "period_int": 0
   },
   "links": [
     {
@@ -160,6 +219,13 @@
       "rel": "service-desc",
       "type": "application/vnd.oai.openapi+json;version=3.0",
       "title": "Open Radar Data"
+    },
+    {
+      "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5",
+      "length": 177,
+      "rel": "items",
+      "title": "Default link, to data.",
+      "type": "application/x-odim"
     }
   ]
 }
@@ -180,22 +246,37 @@
     "Conventions": "CF-1.8",
     "summary": "Radar data from OPERA network.",
     "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
-    "radar_meta": "{'format': 'ODIM', 'format_version': 'H5rad 3.0', 'object': 'PVOL', 'beamwH': '0.95', 'beamwV': '0.95', 'frequency': '5624624484.052533', 'elangle': '0.48339799999999655', 'nbins': '475', 'nrays': '360', 'rscale': '500.0', 'product': 'SCAN'}",
     "naming_authority": "eu.eumetnet",
     "level": 48,
+    "hamsl": 109.0,
     "function": "point",
     "period": "PT0S",
-    "period_int": 0,
     "platform": "0-20000-0-06036",
     "platform_name": "[dksin] Sindal",
+    "format": "ODIM",
+    "radar_meta": {
+      "format_version": "H5rad 3.0",
+      "object": "PVOL",
+      "beamwH": 0.95,
+      "beamwV": 0.95,
+      "pulsewidth": 0.8,
+      "frequency": "5624624484.052533",
+      "elangle": 0.48339799999999655,
+      "nbins": 475,
+      "nrays": 360,
+      "a1gate": 0,
+      "rstart": 0.5,
+      "rscale": 500.0,
+      "product": "SCAN"
+    },
     "content": {
       "encoding": "utf-8",
       "standard_name": "WRAD",
       "unit": "text",
-      "size": 177,
-      "value": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5"
+      "size": 1,
+      "value": "0"
     },
-    "hmsl": 109.0
+    "period_int": 0
   },
   "links": [
     {
@@ -215,6 +296,13 @@
       "rel": "service-desc",
       "type": "application/vnd.oai.openapi+json;version=3.0",
       "title": "Open Radar Data"
+    },
+    {
+      "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5",
+      "length": 177,
+      "rel": "items",
+      "title": "Default link, to data.",
+      "type": "application/x-odim"
     }
   ]
 }
@@ -235,22 +323,37 @@
     "Conventions": "CF-1.8",
     "summary": "Radar data from OPERA network.",
     "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
-    "radar_meta": "{'format': 'ODIM', 'format_version': 'H5rad 3.0', 'object': 'PVOL', 'beamwH': '0.95', 'beamwV': '0.95', 'frequency': '5624624484.052533', 'elangle': '0.48339799999999655', 'nbins': '475', 'nrays': '360', 'rscale': '500.0', 'product': 'SCAN'}",
     "naming_authority": "eu.eumetnet",
     "level": 48,
+    "hamsl": 109.0,
     "function": "point",
     "period": "PT0S",
-    "period_int": 0,
     "platform": "0-20000-0-06036",
     "platform_name": "[dksin] Sindal",
+    "format": "ODIM",
+    "radar_meta": {
+      "format_version": "H5rad 3.0",
+      "object": "PVOL",
+      "beamwH": 0.95,
+      "beamwV": 0.95,
+      "pulsewidth": 0.8,
+      "frequency": "5624624484.052533",
+      "elangle": 0.48339799999999655,
+      "nbins": 475,
+      "nrays": 360,
+      "a1gate": 0,
+      "rstart": 0.5,
+      "rscale": 500.0,
+      "product": "SCAN"
+    },
     "content": {
       "encoding": "utf-8",
       "standard_name": "ZDR",
       "unit": "text",
-      "size": 177,
-      "value": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5"
+      "size": 1,
+      "value": "0"
     },
-    "hmsl": 109.0
+    "period_int": 0
   },
   "links": [
     {
@@ -270,6 +373,13 @@
       "rel": "service-desc",
       "type": "application/vnd.oai.openapi+json;version=3.0",
       "title": "Open Radar Data"
+    },
+    {
+      "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5",
+      "length": 177,
+      "rel": "items",
+      "title": "Default link, to data.",
+      "type": "application/x-odim"
     }
   ]
 }
@@ -290,22 +400,37 @@
     "Conventions": "CF-1.8",
     "summary": "Radar data from OPERA network.",
     "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
-    "radar_meta": "{'format': 'ODIM', 'format_version': 'H5rad 3.0', 'object': 'PVOL', 'beamwH': '0.95', 'beamwV': '0.95', 'frequency': '5624624484.052533', 'elangle': '0.48339799999999655', 'nbins': '475', 'nrays': '360', 'rscale': '500.0', 'product': 'SCAN'}",
     "naming_authority": "eu.eumetnet",
     "level": 48,
+    "hamsl": 109.0,
     "function": "point",
     "period": "PT0S",
-    "period_int": 0,
     "platform": "0-20000-0-06036",
     "platform_name": "[dksin] Sindal",
+    "format": "ODIM",
+    "radar_meta": {
+      "format_version": "H5rad 3.0",
+      "object": "PVOL",
+      "beamwH": 0.95,
+      "beamwV": 0.95,
+      "pulsewidth": 0.8,
+      "frequency": "5624624484.052533",
+      "elangle": 0.48339799999999655,
+      "nbins": 475,
+      "nrays": 360,
+      "a1gate": 0,
+      "rstart": 0.5,
+      "rscale": 500.0,
+      "product": "SCAN"
+    },
     "content": {
       "encoding": "utf-8",
       "standard_name": "RHOHV",
       "unit": "text",
-      "size": 177,
-      "value": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5"
+      "size": 1,
+      "value": "0"
     },
-    "hmsl": 109.0
+    "period_int": 0
   },
   "links": [
     {
@@ -325,6 +450,13 @@
       "rel": "service-desc",
       "type": "application/vnd.oai.openapi+json;version=3.0",
       "title": "Open Radar Data"
+    },
+    {
+      "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5",
+      "length": 177,
+      "rel": "items",
+      "title": "Default link, to data.",
+      "type": "application/x-odim"
     }
   ]
 }
@@ -345,22 +477,37 @@
     "Conventions": "CF-1.8",
     "summary": "Radar data from OPERA network.",
     "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
-    "radar_meta": "{'format': 'ODIM', 'format_version': 'H5rad 3.0', 'object': 'PVOL', 'beamwH': '0.95', 'beamwV': '0.95', 'frequency': '5624624484.052533', 'elangle': '0.48339799999999655', 'nbins': '475', 'nrays': '360', 'rscale': '500.0', 'product': 'SCAN'}",
     "naming_authority": "eu.eumetnet",
     "level": 48,
+    "hamsl": 109.0,
     "function": "point",
     "period": "PT0S",
-    "period_int": 0,
     "platform": "0-20000-0-06036",
     "platform_name": "[dksin] Sindal",
+    "format": "ODIM",
+    "radar_meta": {
+      "format_version": "H5rad 3.0",
+      "object": "PVOL",
+      "beamwH": 0.95,
+      "beamwV": 0.95,
+      "pulsewidth": 0.8,
+      "frequency": "5624624484.052533",
+      "elangle": 0.48339799999999655,
+      "nbins": 475,
+      "nrays": 360,
+      "a1gate": 0,
+      "rstart": 0.5,
+      "rscale": 500.0,
+      "product": "SCAN"
+    },
     "content": {
       "encoding": "utf-8",
       "standard_name": "PHIDP",
       "unit": "text",
-      "size": 177,
-      "value": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5"
+      "size": 1,
+      "value": "0"
     },
-    "hmsl": 109.0
+    "period_int": 0
   },
   "links": [
     {
@@ -380,6 +527,13 @@
       "rel": "service-desc",
       "type": "application/vnd.oai.openapi+json;version=3.0",
       "title": "Open Radar Data"
+    },
+    {
+      "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5",
+      "length": 177,
+      "rel": "items",
+      "title": "Default link, to data.",
+      "type": "application/x-odim"
     }
   ]
 }
@@ -400,22 +554,37 @@
     "Conventions": "CF-1.8",
     "summary": "Radar data from OPERA network.",
     "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
-    "radar_meta": "{'format': 'ODIM', 'format_version': 'H5rad 3.0', 'object': 'PVOL', 'beamwH': '0.95', 'beamwV': '0.95', 'frequency': '5624624484.052533', 'elangle': '0.48339799999999655', 'nbins': '475', 'nrays': '360', 'rscale': '500.0', 'product': 'SCAN'}",
     "naming_authority": "eu.eumetnet",
     "level": 48,
+    "hamsl": 109.0,
     "function": "point",
     "period": "PT0S",
-    "period_int": 0,
     "platform": "0-20000-0-06036",
     "platform_name": "[dksin] Sindal",
+    "format": "ODIM",
+    "radar_meta": {
+      "format_version": "H5rad 3.0",
+      "object": "PVOL",
+      "beamwH": 0.95,
+      "beamwV": 0.95,
+      "pulsewidth": 0.8,
+      "frequency": "5624624484.052533",
+      "elangle": 0.48339799999999655,
+      "nbins": 475,
+      "nrays": 360,
+      "a1gate": 0,
+      "rstart": 0.5,
+      "rscale": 500.0,
+      "product": "SCAN"
+    },
     "content": {
       "encoding": "utf-8",
       "standard_name": "LDR",
       "unit": "text",
-      "size": 177,
-      "value": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5"
+      "size": 1,
+      "value": "0"
     },
-    "hmsl": 109.0
+    "period_int": 0
   },
   "links": [
     {
@@ -435,6 +604,13 @@
       "rel": "service-desc",
       "type": "application/vnd.oai.openapi+json;version=3.0",
       "title": "Open Radar Data"
+    },
+    {
+      "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5",
+      "length": 177,
+      "rel": "items",
+      "title": "Default link, to data.",
+      "type": "application/x-odim"
     }
   ]
 }
@@ -455,22 +631,37 @@
     "Conventions": "CF-1.8",
     "summary": "Radar data from OPERA network.",
     "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
-    "radar_meta": "{'format': 'ODIM', 'format_version': 'H5rad 3.0', 'object': 'PVOL', 'beamwH': '0.95', 'beamwV': '0.95', 'frequency': '5624624484.052533', 'elangle': '0.6546862097222195', 'nbins': '475', 'nrays': '360', 'rscale': '500.0', 'product': 'SCAN'}",
     "naming_authority": "eu.eumetnet",
     "level": 65,
+    "hamsl": 109.0,
     "function": "point",
     "period": "PT0S",
-    "period_int": 0,
     "platform": "0-20000-0-06036",
     "platform_name": "[dksin] Sindal",
+    "format": "ODIM",
+    "radar_meta": {
+      "format_version": "H5rad 3.0",
+      "object": "PVOL",
+      "beamwH": 0.95,
+      "beamwV": 0.95,
+      "pulsewidth": 0.8,
+      "frequency": "5624624484.052533",
+      "elangle": 0.6546862097222195,
+      "nbins": 475,
+      "nrays": 360,
+      "a1gate": 0,
+      "rstart": 0.5,
+      "rscale": 500.0,
+      "product": "SCAN"
+    },
     "content": {
       "encoding": "utf-8",
       "standard_name": "DBZH",
       "unit": "text",
-      "size": 177,
-      "value": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5"
+      "size": 1,
+      "value": "0"
     },
-    "hmsl": 109.0
+    "period_int": 0
   },
   "links": [
     {
@@ -490,6 +681,13 @@
       "rel": "service-desc",
       "type": "application/vnd.oai.openapi+json;version=3.0",
       "title": "Open Radar Data"
+    },
+    {
+      "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5",
+      "length": 177,
+      "rel": "items",
+      "title": "Default link, to data.",
+      "type": "application/x-odim"
     }
   ]
 }
@@ -510,22 +708,37 @@
     "Conventions": "CF-1.8",
     "summary": "Radar data from OPERA network.",
     "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
-    "radar_meta": "{'format': 'ODIM', 'format_version': 'H5rad 3.0', 'object': 'PVOL', 'beamwH': '0.95', 'beamwV': '0.95', 'frequency': '5624624484.052533', 'elangle': '0.6546862097222195', 'nbins': '475', 'nrays': '360', 'rscale': '500.0', 'product': 'SCAN'}",
     "naming_authority": "eu.eumetnet",
     "level": 65,
+    "hamsl": 109.0,
     "function": "point",
     "period": "PT0S",
-    "period_int": 0,
     "platform": "0-20000-0-06036",
     "platform_name": "[dksin] Sindal",
+    "format": "ODIM",
+    "radar_meta": {
+      "format_version": "H5rad 3.0",
+      "object": "PVOL",
+      "beamwH": 0.95,
+      "beamwV": 0.95,
+      "pulsewidth": 0.8,
+      "frequency": "5624624484.052533",
+      "elangle": 0.6546862097222195,
+      "nbins": 475,
+      "nrays": 360,
+      "a1gate": 0,
+      "rstart": 0.5,
+      "rscale": 500.0,
+      "product": "SCAN"
+    },
     "content": {
       "encoding": "utf-8",
       "standard_name": "VRAD",
       "unit": "text",
-      "size": 177,
-      "value": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5"
+      "size": 1,
+      "value": "0"
     },
-    "hmsl": 109.0
+    "period_int": 0
   },
   "links": [
     {
@@ -545,6 +758,13 @@
       "rel": "service-desc",
       "type": "application/vnd.oai.openapi+json;version=3.0",
       "title": "Open Radar Data"
+    },
+    {
+      "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5",
+      "length": 177,
+      "rel": "items",
+      "title": "Default link, to data.",
+      "type": "application/x-odim"
     }
   ]
 }
@@ -565,22 +785,37 @@
     "Conventions": "CF-1.8",
     "summary": "Radar data from OPERA network.",
     "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
-    "radar_meta": "{'format': 'ODIM', 'format_version': 'H5rad 3.0', 'object': 'PVOL', 'beamwH': '0.95', 'beamwV': '0.95', 'frequency': '5624624484.052533', 'elangle': '0.6546862097222195', 'nbins': '475', 'nrays': '360', 'rscale': '500.0', 'product': 'SCAN'}",
     "naming_authority": "eu.eumetnet",
     "level": 65,
+    "hamsl": 109.0,
     "function": "point",
     "period": "PT0S",
-    "period_int": 0,
     "platform": "0-20000-0-06036",
     "platform_name": "[dksin] Sindal",
+    "format": "ODIM",
+    "radar_meta": {
+      "format_version": "H5rad 3.0",
+      "object": "PVOL",
+      "beamwH": 0.95,
+      "beamwV": 0.95,
+      "pulsewidth": 0.8,
+      "frequency": "5624624484.052533",
+      "elangle": 0.6546862097222195,
+      "nbins": 475,
+      "nrays": 360,
+      "a1gate": 0,
+      "rstart": 0.5,
+      "rscale": 500.0,
+      "product": "SCAN"
+    },
     "content": {
       "encoding": "utf-8",
       "standard_name": "TH",
       "unit": "text",
-      "size": 177,
-      "value": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5"
+      "size": 1,
+      "value": "0"
     },
-    "hmsl": 109.0
+    "period_int": 0
   },
   "links": [
     {
@@ -600,6 +835,13 @@
       "rel": "service-desc",
       "type": "application/vnd.oai.openapi+json;version=3.0",
       "title": "Open Radar Data"
+    },
+    {
+      "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5",
+      "length": 177,
+      "rel": "items",
+      "title": "Default link, to data.",
+      "type": "application/x-odim"
     }
   ]
 }
@@ -620,22 +862,37 @@
     "Conventions": "CF-1.8",
     "summary": "Radar data from OPERA network.",
     "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
-    "radar_meta": "{'format': 'ODIM', 'format_version': 'H5rad 3.0', 'object': 'PVOL', 'beamwH': '0.95', 'beamwV': '0.95', 'frequency': '5624624484.052533', 'elangle': '0.6546862097222195', 'nbins': '475', 'nrays': '360', 'rscale': '500.0', 'product': 'SCAN'}",
     "naming_authority": "eu.eumetnet",
     "level": 65,
+    "hamsl": 109.0,
     "function": "point",
     "period": "PT0S",
-    "period_int": 0,
     "platform": "0-20000-0-06036",
     "platform_name": "[dksin] Sindal",
+    "format": "ODIM",
+    "radar_meta": {
+      "format_version": "H5rad 3.0",
+      "object": "PVOL",
+      "beamwH": 0.95,
+      "beamwV": 0.95,
+      "pulsewidth": 0.8,
+      "frequency": "5624624484.052533",
+      "elangle": 0.6546862097222195,
+      "nbins": 475,
+      "nrays": 360,
+      "a1gate": 0,
+      "rstart": 0.5,
+      "rscale": 500.0,
+      "product": "SCAN"
+    },
     "content": {
       "encoding": "utf-8",
       "standard_name": "WRAD",
       "unit": "text",
-      "size": 177,
-      "value": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5"
+      "size": 1,
+      "value": "0"
     },
-    "hmsl": 109.0
+    "period_int": 0
   },
   "links": [
     {
@@ -655,6 +912,13 @@
       "rel": "service-desc",
       "type": "application/vnd.oai.openapi+json;version=3.0",
       "title": "Open Radar Data"
+    },
+    {
+      "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5",
+      "length": 177,
+      "rel": "items",
+      "title": "Default link, to data.",
+      "type": "application/x-odim"
     }
   ]
 }
@@ -675,22 +939,37 @@
     "Conventions": "CF-1.8",
     "summary": "Radar data from OPERA network.",
     "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
-    "radar_meta": "{'format': 'ODIM', 'format_version': 'H5rad 3.0', 'object': 'PVOL', 'beamwH': '0.95', 'beamwV': '0.95', 'frequency': '5624624484.052533', 'elangle': '0.6546862097222195', 'nbins': '475', 'nrays': '360', 'rscale': '500.0', 'product': 'SCAN'}",
     "naming_authority": "eu.eumetnet",
     "level": 65,
+    "hamsl": 109.0,
     "function": "point",
     "period": "PT0S",
-    "period_int": 0,
     "platform": "0-20000-0-06036",
     "platform_name": "[dksin] Sindal",
+    "format": "ODIM",
+    "radar_meta": {
+      "format_version": "H5rad 3.0",
+      "object": "PVOL",
+      "beamwH": 0.95,
+      "beamwV": 0.95,
+      "pulsewidth": 0.8,
+      "frequency": "5624624484.052533",
+      "elangle": 0.6546862097222195,
+      "nbins": 475,
+      "nrays": 360,
+      "a1gate": 0,
+      "rstart": 0.5,
+      "rscale": 500.0,
+      "product": "SCAN"
+    },
     "content": {
       "encoding": "utf-8",
       "standard_name": "ZDR",
       "unit": "text",
-      "size": 177,
-      "value": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5"
+      "size": 1,
+      "value": "0"
     },
-    "hmsl": 109.0
+    "period_int": 0
   },
   "links": [
     {
@@ -710,6 +989,13 @@
       "rel": "service-desc",
       "type": "application/vnd.oai.openapi+json;version=3.0",
       "title": "Open Radar Data"
+    },
+    {
+      "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5",
+      "length": 177,
+      "rel": "items",
+      "title": "Default link, to data.",
+      "type": "application/x-odim"
     }
   ]
 }
@@ -730,22 +1016,37 @@
     "Conventions": "CF-1.8",
     "summary": "Radar data from OPERA network.",
     "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
-    "radar_meta": "{'format': 'ODIM', 'format_version': 'H5rad 3.0', 'object': 'PVOL', 'beamwH': '0.95', 'beamwV': '0.95', 'frequency': '5624624484.052533', 'elangle': '0.6546862097222195', 'nbins': '475', 'nrays': '360', 'rscale': '500.0', 'product': 'SCAN'}",
     "naming_authority": "eu.eumetnet",
     "level": 65,
+    "hamsl": 109.0,
     "function": "point",
     "period": "PT0S",
-    "period_int": 0,
     "platform": "0-20000-0-06036",
     "platform_name": "[dksin] Sindal",
+    "format": "ODIM",
+    "radar_meta": {
+      "format_version": "H5rad 3.0",
+      "object": "PVOL",
+      "beamwH": 0.95,
+      "beamwV": 0.95,
+      "pulsewidth": 0.8,
+      "frequency": "5624624484.052533",
+      "elangle": 0.6546862097222195,
+      "nbins": 475,
+      "nrays": 360,
+      "a1gate": 0,
+      "rstart": 0.5,
+      "rscale": 500.0,
+      "product": "SCAN"
+    },
     "content": {
       "encoding": "utf-8",
       "standard_name": "RHOHV",
       "unit": "text",
-      "size": 177,
-      "value": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5"
+      "size": 1,
+      "value": "0"
     },
-    "hmsl": 109.0
+    "period_int": 0
   },
   "links": [
     {
@@ -765,6 +1066,13 @@
       "rel": "service-desc",
       "type": "application/vnd.oai.openapi+json;version=3.0",
       "title": "Open Radar Data"
+    },
+    {
+      "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5",
+      "length": 177,
+      "rel": "items",
+      "title": "Default link, to data.",
+      "type": "application/x-odim"
     }
   ]
 }
@@ -785,22 +1093,37 @@
     "Conventions": "CF-1.8",
     "summary": "Radar data from OPERA network.",
     "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
-    "radar_meta": "{'format': 'ODIM', 'format_version': 'H5rad 3.0', 'object': 'PVOL', 'beamwH': '0.95', 'beamwV': '0.95', 'frequency': '5624624484.052533', 'elangle': '0.6546862097222195', 'nbins': '475', 'nrays': '360', 'rscale': '500.0', 'product': 'SCAN'}",
     "naming_authority": "eu.eumetnet",
     "level": 65,
+    "hamsl": 109.0,
     "function": "point",
     "period": "PT0S",
-    "period_int": 0,
     "platform": "0-20000-0-06036",
     "platform_name": "[dksin] Sindal",
+    "format": "ODIM",
+    "radar_meta": {
+      "format_version": "H5rad 3.0",
+      "object": "PVOL",
+      "beamwH": 0.95,
+      "beamwV": 0.95,
+      "pulsewidth": 0.8,
+      "frequency": "5624624484.052533",
+      "elangle": 0.6546862097222195,
+      "nbins": 475,
+      "nrays": 360,
+      "a1gate": 0,
+      "rstart": 0.5,
+      "rscale": 500.0,
+      "product": "SCAN"
+    },
     "content": {
       "encoding": "utf-8",
       "standard_name": "PHIDP",
       "unit": "text",
-      "size": 177,
-      "value": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5"
+      "size": 1,
+      "value": "0"
     },
-    "hmsl": 109.0
+    "period_int": 0
   },
   "links": [
     {
@@ -820,6 +1143,13 @@
       "rel": "service-desc",
       "type": "application/vnd.oai.openapi+json;version=3.0",
       "title": "Open Radar Data"
+    },
+    {
+      "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5",
+      "length": 177,
+      "rel": "items",
+      "title": "Default link, to data.",
+      "type": "application/x-odim"
     }
   ]
 }
@@ -840,22 +1170,37 @@
     "Conventions": "CF-1.8",
     "summary": "Radar data from OPERA network.",
     "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
-    "radar_meta": "{'format': 'ODIM', 'format_version': 'H5rad 3.0', 'object': 'PVOL', 'beamwH': '0.95', 'beamwV': '0.95', 'frequency': '5624624484.052533', 'elangle': '0.6546862097222195', 'nbins': '475', 'nrays': '360', 'rscale': '500.0', 'product': 'SCAN'}",
     "naming_authority": "eu.eumetnet",
     "level": 65,
+    "hamsl": 109.0,
     "function": "point",
     "period": "PT0S",
-    "period_int": 0,
     "platform": "0-20000-0-06036",
     "platform_name": "[dksin] Sindal",
+    "format": "ODIM",
+    "radar_meta": {
+      "format_version": "H5rad 3.0",
+      "object": "PVOL",
+      "beamwH": 0.95,
+      "beamwV": 0.95,
+      "pulsewidth": 0.8,
+      "frequency": "5624624484.052533",
+      "elangle": 0.6546862097222195,
+      "nbins": 475,
+      "nrays": 360,
+      "a1gate": 0,
+      "rstart": 0.5,
+      "rscale": 500.0,
+      "product": "SCAN"
+    },
     "content": {
       "encoding": "utf-8",
       "standard_name": "LDR",
       "unit": "text",
-      "size": 177,
-      "value": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5"
+      "size": 1,
+      "value": "0"
     },
-    "hmsl": 109.0
+    "period_int": 0
   },
   "links": [
     {
@@ -875,6 +1220,13 @@
       "rel": "service-desc",
       "type": "application/vnd.oai.openapi+json;version=3.0",
       "title": "Open Radar Data"
+    },
+    {
+      "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5",
+      "length": 177,
+      "rel": "items",
+      "title": "Default link, to data.",
+      "type": "application/x-odim"
     }
   ]
 }
@@ -895,22 +1247,37 @@
     "Conventions": "CF-1.8",
     "summary": "Radar data from OPERA network.",
     "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
-    "radar_meta": "{'format': 'ODIM', 'format_version': 'H5rad 3.0', 'object': 'PVOL', 'beamwH': '0.95', 'beamwV': '0.95', 'frequency': '5624624484.052533', 'elangle': '0.9641571930555561', 'nbins': '475', 'nrays': '360', 'rscale': '500.0', 'product': 'SCAN'}",
     "naming_authority": "eu.eumetnet",
     "level": 96,
+    "hamsl": 109.0,
     "function": "point",
     "period": "PT0S",
-    "period_int": 0,
     "platform": "0-20000-0-06036",
     "platform_name": "[dksin] Sindal",
+    "format": "ODIM",
+    "radar_meta": {
+      "format_version": "H5rad 3.0",
+      "object": "PVOL",
+      "beamwH": 0.95,
+      "beamwV": 0.95,
+      "pulsewidth": 0.8,
+      "frequency": "5624624484.052533",
+      "elangle": 0.9641571930555561,
+      "nbins": 475,
+      "nrays": 360,
+      "a1gate": 0,
+      "rstart": 0.5,
+      "rscale": 500.0,
+      "product": "SCAN"
+    },
     "content": {
       "encoding": "utf-8",
       "standard_name": "DBZH",
       "unit": "text",
-      "size": 177,
-      "value": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5"
+      "size": 1,
+      "value": "0"
     },
-    "hmsl": 109.0
+    "period_int": 0
   },
   "links": [
     {
@@ -930,6 +1297,13 @@
       "rel": "service-desc",
       "type": "application/vnd.oai.openapi+json;version=3.0",
       "title": "Open Radar Data"
+    },
+    {
+      "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5",
+      "length": 177,
+      "rel": "items",
+      "title": "Default link, to data.",
+      "type": "application/x-odim"
     }
   ]
 }
@@ -950,22 +1324,37 @@
     "Conventions": "CF-1.8",
     "summary": "Radar data from OPERA network.",
     "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
-    "radar_meta": "{'format': 'ODIM', 'format_version': 'H5rad 3.0', 'object': 'PVOL', 'beamwH': '0.95', 'beamwV': '0.95', 'frequency': '5624624484.052533', 'elangle': '0.9641571930555561', 'nbins': '475', 'nrays': '360', 'rscale': '500.0', 'product': 'SCAN'}",
     "naming_authority": "eu.eumetnet",
     "level": 96,
+    "hamsl": 109.0,
     "function": "point",
     "period": "PT0S",
-    "period_int": 0,
     "platform": "0-20000-0-06036",
     "platform_name": "[dksin] Sindal",
+    "format": "ODIM",
+    "radar_meta": {
+      "format_version": "H5rad 3.0",
+      "object": "PVOL",
+      "beamwH": 0.95,
+      "beamwV": 0.95,
+      "pulsewidth": 0.8,
+      "frequency": "5624624484.052533",
+      "elangle": 0.9641571930555561,
+      "nbins": 475,
+      "nrays": 360,
+      "a1gate": 0,
+      "rstart": 0.5,
+      "rscale": 500.0,
+      "product": "SCAN"
+    },
     "content": {
       "encoding": "utf-8",
       "standard_name": "VRAD",
       "unit": "text",
-      "size": 177,
-      "value": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5"
+      "size": 1,
+      "value": "0"
     },
-    "hmsl": 109.0
+    "period_int": 0
   },
   "links": [
     {
@@ -985,6 +1374,13 @@
       "rel": "service-desc",
       "type": "application/vnd.oai.openapi+json;version=3.0",
       "title": "Open Radar Data"
+    },
+    {
+      "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5",
+      "length": 177,
+      "rel": "items",
+      "title": "Default link, to data.",
+      "type": "application/x-odim"
     }
   ]
 }
@@ -1005,22 +1401,37 @@
     "Conventions": "CF-1.8",
     "summary": "Radar data from OPERA network.",
     "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
-    "radar_meta": "{'format': 'ODIM', 'format_version': 'H5rad 3.0', 'object': 'PVOL', 'beamwH': '0.95', 'beamwV': '0.95', 'frequency': '5624624484.052533', 'elangle': '0.9641571930555561', 'nbins': '475', 'nrays': '360', 'rscale': '500.0', 'product': 'SCAN'}",
     "naming_authority": "eu.eumetnet",
     "level": 96,
+    "hamsl": 109.0,
     "function": "point",
     "period": "PT0S",
-    "period_int": 0,
     "platform": "0-20000-0-06036",
     "platform_name": "[dksin] Sindal",
+    "format": "ODIM",
+    "radar_meta": {
+      "format_version": "H5rad 3.0",
+      "object": "PVOL",
+      "beamwH": 0.95,
+      "beamwV": 0.95,
+      "pulsewidth": 0.8,
+      "frequency": "5624624484.052533",
+      "elangle": 0.9641571930555561,
+      "nbins": 475,
+      "nrays": 360,
+      "a1gate": 0,
+      "rstart": 0.5,
+      "rscale": 500.0,
+      "product": "SCAN"
+    },
     "content": {
       "encoding": "utf-8",
       "standard_name": "TH",
       "unit": "text",
-      "size": 177,
-      "value": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5"
+      "size": 1,
+      "value": "0"
     },
-    "hmsl": 109.0
+    "period_int": 0
   },
   "links": [
     {
@@ -1040,6 +1451,13 @@
       "rel": "service-desc",
       "type": "application/vnd.oai.openapi+json;version=3.0",
       "title": "Open Radar Data"
+    },
+    {
+      "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5",
+      "length": 177,
+      "rel": "items",
+      "title": "Default link, to data.",
+      "type": "application/x-odim"
     }
   ]
 }
@@ -1060,22 +1478,37 @@
     "Conventions": "CF-1.8",
     "summary": "Radar data from OPERA network.",
     "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
-    "radar_meta": "{'format': 'ODIM', 'format_version': 'H5rad 3.0', 'object': 'PVOL', 'beamwH': '0.95', 'beamwV': '0.95', 'frequency': '5624624484.052533', 'elangle': '0.9641571930555561', 'nbins': '475', 'nrays': '360', 'rscale': '500.0', 'product': 'SCAN'}",
     "naming_authority": "eu.eumetnet",
     "level": 96,
+    "hamsl": 109.0,
     "function": "point",
     "period": "PT0S",
-    "period_int": 0,
     "platform": "0-20000-0-06036",
     "platform_name": "[dksin] Sindal",
+    "format": "ODIM",
+    "radar_meta": {
+      "format_version": "H5rad 3.0",
+      "object": "PVOL",
+      "beamwH": 0.95,
+      "beamwV": 0.95,
+      "pulsewidth": 0.8,
+      "frequency": "5624624484.052533",
+      "elangle": 0.9641571930555561,
+      "nbins": 475,
+      "nrays": 360,
+      "a1gate": 0,
+      "rstart": 0.5,
+      "rscale": 500.0,
+      "product": "SCAN"
+    },
     "content": {
       "encoding": "utf-8",
       "standard_name": "WRAD",
       "unit": "text",
-      "size": 177,
-      "value": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5"
+      "size": 1,
+      "value": "0"
     },
-    "hmsl": 109.0
+    "period_int": 0
   },
   "links": [
     {
@@ -1095,6 +1528,13 @@
       "rel": "service-desc",
       "type": "application/vnd.oai.openapi+json;version=3.0",
       "title": "Open Radar Data"
+    },
+    {
+      "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5",
+      "length": 177,
+      "rel": "items",
+      "title": "Default link, to data.",
+      "type": "application/x-odim"
     }
   ]
 }
@@ -1115,22 +1555,37 @@
     "Conventions": "CF-1.8",
     "summary": "Radar data from OPERA network.",
     "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
-    "radar_meta": "{'format': 'ODIM', 'format_version': 'H5rad 3.0', 'object': 'PVOL', 'beamwH': '0.95', 'beamwV': '0.95', 'frequency': '5624624484.052533', 'elangle': '0.9641571930555561', 'nbins': '475', 'nrays': '360', 'rscale': '500.0', 'product': 'SCAN'}",
     "naming_authority": "eu.eumetnet",
     "level": 96,
+    "hamsl": 109.0,
     "function": "point",
     "period": "PT0S",
-    "period_int": 0,
     "platform": "0-20000-0-06036",
     "platform_name": "[dksin] Sindal",
+    "format": "ODIM",
+    "radar_meta": {
+      "format_version": "H5rad 3.0",
+      "object": "PVOL",
+      "beamwH": 0.95,
+      "beamwV": 0.95,
+      "pulsewidth": 0.8,
+      "frequency": "5624624484.052533",
+      "elangle": 0.9641571930555561,
+      "nbins": 475,
+      "nrays": 360,
+      "a1gate": 0,
+      "rstart": 0.5,
+      "rscale": 500.0,
+      "product": "SCAN"
+    },
     "content": {
       "encoding": "utf-8",
       "standard_name": "ZDR",
       "unit": "text",
-      "size": 177,
-      "value": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5"
+      "size": 1,
+      "value": "0"
     },
-    "hmsl": 109.0
+    "period_int": 0
   },
   "links": [
     {
@@ -1150,6 +1605,13 @@
       "rel": "service-desc",
       "type": "application/vnd.oai.openapi+json;version=3.0",
       "title": "Open Radar Data"
+    },
+    {
+      "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5",
+      "length": 177,
+      "rel": "items",
+      "title": "Default link, to data.",
+      "type": "application/x-odim"
     }
   ]
 }
@@ -1170,22 +1632,37 @@
     "Conventions": "CF-1.8",
     "summary": "Radar data from OPERA network.",
     "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
-    "radar_meta": "{'format': 'ODIM', 'format_version': 'H5rad 3.0', 'object': 'PVOL', 'beamwH': '0.95', 'beamwV': '0.95', 'frequency': '5624624484.052533', 'elangle': '0.9641571930555561', 'nbins': '475', 'nrays': '360', 'rscale': '500.0', 'product': 'SCAN'}",
     "naming_authority": "eu.eumetnet",
     "level": 96,
+    "hamsl": 109.0,
     "function": "point",
     "period": "PT0S",
-    "period_int": 0,
     "platform": "0-20000-0-06036",
     "platform_name": "[dksin] Sindal",
+    "format": "ODIM",
+    "radar_meta": {
+      "format_version": "H5rad 3.0",
+      "object": "PVOL",
+      "beamwH": 0.95,
+      "beamwV": 0.95,
+      "pulsewidth": 0.8,
+      "frequency": "5624624484.052533",
+      "elangle": 0.9641571930555561,
+      "nbins": 475,
+      "nrays": 360,
+      "a1gate": 0,
+      "rstart": 0.5,
+      "rscale": 500.0,
+      "product": "SCAN"
+    },
     "content": {
       "encoding": "utf-8",
       "standard_name": "RHOHV",
       "unit": "text",
-      "size": 177,
-      "value": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5"
+      "size": 1,
+      "value": "0"
     },
-    "hmsl": 109.0
+    "period_int": 0
   },
   "links": [
     {
@@ -1205,6 +1682,13 @@
       "rel": "service-desc",
       "type": "application/vnd.oai.openapi+json;version=3.0",
       "title": "Open Radar Data"
+    },
+    {
+      "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5",
+      "length": 177,
+      "rel": "items",
+      "title": "Default link, to data.",
+      "type": "application/x-odim"
     }
   ]
 }
@@ -1225,22 +1709,37 @@
     "Conventions": "CF-1.8",
     "summary": "Radar data from OPERA network.",
     "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
-    "radar_meta": "{'format': 'ODIM', 'format_version': 'H5rad 3.0', 'object': 'PVOL', 'beamwH': '0.95', 'beamwV': '0.95', 'frequency': '5624624484.052533', 'elangle': '0.9641571930555561', 'nbins': '475', 'nrays': '360', 'rscale': '500.0', 'product': 'SCAN'}",
     "naming_authority": "eu.eumetnet",
     "level": 96,
+    "hamsl": 109.0,
     "function": "point",
     "period": "PT0S",
-    "period_int": 0,
     "platform": "0-20000-0-06036",
     "platform_name": "[dksin] Sindal",
+    "format": "ODIM",
+    "radar_meta": {
+      "format_version": "H5rad 3.0",
+      "object": "PVOL",
+      "beamwH": 0.95,
+      "beamwV": 0.95,
+      "pulsewidth": 0.8,
+      "frequency": "5624624484.052533",
+      "elangle": 0.9641571930555561,
+      "nbins": 475,
+      "nrays": 360,
+      "a1gate": 0,
+      "rstart": 0.5,
+      "rscale": 500.0,
+      "product": "SCAN"
+    },
     "content": {
       "encoding": "utf-8",
       "standard_name": "PHIDP",
       "unit": "text",
-      "size": 177,
-      "value": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5"
+      "size": 1,
+      "value": "0"
     },
-    "hmsl": 109.0
+    "period_int": 0
   },
   "links": [
     {
@@ -1260,6 +1759,13 @@
       "rel": "service-desc",
       "type": "application/vnd.oai.openapi+json;version=3.0",
       "title": "Open Radar Data"
+    },
+    {
+      "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5",
+      "length": 177,
+      "rel": "items",
+      "title": "Default link, to data.",
+      "type": "application/x-odim"
     }
   ]
 }
@@ -1280,22 +1786,37 @@
     "Conventions": "CF-1.8",
     "summary": "Radar data from OPERA network.",
     "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
-    "radar_meta": "{'format': 'ODIM', 'format_version': 'H5rad 3.0', 'object': 'PVOL', 'beamwH': '0.95', 'beamwV': '0.95', 'frequency': '5624624484.052533', 'elangle': '0.9641571930555561', 'nbins': '475', 'nrays': '360', 'rscale': '500.0', 'product': 'SCAN'}",
     "naming_authority": "eu.eumetnet",
     "level": 96,
+    "hamsl": 109.0,
     "function": "point",
     "period": "PT0S",
-    "period_int": 0,
     "platform": "0-20000-0-06036",
     "platform_name": "[dksin] Sindal",
+    "format": "ODIM",
+    "radar_meta": {
+      "format_version": "H5rad 3.0",
+      "object": "PVOL",
+      "beamwH": 0.95,
+      "beamwV": 0.95,
+      "pulsewidth": 0.8,
+      "frequency": "5624624484.052533",
+      "elangle": 0.9641571930555561,
+      "nbins": 475,
+      "nrays": 360,
+      "a1gate": 0,
+      "rstart": 0.5,
+      "rscale": 500.0,
+      "product": "SCAN"
+    },
     "content": {
       "encoding": "utf-8",
       "standard_name": "LDR",
       "unit": "text",
-      "size": 177,
-      "value": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5"
+      "size": 1,
+      "value": "0"
     },
-    "hmsl": 109.0
+    "period_int": 0
   },
   "links": [
     {
@@ -1315,6 +1836,13 @@
       "rel": "service-desc",
       "type": "application/vnd.oai.openapi+json;version=3.0",
       "title": "Open Radar Data"
+    },
+    {
+      "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5",
+      "length": 177,
+      "rel": "items",
+      "title": "Default link, to data.",
+      "type": "application/x-odim"
     }
   ]
 }
@@ -1335,22 +1863,37 @@
     "Conventions": "CF-1.8",
     "summary": "Radar data from OPERA network.",
     "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
-    "radar_meta": "{'format': 'ODIM', 'format_version': 'H5rad 3.0', 'object': 'PVOL', 'beamwH': '0.95', 'beamwV': '0.95', 'frequency': '5624624484.052533', 'elangle': '1.4682794027777808', 'nbins': '475', 'nrays': '360', 'rscale': '500.0', 'product': 'SCAN'}",
     "naming_authority": "eu.eumetnet",
     "level": 147,
+    "hamsl": 109.0,
     "function": "point",
     "period": "PT0S",
-    "period_int": 0,
     "platform": "0-20000-0-06036",
     "platform_name": "[dksin] Sindal",
+    "format": "ODIM",
+    "radar_meta": {
+      "format_version": "H5rad 3.0",
+      "object": "PVOL",
+      "beamwH": 0.95,
+      "beamwV": 0.95,
+      "pulsewidth": 0.8,
+      "frequency": "5624624484.052533",
+      "elangle": 1.4682794027777808,
+      "nbins": 475,
+      "nrays": 360,
+      "a1gate": 0,
+      "rstart": 0.5,
+      "rscale": 500.0,
+      "product": "SCAN"
+    },
     "content": {
       "encoding": "utf-8",
       "standard_name": "DBZH",
       "unit": "text",
-      "size": 177,
-      "value": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5"
+      "size": 1,
+      "value": "0"
     },
-    "hmsl": 109.0
+    "period_int": 0
   },
   "links": [
     {
@@ -1370,6 +1913,13 @@
       "rel": "service-desc",
       "type": "application/vnd.oai.openapi+json;version=3.0",
       "title": "Open Radar Data"
+    },
+    {
+      "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5",
+      "length": 177,
+      "rel": "items",
+      "title": "Default link, to data.",
+      "type": "application/x-odim"
     }
   ]
 }
@@ -1390,22 +1940,37 @@
     "Conventions": "CF-1.8",
     "summary": "Radar data from OPERA network.",
     "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
-    "radar_meta": "{'format': 'ODIM', 'format_version': 'H5rad 3.0', 'object': 'PVOL', 'beamwH': '0.95', 'beamwV': '0.95', 'frequency': '5624624484.052533', 'elangle': '1.4682794027777808', 'nbins': '475', 'nrays': '360', 'rscale': '500.0', 'product': 'SCAN'}",
     "naming_authority": "eu.eumetnet",
     "level": 147,
+    "hamsl": 109.0,
     "function": "point",
     "period": "PT0S",
-    "period_int": 0,
     "platform": "0-20000-0-06036",
     "platform_name": "[dksin] Sindal",
+    "format": "ODIM",
+    "radar_meta": {
+      "format_version": "H5rad 3.0",
+      "object": "PVOL",
+      "beamwH": 0.95,
+      "beamwV": 0.95,
+      "pulsewidth": 0.8,
+      "frequency": "5624624484.052533",
+      "elangle": 1.4682794027777808,
+      "nbins": 475,
+      "nrays": 360,
+      "a1gate": 0,
+      "rstart": 0.5,
+      "rscale": 500.0,
+      "product": "SCAN"
+    },
     "content": {
       "encoding": "utf-8",
       "standard_name": "VRAD",
       "unit": "text",
-      "size": 177,
-      "value": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5"
+      "size": 1,
+      "value": "0"
     },
-    "hmsl": 109.0
+    "period_int": 0
   },
   "links": [
     {
@@ -1425,6 +1990,13 @@
       "rel": "service-desc",
       "type": "application/vnd.oai.openapi+json;version=3.0",
       "title": "Open Radar Data"
+    },
+    {
+      "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5",
+      "length": 177,
+      "rel": "items",
+      "title": "Default link, to data.",
+      "type": "application/x-odim"
     }
   ]
 }
@@ -1445,22 +2017,37 @@
     "Conventions": "CF-1.8",
     "summary": "Radar data from OPERA network.",
     "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
-    "radar_meta": "{'format': 'ODIM', 'format_version': 'H5rad 3.0', 'object': 'PVOL', 'beamwH': '0.95', 'beamwV': '0.95', 'frequency': '5624624484.052533', 'elangle': '1.4682794027777808', 'nbins': '475', 'nrays': '360', 'rscale': '500.0', 'product': 'SCAN'}",
     "naming_authority": "eu.eumetnet",
     "level": 147,
+    "hamsl": 109.0,
     "function": "point",
     "period": "PT0S",
-    "period_int": 0,
     "platform": "0-20000-0-06036",
     "platform_name": "[dksin] Sindal",
+    "format": "ODIM",
+    "radar_meta": {
+      "format_version": "H5rad 3.0",
+      "object": "PVOL",
+      "beamwH": 0.95,
+      "beamwV": 0.95,
+      "pulsewidth": 0.8,
+      "frequency": "5624624484.052533",
+      "elangle": 1.4682794027777808,
+      "nbins": 475,
+      "nrays": 360,
+      "a1gate": 0,
+      "rstart": 0.5,
+      "rscale": 500.0,
+      "product": "SCAN"
+    },
     "content": {
       "encoding": "utf-8",
       "standard_name": "TH",
       "unit": "text",
-      "size": 177,
-      "value": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5"
+      "size": 1,
+      "value": "0"
     },
-    "hmsl": 109.0
+    "period_int": 0
   },
   "links": [
     {
@@ -1480,6 +2067,13 @@
       "rel": "service-desc",
       "type": "application/vnd.oai.openapi+json;version=3.0",
       "title": "Open Radar Data"
+    },
+    {
+      "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5",
+      "length": 177,
+      "rel": "items",
+      "title": "Default link, to data.",
+      "type": "application/x-odim"
     }
   ]
 }
@@ -1500,22 +2094,37 @@
     "Conventions": "CF-1.8",
     "summary": "Radar data from OPERA network.",
     "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
-    "radar_meta": "{'format': 'ODIM', 'format_version': 'H5rad 3.0', 'object': 'PVOL', 'beamwH': '0.95', 'beamwV': '0.95', 'frequency': '5624624484.052533', 'elangle': '1.4682794027777808', 'nbins': '475', 'nrays': '360', 'rscale': '500.0', 'product': 'SCAN'}",
     "naming_authority": "eu.eumetnet",
     "level": 147,
+    "hamsl": 109.0,
     "function": "point",
     "period": "PT0S",
-    "period_int": 0,
     "platform": "0-20000-0-06036",
     "platform_name": "[dksin] Sindal",
+    "format": "ODIM",
+    "radar_meta": {
+      "format_version": "H5rad 3.0",
+      "object": "PVOL",
+      "beamwH": 0.95,
+      "beamwV": 0.95,
+      "pulsewidth": 0.8,
+      "frequency": "5624624484.052533",
+      "elangle": 1.4682794027777808,
+      "nbins": 475,
+      "nrays": 360,
+      "a1gate": 0,
+      "rstart": 0.5,
+      "rscale": 500.0,
+      "product": "SCAN"
+    },
     "content": {
       "encoding": "utf-8",
       "standard_name": "WRAD",
       "unit": "text",
-      "size": 177,
-      "value": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5"
+      "size": 1,
+      "value": "0"
     },
-    "hmsl": 109.0
+    "period_int": 0
   },
   "links": [
     {
@@ -1535,6 +2144,13 @@
       "rel": "service-desc",
       "type": "application/vnd.oai.openapi+json;version=3.0",
       "title": "Open Radar Data"
+    },
+    {
+      "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5",
+      "length": 177,
+      "rel": "items",
+      "title": "Default link, to data.",
+      "type": "application/x-odim"
     }
   ]
 }
@@ -1555,22 +2171,37 @@
     "Conventions": "CF-1.8",
     "summary": "Radar data from OPERA network.",
     "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
-    "radar_meta": "{'format': 'ODIM', 'format_version': 'H5rad 3.0', 'object': 'PVOL', 'beamwH': '0.95', 'beamwV': '0.95', 'frequency': '5624624484.052533', 'elangle': '1.4682794027777808', 'nbins': '475', 'nrays': '360', 'rscale': '500.0', 'product': 'SCAN'}",
     "naming_authority": "eu.eumetnet",
     "level": 147,
+    "hamsl": 109.0,
     "function": "point",
     "period": "PT0S",
-    "period_int": 0,
     "platform": "0-20000-0-06036",
     "platform_name": "[dksin] Sindal",
+    "format": "ODIM",
+    "radar_meta": {
+      "format_version": "H5rad 3.0",
+      "object": "PVOL",
+      "beamwH": 0.95,
+      "beamwV": 0.95,
+      "pulsewidth": 0.8,
+      "frequency": "5624624484.052533",
+      "elangle": 1.4682794027777808,
+      "nbins": 475,
+      "nrays": 360,
+      "a1gate": 0,
+      "rstart": 0.5,
+      "rscale": 500.0,
+      "product": "SCAN"
+    },
     "content": {
       "encoding": "utf-8",
       "standard_name": "ZDR",
       "unit": "text",
-      "size": 177,
-      "value": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5"
+      "size": 1,
+      "value": "0"
     },
-    "hmsl": 109.0
+    "period_int": 0
   },
   "links": [
     {
@@ -1590,6 +2221,13 @@
       "rel": "service-desc",
       "type": "application/vnd.oai.openapi+json;version=3.0",
       "title": "Open Radar Data"
+    },
+    {
+      "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5",
+      "length": 177,
+      "rel": "items",
+      "title": "Default link, to data.",
+      "type": "application/x-odim"
     }
   ]
 }
@@ -1610,22 +2248,37 @@
     "Conventions": "CF-1.8",
     "summary": "Radar data from OPERA network.",
     "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
-    "radar_meta": "{'format': 'ODIM', 'format_version': 'H5rad 3.0', 'object': 'PVOL', 'beamwH': '0.95', 'beamwV': '0.95', 'frequency': '5624624484.052533', 'elangle': '1.4682794027777808', 'nbins': '475', 'nrays': '360', 'rscale': '500.0', 'product': 'SCAN'}",
     "naming_authority": "eu.eumetnet",
     "level": 147,
+    "hamsl": 109.0,
     "function": "point",
     "period": "PT0S",
-    "period_int": 0,
     "platform": "0-20000-0-06036",
     "platform_name": "[dksin] Sindal",
+    "format": "ODIM",
+    "radar_meta": {
+      "format_version": "H5rad 3.0",
+      "object": "PVOL",
+      "beamwH": 0.95,
+      "beamwV": 0.95,
+      "pulsewidth": 0.8,
+      "frequency": "5624624484.052533",
+      "elangle": 1.4682794027777808,
+      "nbins": 475,
+      "nrays": 360,
+      "a1gate": 0,
+      "rstart": 0.5,
+      "rscale": 500.0,
+      "product": "SCAN"
+    },
     "content": {
       "encoding": "utf-8",
       "standard_name": "RHOHV",
       "unit": "text",
-      "size": 177,
-      "value": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5"
+      "size": 1,
+      "value": "0"
     },
-    "hmsl": 109.0
+    "period_int": 0
   },
   "links": [
     {
@@ -1645,6 +2298,13 @@
       "rel": "service-desc",
       "type": "application/vnd.oai.openapi+json;version=3.0",
       "title": "Open Radar Data"
+    },
+    {
+      "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5",
+      "length": 177,
+      "rel": "items",
+      "title": "Default link, to data.",
+      "type": "application/x-odim"
     }
   ]
 }
@@ -1665,22 +2325,37 @@
     "Conventions": "CF-1.8",
     "summary": "Radar data from OPERA network.",
     "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
-    "radar_meta": "{'format': 'ODIM', 'format_version': 'H5rad 3.0', 'object': 'PVOL', 'beamwH': '0.95', 'beamwV': '0.95', 'frequency': '5624624484.052533', 'elangle': '1.4682794027777808', 'nbins': '475', 'nrays': '360', 'rscale': '500.0', 'product': 'SCAN'}",
     "naming_authority": "eu.eumetnet",
     "level": 147,
+    "hamsl": 109.0,
     "function": "point",
     "period": "PT0S",
-    "period_int": 0,
     "platform": "0-20000-0-06036",
     "platform_name": "[dksin] Sindal",
+    "format": "ODIM",
+    "radar_meta": {
+      "format_version": "H5rad 3.0",
+      "object": "PVOL",
+      "beamwH": 0.95,
+      "beamwV": 0.95,
+      "pulsewidth": 0.8,
+      "frequency": "5624624484.052533",
+      "elangle": 1.4682794027777808,
+      "nbins": 475,
+      "nrays": 360,
+      "a1gate": 0,
+      "rstart": 0.5,
+      "rscale": 500.0,
+      "product": "SCAN"
+    },
     "content": {
       "encoding": "utf-8",
       "standard_name": "PHIDP",
       "unit": "text",
-      "size": 177,
-      "value": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5"
+      "size": 1,
+      "value": "0"
     },
-    "hmsl": 109.0
+    "period_int": 0
   },
   "links": [
     {
@@ -1700,6 +2375,13 @@
       "rel": "service-desc",
       "type": "application/vnd.oai.openapi+json;version=3.0",
       "title": "Open Radar Data"
+    },
+    {
+      "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5",
+      "length": 177,
+      "rel": "items",
+      "title": "Default link, to data.",
+      "type": "application/x-odim"
     }
   ]
 }
@@ -1720,22 +2402,37 @@
     "Conventions": "CF-1.8",
     "summary": "Radar data from OPERA network.",
     "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
-    "radar_meta": "{'format': 'ODIM', 'format_version': 'H5rad 3.0', 'object': 'PVOL', 'beamwH': '0.95', 'beamwV': '0.95', 'frequency': '5624624484.052533', 'elangle': '1.4682794027777808', 'nbins': '475', 'nrays': '360', 'rscale': '500.0', 'product': 'SCAN'}",
     "naming_authority": "eu.eumetnet",
     "level": 147,
+    "hamsl": 109.0,
     "function": "point",
     "period": "PT0S",
-    "period_int": 0,
     "platform": "0-20000-0-06036",
     "platform_name": "[dksin] Sindal",
+    "format": "ODIM",
+    "radar_meta": {
+      "format_version": "H5rad 3.0",
+      "object": "PVOL",
+      "beamwH": 0.95,
+      "beamwV": 0.95,
+      "pulsewidth": 0.8,
+      "frequency": "5624624484.052533",
+      "elangle": 1.4682794027777808,
+      "nbins": 475,
+      "nrays": 360,
+      "a1gate": 0,
+      "rstart": 0.5,
+      "rscale": 500.0,
+      "product": "SCAN"
+    },
     "content": {
       "encoding": "utf-8",
       "standard_name": "LDR",
       "unit": "text",
-      "size": 177,
-      "value": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5"
+      "size": 1,
+      "value": "0"
     },
-    "hmsl": 109.0
+    "period_int": 0
   },
   "links": [
     {
@@ -1755,6 +2452,13 @@
       "rel": "service-desc",
       "type": "application/vnd.oai.openapi+json;version=3.0",
       "title": "Open Radar Data"
+    },
+    {
+      "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5",
+      "length": 177,
+      "rel": "items",
+      "title": "Default link, to data.",
+      "type": "application/x-odim"
     }
   ]
 }
@@ -1775,22 +2479,37 @@
     "Conventions": "CF-1.8",
     "summary": "Radar data from OPERA network.",
     "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
-    "radar_meta": "{'format': 'ODIM', 'format_version': 'H5rad 3.0', 'object': 'PVOL', 'beamwH': '0.95', 'beamwV': '0.95', 'frequency': '5624624484.052533', 'elangle': '2.3730500000000085', 'nbins': '475', 'nrays': '360', 'rscale': '500.0', 'product': 'SCAN'}",
     "naming_authority": "eu.eumetnet",
     "level": 237,
+    "hamsl": 109.0,
     "function": "point",
     "period": "PT0S",
-    "period_int": 0,
     "platform": "0-20000-0-06036",
     "platform_name": "[dksin] Sindal",
+    "format": "ODIM",
+    "radar_meta": {
+      "format_version": "H5rad 3.0",
+      "object": "PVOL",
+      "beamwH": 0.95,
+      "beamwV": 0.95,
+      "pulsewidth": 0.8,
+      "frequency": "5624624484.052533",
+      "elangle": 2.3730500000000085,
+      "nbins": 475,
+      "nrays": 360,
+      "a1gate": 0,
+      "rstart": 0.5,
+      "rscale": 500.0,
+      "product": "SCAN"
+    },
     "content": {
       "encoding": "utf-8",
       "standard_name": "DBZH",
       "unit": "text",
-      "size": 177,
-      "value": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5"
+      "size": 1,
+      "value": "0"
     },
-    "hmsl": 109.0
+    "period_int": 0
   },
   "links": [
     {
@@ -1810,6 +2529,13 @@
       "rel": "service-desc",
       "type": "application/vnd.oai.openapi+json;version=3.0",
       "title": "Open Radar Data"
+    },
+    {
+      "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5",
+      "length": 177,
+      "rel": "items",
+      "title": "Default link, to data.",
+      "type": "application/x-odim"
     }
   ]
 }
@@ -1830,22 +2556,37 @@
     "Conventions": "CF-1.8",
     "summary": "Radar data from OPERA network.",
     "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
-    "radar_meta": "{'format': 'ODIM', 'format_version': 'H5rad 3.0', 'object': 'PVOL', 'beamwH': '0.95', 'beamwV': '0.95', 'frequency': '5624624484.052533', 'elangle': '2.3730500000000085', 'nbins': '475', 'nrays': '360', 'rscale': '500.0', 'product': 'SCAN'}",
     "naming_authority": "eu.eumetnet",
     "level": 237,
+    "hamsl": 109.0,
     "function": "point",
     "period": "PT0S",
-    "period_int": 0,
     "platform": "0-20000-0-06036",
     "platform_name": "[dksin] Sindal",
+    "format": "ODIM",
+    "radar_meta": {
+      "format_version": "H5rad 3.0",
+      "object": "PVOL",
+      "beamwH": 0.95,
+      "beamwV": 0.95,
+      "pulsewidth": 0.8,
+      "frequency": "5624624484.052533",
+      "elangle": 2.3730500000000085,
+      "nbins": 475,
+      "nrays": 360,
+      "a1gate": 0,
+      "rstart": 0.5,
+      "rscale": 500.0,
+      "product": "SCAN"
+    },
     "content": {
       "encoding": "utf-8",
       "standard_name": "VRAD",
       "unit": "text",
-      "size": 177,
-      "value": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5"
+      "size": 1,
+      "value": "0"
     },
-    "hmsl": 109.0
+    "period_int": 0
   },
   "links": [
     {
@@ -1865,6 +2606,13 @@
       "rel": "service-desc",
       "type": "application/vnd.oai.openapi+json;version=3.0",
       "title": "Open Radar Data"
+    },
+    {
+      "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5",
+      "length": 177,
+      "rel": "items",
+      "title": "Default link, to data.",
+      "type": "application/x-odim"
     }
   ]
 }
@@ -1885,22 +2633,37 @@
     "Conventions": "CF-1.8",
     "summary": "Radar data from OPERA network.",
     "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
-    "radar_meta": "{'format': 'ODIM', 'format_version': 'H5rad 3.0', 'object': 'PVOL', 'beamwH': '0.95', 'beamwV': '0.95', 'frequency': '5624624484.052533', 'elangle': '2.3730500000000085', 'nbins': '475', 'nrays': '360', 'rscale': '500.0', 'product': 'SCAN'}",
     "naming_authority": "eu.eumetnet",
     "level": 237,
+    "hamsl": 109.0,
     "function": "point",
     "period": "PT0S",
-    "period_int": 0,
     "platform": "0-20000-0-06036",
     "platform_name": "[dksin] Sindal",
+    "format": "ODIM",
+    "radar_meta": {
+      "format_version": "H5rad 3.0",
+      "object": "PVOL",
+      "beamwH": 0.95,
+      "beamwV": 0.95,
+      "pulsewidth": 0.8,
+      "frequency": "5624624484.052533",
+      "elangle": 2.3730500000000085,
+      "nbins": 475,
+      "nrays": 360,
+      "a1gate": 0,
+      "rstart": 0.5,
+      "rscale": 500.0,
+      "product": "SCAN"
+    },
     "content": {
       "encoding": "utf-8",
       "standard_name": "TH",
       "unit": "text",
-      "size": 177,
-      "value": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5"
+      "size": 1,
+      "value": "0"
     },
-    "hmsl": 109.0
+    "period_int": 0
   },
   "links": [
     {
@@ -1920,6 +2683,13 @@
       "rel": "service-desc",
       "type": "application/vnd.oai.openapi+json;version=3.0",
       "title": "Open Radar Data"
+    },
+    {
+      "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5",
+      "length": 177,
+      "rel": "items",
+      "title": "Default link, to data.",
+      "type": "application/x-odim"
     }
   ]
 }
@@ -1940,22 +2710,37 @@
     "Conventions": "CF-1.8",
     "summary": "Radar data from OPERA network.",
     "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
-    "radar_meta": "{'format': 'ODIM', 'format_version': 'H5rad 3.0', 'object': 'PVOL', 'beamwH': '0.95', 'beamwV': '0.95', 'frequency': '5624624484.052533', 'elangle': '2.3730500000000085', 'nbins': '475', 'nrays': '360', 'rscale': '500.0', 'product': 'SCAN'}",
     "naming_authority": "eu.eumetnet",
     "level": 237,
+    "hamsl": 109.0,
     "function": "point",
     "period": "PT0S",
-    "period_int": 0,
     "platform": "0-20000-0-06036",
     "platform_name": "[dksin] Sindal",
+    "format": "ODIM",
+    "radar_meta": {
+      "format_version": "H5rad 3.0",
+      "object": "PVOL",
+      "beamwH": 0.95,
+      "beamwV": 0.95,
+      "pulsewidth": 0.8,
+      "frequency": "5624624484.052533",
+      "elangle": 2.3730500000000085,
+      "nbins": 475,
+      "nrays": 360,
+      "a1gate": 0,
+      "rstart": 0.5,
+      "rscale": 500.0,
+      "product": "SCAN"
+    },
     "content": {
       "encoding": "utf-8",
       "standard_name": "WRAD",
       "unit": "text",
-      "size": 177,
-      "value": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5"
+      "size": 1,
+      "value": "0"
     },
-    "hmsl": 109.0
+    "period_int": 0
   },
   "links": [
     {
@@ -1975,6 +2760,13 @@
       "rel": "service-desc",
       "type": "application/vnd.oai.openapi+json;version=3.0",
       "title": "Open Radar Data"
+    },
+    {
+      "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5",
+      "length": 177,
+      "rel": "items",
+      "title": "Default link, to data.",
+      "type": "application/x-odim"
     }
   ]
 }
@@ -1995,22 +2787,37 @@
     "Conventions": "CF-1.8",
     "summary": "Radar data from OPERA network.",
     "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
-    "radar_meta": "{'format': 'ODIM', 'format_version': 'H5rad 3.0', 'object': 'PVOL', 'beamwH': '0.95', 'beamwV': '0.95', 'frequency': '5624624484.052533', 'elangle': '2.3730500000000085', 'nbins': '475', 'nrays': '360', 'rscale': '500.0', 'product': 'SCAN'}",
     "naming_authority": "eu.eumetnet",
     "level": 237,
+    "hamsl": 109.0,
     "function": "point",
     "period": "PT0S",
-    "period_int": 0,
     "platform": "0-20000-0-06036",
     "platform_name": "[dksin] Sindal",
+    "format": "ODIM",
+    "radar_meta": {
+      "format_version": "H5rad 3.0",
+      "object": "PVOL",
+      "beamwH": 0.95,
+      "beamwV": 0.95,
+      "pulsewidth": 0.8,
+      "frequency": "5624624484.052533",
+      "elangle": 2.3730500000000085,
+      "nbins": 475,
+      "nrays": 360,
+      "a1gate": 0,
+      "rstart": 0.5,
+      "rscale": 500.0,
+      "product": "SCAN"
+    },
     "content": {
       "encoding": "utf-8",
       "standard_name": "ZDR",
       "unit": "text",
-      "size": 177,
-      "value": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5"
+      "size": 1,
+      "value": "0"
     },
-    "hmsl": 109.0
+    "period_int": 0
   },
   "links": [
     {
@@ -2030,6 +2837,13 @@
       "rel": "service-desc",
       "type": "application/vnd.oai.openapi+json;version=3.0",
       "title": "Open Radar Data"
+    },
+    {
+      "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5",
+      "length": 177,
+      "rel": "items",
+      "title": "Default link, to data.",
+      "type": "application/x-odim"
     }
   ]
 }
@@ -2050,22 +2864,37 @@
     "Conventions": "CF-1.8",
     "summary": "Radar data from OPERA network.",
     "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
-    "radar_meta": "{'format': 'ODIM', 'format_version': 'H5rad 3.0', 'object': 'PVOL', 'beamwH': '0.95', 'beamwV': '0.95', 'frequency': '5624624484.052533', 'elangle': '2.3730500000000085', 'nbins': '475', 'nrays': '360', 'rscale': '500.0', 'product': 'SCAN'}",
     "naming_authority": "eu.eumetnet",
     "level": 237,
+    "hamsl": 109.0,
     "function": "point",
     "period": "PT0S",
-    "period_int": 0,
     "platform": "0-20000-0-06036",
     "platform_name": "[dksin] Sindal",
+    "format": "ODIM",
+    "radar_meta": {
+      "format_version": "H5rad 3.0",
+      "object": "PVOL",
+      "beamwH": 0.95,
+      "beamwV": 0.95,
+      "pulsewidth": 0.8,
+      "frequency": "5624624484.052533",
+      "elangle": 2.3730500000000085,
+      "nbins": 475,
+      "nrays": 360,
+      "a1gate": 0,
+      "rstart": 0.5,
+      "rscale": 500.0,
+      "product": "SCAN"
+    },
     "content": {
       "encoding": "utf-8",
       "standard_name": "RHOHV",
       "unit": "text",
-      "size": 177,
-      "value": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5"
+      "size": 1,
+      "value": "0"
     },
-    "hmsl": 109.0
+    "period_int": 0
   },
   "links": [
     {
@@ -2085,6 +2914,13 @@
       "rel": "service-desc",
       "type": "application/vnd.oai.openapi+json;version=3.0",
       "title": "Open Radar Data"
+    },
+    {
+      "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5",
+      "length": 177,
+      "rel": "items",
+      "title": "Default link, to data.",
+      "type": "application/x-odim"
     }
   ]
 }
@@ -2105,22 +2941,37 @@
     "Conventions": "CF-1.8",
     "summary": "Radar data from OPERA network.",
     "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
-    "radar_meta": "{'format': 'ODIM', 'format_version': 'H5rad 3.0', 'object': 'PVOL', 'beamwH': '0.95', 'beamwV': '0.95', 'frequency': '5624624484.052533', 'elangle': '2.3730500000000085', 'nbins': '475', 'nrays': '360', 'rscale': '500.0', 'product': 'SCAN'}",
     "naming_authority": "eu.eumetnet",
     "level": 237,
+    "hamsl": 109.0,
     "function": "point",
     "period": "PT0S",
-    "period_int": 0,
     "platform": "0-20000-0-06036",
     "platform_name": "[dksin] Sindal",
+    "format": "ODIM",
+    "radar_meta": {
+      "format_version": "H5rad 3.0",
+      "object": "PVOL",
+      "beamwH": 0.95,
+      "beamwV": 0.95,
+      "pulsewidth": 0.8,
+      "frequency": "5624624484.052533",
+      "elangle": 2.3730500000000085,
+      "nbins": 475,
+      "nrays": 360,
+      "a1gate": 0,
+      "rstart": 0.5,
+      "rscale": 500.0,
+      "product": "SCAN"
+    },
     "content": {
       "encoding": "utf-8",
       "standard_name": "PHIDP",
       "unit": "text",
-      "size": 177,
-      "value": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5"
+      "size": 1,
+      "value": "0"
     },
-    "hmsl": 109.0
+    "period_int": 0
   },
   "links": [
     {
@@ -2140,6 +2991,13 @@
       "rel": "service-desc",
       "type": "application/vnd.oai.openapi+json;version=3.0",
       "title": "Open Radar Data"
+    },
+    {
+      "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5",
+      "length": 177,
+      "rel": "items",
+      "title": "Default link, to data.",
+      "type": "application/x-odim"
     }
   ]
 }
@@ -2160,22 +3018,37 @@
     "Conventions": "CF-1.8",
     "summary": "Radar data from OPERA network.",
     "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
-    "radar_meta": "{'format': 'ODIM', 'format_version': 'H5rad 3.0', 'object': 'PVOL', 'beamwH': '0.95', 'beamwV': '0.95', 'frequency': '5624624484.052533', 'elangle': '2.3730500000000085', 'nbins': '475', 'nrays': '360', 'rscale': '500.0', 'product': 'SCAN'}",
     "naming_authority": "eu.eumetnet",
     "level": 237,
+    "hamsl": 109.0,
     "function": "point",
     "period": "PT0S",
-    "period_int": 0,
     "platform": "0-20000-0-06036",
     "platform_name": "[dksin] Sindal",
+    "format": "ODIM",
+    "radar_meta": {
+      "format_version": "H5rad 3.0",
+      "object": "PVOL",
+      "beamwH": 0.95,
+      "beamwV": 0.95,
+      "pulsewidth": 0.8,
+      "frequency": "5624624484.052533",
+      "elangle": 2.3730500000000085,
+      "nbins": 475,
+      "nrays": 360,
+      "a1gate": 0,
+      "rstart": 0.5,
+      "rscale": 500.0,
+      "product": "SCAN"
+    },
     "content": {
       "encoding": "utf-8",
       "standard_name": "LDR",
       "unit": "text",
-      "size": 177,
-      "value": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5"
+      "size": 1,
+      "value": "0"
     },
-    "hmsl": 109.0
+    "period_int": 0
   },
   "links": [
     {
@@ -2195,6 +3068,13 @@
       "rel": "service-desc",
       "type": "application/vnd.oai.openapi+json;version=3.0",
       "title": "Open Radar Data"
+    },
+    {
+      "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5",
+      "length": 177,
+      "rel": "items",
+      "title": "Default link, to data.",
+      "type": "application/x-odim"
     }
   ]
 }
@@ -2215,22 +3095,37 @@
     "Conventions": "CF-1.8",
     "summary": "Radar data from OPERA network.",
     "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
-    "radar_meta": "{'format': 'ODIM', 'format_version': 'H5rad 3.0', 'object': 'PVOL', 'beamwH': '0.95', 'beamwV': '0.95', 'frequency': '5624624484.052533', 'elangle': '4.8120100000000345', 'nbins': '475', 'nrays': '360', 'rscale': '500.0', 'product': 'SCAN'}",
     "naming_authority": "eu.eumetnet",
     "level": 480,
+    "hamsl": 109.0,
     "function": "point",
     "period": "PT0S",
-    "period_int": 0,
     "platform": "0-20000-0-06036",
     "platform_name": "[dksin] Sindal",
+    "format": "ODIM",
+    "radar_meta": {
+      "format_version": "H5rad 3.0",
+      "object": "PVOL",
+      "beamwH": 0.95,
+      "beamwV": 0.95,
+      "pulsewidth": 0.8,
+      "frequency": "5624624484.052533",
+      "elangle": 4.8120100000000345,
+      "nbins": 475,
+      "nrays": 360,
+      "a1gate": 0,
+      "rstart": 0.5,
+      "rscale": 500.0,
+      "product": "SCAN"
+    },
     "content": {
       "encoding": "utf-8",
       "standard_name": "DBZH",
       "unit": "text",
-      "size": 177,
-      "value": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5"
+      "size": 1,
+      "value": "0"
     },
-    "hmsl": 109.0
+    "period_int": 0
   },
   "links": [
     {
@@ -2250,6 +3145,13 @@
       "rel": "service-desc",
       "type": "application/vnd.oai.openapi+json;version=3.0",
       "title": "Open Radar Data"
+    },
+    {
+      "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5",
+      "length": 177,
+      "rel": "items",
+      "title": "Default link, to data.",
+      "type": "application/x-odim"
     }
   ]
 }
@@ -2270,22 +3172,37 @@
     "Conventions": "CF-1.8",
     "summary": "Radar data from OPERA network.",
     "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
-    "radar_meta": "{'format': 'ODIM', 'format_version': 'H5rad 3.0', 'object': 'PVOL', 'beamwH': '0.95', 'beamwV': '0.95', 'frequency': '5624624484.052533', 'elangle': '4.8120100000000345', 'nbins': '475', 'nrays': '360', 'rscale': '500.0', 'product': 'SCAN'}",
     "naming_authority": "eu.eumetnet",
     "level": 480,
+    "hamsl": 109.0,
     "function": "point",
     "period": "PT0S",
-    "period_int": 0,
     "platform": "0-20000-0-06036",
     "platform_name": "[dksin] Sindal",
+    "format": "ODIM",
+    "radar_meta": {
+      "format_version": "H5rad 3.0",
+      "object": "PVOL",
+      "beamwH": 0.95,
+      "beamwV": 0.95,
+      "pulsewidth": 0.8,
+      "frequency": "5624624484.052533",
+      "elangle": 4.8120100000000345,
+      "nbins": 475,
+      "nrays": 360,
+      "a1gate": 0,
+      "rstart": 0.5,
+      "rscale": 500.0,
+      "product": "SCAN"
+    },
     "content": {
       "encoding": "utf-8",
       "standard_name": "VRAD",
       "unit": "text",
-      "size": 177,
-      "value": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5"
+      "size": 1,
+      "value": "0"
     },
-    "hmsl": 109.0
+    "period_int": 0
   },
   "links": [
     {
@@ -2305,6 +3222,13 @@
       "rel": "service-desc",
       "type": "application/vnd.oai.openapi+json;version=3.0",
       "title": "Open Radar Data"
+    },
+    {
+      "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5",
+      "length": 177,
+      "rel": "items",
+      "title": "Default link, to data.",
+      "type": "application/x-odim"
     }
   ]
 }
@@ -2325,22 +3249,37 @@
     "Conventions": "CF-1.8",
     "summary": "Radar data from OPERA network.",
     "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
-    "radar_meta": "{'format': 'ODIM', 'format_version': 'H5rad 3.0', 'object': 'PVOL', 'beamwH': '0.95', 'beamwV': '0.95', 'frequency': '5624624484.052533', 'elangle': '4.8120100000000345', 'nbins': '475', 'nrays': '360', 'rscale': '500.0', 'product': 'SCAN'}",
     "naming_authority": "eu.eumetnet",
     "level": 480,
+    "hamsl": 109.0,
     "function": "point",
     "period": "PT0S",
-    "period_int": 0,
     "platform": "0-20000-0-06036",
     "platform_name": "[dksin] Sindal",
+    "format": "ODIM",
+    "radar_meta": {
+      "format_version": "H5rad 3.0",
+      "object": "PVOL",
+      "beamwH": 0.95,
+      "beamwV": 0.95,
+      "pulsewidth": 0.8,
+      "frequency": "5624624484.052533",
+      "elangle": 4.8120100000000345,
+      "nbins": 475,
+      "nrays": 360,
+      "a1gate": 0,
+      "rstart": 0.5,
+      "rscale": 500.0,
+      "product": "SCAN"
+    },
     "content": {
       "encoding": "utf-8",
       "standard_name": "TH",
       "unit": "text",
-      "size": 177,
-      "value": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5"
+      "size": 1,
+      "value": "0"
     },
-    "hmsl": 109.0
+    "period_int": 0
   },
   "links": [
     {
@@ -2360,6 +3299,13 @@
       "rel": "service-desc",
       "type": "application/vnd.oai.openapi+json;version=3.0",
       "title": "Open Radar Data"
+    },
+    {
+      "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5",
+      "length": 177,
+      "rel": "items",
+      "title": "Default link, to data.",
+      "type": "application/x-odim"
     }
   ]
 }
@@ -2380,22 +3326,37 @@
     "Conventions": "CF-1.8",
     "summary": "Radar data from OPERA network.",
     "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
-    "radar_meta": "{'format': 'ODIM', 'format_version': 'H5rad 3.0', 'object': 'PVOL', 'beamwH': '0.95', 'beamwV': '0.95', 'frequency': '5624624484.052533', 'elangle': '4.8120100000000345', 'nbins': '475', 'nrays': '360', 'rscale': '500.0', 'product': 'SCAN'}",
     "naming_authority": "eu.eumetnet",
     "level": 480,
+    "hamsl": 109.0,
     "function": "point",
     "period": "PT0S",
-    "period_int": 0,
     "platform": "0-20000-0-06036",
     "platform_name": "[dksin] Sindal",
+    "format": "ODIM",
+    "radar_meta": {
+      "format_version": "H5rad 3.0",
+      "object": "PVOL",
+      "beamwH": 0.95,
+      "beamwV": 0.95,
+      "pulsewidth": 0.8,
+      "frequency": "5624624484.052533",
+      "elangle": 4.8120100000000345,
+      "nbins": 475,
+      "nrays": 360,
+      "a1gate": 0,
+      "rstart": 0.5,
+      "rscale": 500.0,
+      "product": "SCAN"
+    },
     "content": {
       "encoding": "utf-8",
       "standard_name": "WRAD",
       "unit": "text",
-      "size": 177,
-      "value": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5"
+      "size": 1,
+      "value": "0"
     },
-    "hmsl": 109.0
+    "period_int": 0
   },
   "links": [
     {
@@ -2415,6 +3376,13 @@
       "rel": "service-desc",
       "type": "application/vnd.oai.openapi+json;version=3.0",
       "title": "Open Radar Data"
+    },
+    {
+      "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5",
+      "length": 177,
+      "rel": "items",
+      "title": "Default link, to data.",
+      "type": "application/x-odim"
     }
   ]
 }
@@ -2435,22 +3403,37 @@
     "Conventions": "CF-1.8",
     "summary": "Radar data from OPERA network.",
     "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
-    "radar_meta": "{'format': 'ODIM', 'format_version': 'H5rad 3.0', 'object': 'PVOL', 'beamwH': '0.95', 'beamwV': '0.95', 'frequency': '5624624484.052533', 'elangle': '4.8120100000000345', 'nbins': '475', 'nrays': '360', 'rscale': '500.0', 'product': 'SCAN'}",
     "naming_authority": "eu.eumetnet",
     "level": 480,
+    "hamsl": 109.0,
     "function": "point",
     "period": "PT0S",
-    "period_int": 0,
     "platform": "0-20000-0-06036",
     "platform_name": "[dksin] Sindal",
+    "format": "ODIM",
+    "radar_meta": {
+      "format_version": "H5rad 3.0",
+      "object": "PVOL",
+      "beamwH": 0.95,
+      "beamwV": 0.95,
+      "pulsewidth": 0.8,
+      "frequency": "5624624484.052533",
+      "elangle": 4.8120100000000345,
+      "nbins": 475,
+      "nrays": 360,
+      "a1gate": 0,
+      "rstart": 0.5,
+      "rscale": 500.0,
+      "product": "SCAN"
+    },
     "content": {
       "encoding": "utf-8",
       "standard_name": "ZDR",
       "unit": "text",
-      "size": 177,
-      "value": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5"
+      "size": 1,
+      "value": "0"
     },
-    "hmsl": 109.0
+    "period_int": 0
   },
   "links": [
     {
@@ -2470,6 +3453,13 @@
       "rel": "service-desc",
       "type": "application/vnd.oai.openapi+json;version=3.0",
       "title": "Open Radar Data"
+    },
+    {
+      "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5",
+      "length": 177,
+      "rel": "items",
+      "title": "Default link, to data.",
+      "type": "application/x-odim"
     }
   ]
 }
@@ -2490,22 +3480,37 @@
     "Conventions": "CF-1.8",
     "summary": "Radar data from OPERA network.",
     "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
-    "radar_meta": "{'format': 'ODIM', 'format_version': 'H5rad 3.0', 'object': 'PVOL', 'beamwH': '0.95', 'beamwV': '0.95', 'frequency': '5624624484.052533', 'elangle': '4.8120100000000345', 'nbins': '475', 'nrays': '360', 'rscale': '500.0', 'product': 'SCAN'}",
     "naming_authority": "eu.eumetnet",
     "level": 480,
+    "hamsl": 109.0,
     "function": "point",
     "period": "PT0S",
-    "period_int": 0,
     "platform": "0-20000-0-06036",
     "platform_name": "[dksin] Sindal",
+    "format": "ODIM",
+    "radar_meta": {
+      "format_version": "H5rad 3.0",
+      "object": "PVOL",
+      "beamwH": 0.95,
+      "beamwV": 0.95,
+      "pulsewidth": 0.8,
+      "frequency": "5624624484.052533",
+      "elangle": 4.8120100000000345,
+      "nbins": 475,
+      "nrays": 360,
+      "a1gate": 0,
+      "rstart": 0.5,
+      "rscale": 500.0,
+      "product": "SCAN"
+    },
     "content": {
       "encoding": "utf-8",
       "standard_name": "RHOHV",
       "unit": "text",
-      "size": 177,
-      "value": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5"
+      "size": 1,
+      "value": "0"
     },
-    "hmsl": 109.0
+    "period_int": 0
   },
   "links": [
     {
@@ -2525,6 +3530,13 @@
       "rel": "service-desc",
       "type": "application/vnd.oai.openapi+json;version=3.0",
       "title": "Open Radar Data"
+    },
+    {
+      "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5",
+      "length": 177,
+      "rel": "items",
+      "title": "Default link, to data.",
+      "type": "application/x-odim"
     }
   ]
 }
@@ -2545,22 +3557,37 @@
     "Conventions": "CF-1.8",
     "summary": "Radar data from OPERA network.",
     "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
-    "radar_meta": "{'format': 'ODIM', 'format_version': 'H5rad 3.0', 'object': 'PVOL', 'beamwH': '0.95', 'beamwV': '0.95', 'frequency': '5624624484.052533', 'elangle': '4.8120100000000345', 'nbins': '475', 'nrays': '360', 'rscale': '500.0', 'product': 'SCAN'}",
     "naming_authority": "eu.eumetnet",
     "level": 480,
+    "hamsl": 109.0,
     "function": "point",
     "period": "PT0S",
-    "period_int": 0,
     "platform": "0-20000-0-06036",
     "platform_name": "[dksin] Sindal",
+    "format": "ODIM",
+    "radar_meta": {
+      "format_version": "H5rad 3.0",
+      "object": "PVOL",
+      "beamwH": 0.95,
+      "beamwV": 0.95,
+      "pulsewidth": 0.8,
+      "frequency": "5624624484.052533",
+      "elangle": 4.8120100000000345,
+      "nbins": 475,
+      "nrays": 360,
+      "a1gate": 0,
+      "rstart": 0.5,
+      "rscale": 500.0,
+      "product": "SCAN"
+    },
     "content": {
       "encoding": "utf-8",
       "standard_name": "PHIDP",
       "unit": "text",
-      "size": 177,
-      "value": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5"
+      "size": 1,
+      "value": "0"
     },
-    "hmsl": 109.0
+    "period_int": 0
   },
   "links": [
     {
@@ -2580,6 +3607,13 @@
       "rel": "service-desc",
       "type": "application/vnd.oai.openapi+json;version=3.0",
       "title": "Open Radar Data"
+    },
+    {
+      "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5",
+      "length": 177,
+      "rel": "items",
+      "title": "Default link, to data.",
+      "type": "application/x-odim"
     }
   ]
 }
@@ -2600,22 +3634,37 @@
     "Conventions": "CF-1.8",
     "summary": "Radar data from OPERA network.",
     "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
-    "radar_meta": "{'format': 'ODIM', 'format_version': 'H5rad 3.0', 'object': 'PVOL', 'beamwH': '0.95', 'beamwV': '0.95', 'frequency': '5624624484.052533', 'elangle': '4.8120100000000345', 'nbins': '475', 'nrays': '360', 'rscale': '500.0', 'product': 'SCAN'}",
     "naming_authority": "eu.eumetnet",
     "level": 480,
+    "hamsl": 109.0,
     "function": "point",
     "period": "PT0S",
-    "period_int": 0,
     "platform": "0-20000-0-06036",
     "platform_name": "[dksin] Sindal",
+    "format": "ODIM",
+    "radar_meta": {
+      "format_version": "H5rad 3.0",
+      "object": "PVOL",
+      "beamwH": 0.95,
+      "beamwV": 0.95,
+      "pulsewidth": 0.8,
+      "frequency": "5624624484.052533",
+      "elangle": 4.8120100000000345,
+      "nbins": 475,
+      "nrays": 360,
+      "a1gate": 0,
+      "rstart": 0.5,
+      "rscale": 500.0,
+      "product": "SCAN"
+    },
     "content": {
       "encoding": "utf-8",
       "standard_name": "LDR",
       "unit": "text",
-      "size": 177,
-      "value": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5"
+      "size": 1,
+      "value": "0"
     },
-    "hmsl": 109.0
+    "period_int": 0
   },
   "links": [
     {
@@ -2635,6 +3684,13 @@
       "rel": "service-desc",
       "type": "application/vnd.oai.openapi+json;version=3.0",
       "title": "Open Radar Data"
+    },
+    {
+      "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5",
+      "length": 177,
+      "rel": "items",
+      "title": "Default link, to data.",
+      "type": "application/x-odim"
     }
   ]
 }
@@ -2655,22 +3711,37 @@
     "Conventions": "CF-1.8",
     "summary": "Radar data from OPERA network.",
     "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
-    "radar_meta": "{'format': 'ODIM', 'format_version': 'H5rad 3.0', 'object': 'PVOL', 'beamwH': '0.95', 'beamwV': '0.95', 'frequency': '5624624484.052533', 'elangle': '8.393634097222165', 'nbins': '475', 'nrays': '360', 'rscale': '500.0', 'product': 'SCAN'}",
     "naming_authority": "eu.eumetnet",
     "level": 839,
+    "hamsl": 109.0,
     "function": "point",
     "period": "PT0S",
-    "period_int": 0,
     "platform": "0-20000-0-06036",
     "platform_name": "[dksin] Sindal",
+    "format": "ODIM",
+    "radar_meta": {
+      "format_version": "H5rad 3.0",
+      "object": "PVOL",
+      "beamwH": 0.95,
+      "beamwV": 0.95,
+      "pulsewidth": 0.8,
+      "frequency": "5624624484.052533",
+      "elangle": 8.393634097222165,
+      "nbins": 475,
+      "nrays": 360,
+      "a1gate": 0,
+      "rstart": 0.5,
+      "rscale": 500.0,
+      "product": "SCAN"
+    },
     "content": {
       "encoding": "utf-8",
       "standard_name": "DBZH",
       "unit": "text",
-      "size": 177,
-      "value": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5"
+      "size": 1,
+      "value": "0"
     },
-    "hmsl": 109.0
+    "period_int": 0
   },
   "links": [
     {
@@ -2690,6 +3761,13 @@
       "rel": "service-desc",
       "type": "application/vnd.oai.openapi+json;version=3.0",
       "title": "Open Radar Data"
+    },
+    {
+      "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5",
+      "length": 177,
+      "rel": "items",
+      "title": "Default link, to data.",
+      "type": "application/x-odim"
     }
   ]
 }
@@ -2710,22 +3788,37 @@
     "Conventions": "CF-1.8",
     "summary": "Radar data from OPERA network.",
     "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
-    "radar_meta": "{'format': 'ODIM', 'format_version': 'H5rad 3.0', 'object': 'PVOL', 'beamwH': '0.95', 'beamwV': '0.95', 'frequency': '5624624484.052533', 'elangle': '8.393634097222165', 'nbins': '475', 'nrays': '360', 'rscale': '500.0', 'product': 'SCAN'}",
     "naming_authority": "eu.eumetnet",
     "level": 839,
+    "hamsl": 109.0,
     "function": "point",
     "period": "PT0S",
-    "period_int": 0,
     "platform": "0-20000-0-06036",
     "platform_name": "[dksin] Sindal",
+    "format": "ODIM",
+    "radar_meta": {
+      "format_version": "H5rad 3.0",
+      "object": "PVOL",
+      "beamwH": 0.95,
+      "beamwV": 0.95,
+      "pulsewidth": 0.8,
+      "frequency": "5624624484.052533",
+      "elangle": 8.393634097222165,
+      "nbins": 475,
+      "nrays": 360,
+      "a1gate": 0,
+      "rstart": 0.5,
+      "rscale": 500.0,
+      "product": "SCAN"
+    },
     "content": {
       "encoding": "utf-8",
       "standard_name": "VRAD",
       "unit": "text",
-      "size": 177,
-      "value": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5"
+      "size": 1,
+      "value": "0"
     },
-    "hmsl": 109.0
+    "period_int": 0
   },
   "links": [
     {
@@ -2745,6 +3838,13 @@
       "rel": "service-desc",
       "type": "application/vnd.oai.openapi+json;version=3.0",
       "title": "Open Radar Data"
+    },
+    {
+      "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5",
+      "length": 177,
+      "rel": "items",
+      "title": "Default link, to data.",
+      "type": "application/x-odim"
     }
   ]
 }
@@ -2765,22 +3865,37 @@
     "Conventions": "CF-1.8",
     "summary": "Radar data from OPERA network.",
     "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
-    "radar_meta": "{'format': 'ODIM', 'format_version': 'H5rad 3.0', 'object': 'PVOL', 'beamwH': '0.95', 'beamwV': '0.95', 'frequency': '5624624484.052533', 'elangle': '8.393634097222165', 'nbins': '475', 'nrays': '360', 'rscale': '500.0', 'product': 'SCAN'}",
     "naming_authority": "eu.eumetnet",
     "level": 839,
+    "hamsl": 109.0,
     "function": "point",
     "period": "PT0S",
-    "period_int": 0,
     "platform": "0-20000-0-06036",
     "platform_name": "[dksin] Sindal",
+    "format": "ODIM",
+    "radar_meta": {
+      "format_version": "H5rad 3.0",
+      "object": "PVOL",
+      "beamwH": 0.95,
+      "beamwV": 0.95,
+      "pulsewidth": 0.8,
+      "frequency": "5624624484.052533",
+      "elangle": 8.393634097222165,
+      "nbins": 475,
+      "nrays": 360,
+      "a1gate": 0,
+      "rstart": 0.5,
+      "rscale": 500.0,
+      "product": "SCAN"
+    },
     "content": {
       "encoding": "utf-8",
       "standard_name": "TH",
       "unit": "text",
-      "size": 177,
-      "value": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5"
+      "size": 1,
+      "value": "0"
     },
-    "hmsl": 109.0
+    "period_int": 0
   },
   "links": [
     {
@@ -2800,6 +3915,13 @@
       "rel": "service-desc",
       "type": "application/vnd.oai.openapi+json;version=3.0",
       "title": "Open Radar Data"
+    },
+    {
+      "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5",
+      "length": 177,
+      "rel": "items",
+      "title": "Default link, to data.",
+      "type": "application/x-odim"
     }
   ]
 }
@@ -2820,22 +3942,37 @@
     "Conventions": "CF-1.8",
     "summary": "Radar data from OPERA network.",
     "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
-    "radar_meta": "{'format': 'ODIM', 'format_version': 'H5rad 3.0', 'object': 'PVOL', 'beamwH': '0.95', 'beamwV': '0.95', 'frequency': '5624624484.052533', 'elangle': '8.393634097222165', 'nbins': '475', 'nrays': '360', 'rscale': '500.0', 'product': 'SCAN'}",
     "naming_authority": "eu.eumetnet",
     "level": 839,
+    "hamsl": 109.0,
     "function": "point",
     "period": "PT0S",
-    "period_int": 0,
     "platform": "0-20000-0-06036",
     "platform_name": "[dksin] Sindal",
+    "format": "ODIM",
+    "radar_meta": {
+      "format_version": "H5rad 3.0",
+      "object": "PVOL",
+      "beamwH": 0.95,
+      "beamwV": 0.95,
+      "pulsewidth": 0.8,
+      "frequency": "5624624484.052533",
+      "elangle": 8.393634097222165,
+      "nbins": 475,
+      "nrays": 360,
+      "a1gate": 0,
+      "rstart": 0.5,
+      "rscale": 500.0,
+      "product": "SCAN"
+    },
     "content": {
       "encoding": "utf-8",
       "standard_name": "WRAD",
       "unit": "text",
-      "size": 177,
-      "value": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5"
+      "size": 1,
+      "value": "0"
     },
-    "hmsl": 109.0
+    "period_int": 0
   },
   "links": [
     {
@@ -2855,6 +3992,13 @@
       "rel": "service-desc",
       "type": "application/vnd.oai.openapi+json;version=3.0",
       "title": "Open Radar Data"
+    },
+    {
+      "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5",
+      "length": 177,
+      "rel": "items",
+      "title": "Default link, to data.",
+      "type": "application/x-odim"
     }
   ]
 }
@@ -2875,22 +4019,37 @@
     "Conventions": "CF-1.8",
     "summary": "Radar data from OPERA network.",
     "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
-    "radar_meta": "{'format': 'ODIM', 'format_version': 'H5rad 3.0', 'object': 'PVOL', 'beamwH': '0.95', 'beamwV': '0.95', 'frequency': '5624624484.052533', 'elangle': '8.393634097222165', 'nbins': '475', 'nrays': '360', 'rscale': '500.0', 'product': 'SCAN'}",
     "naming_authority": "eu.eumetnet",
     "level": 839,
+    "hamsl": 109.0,
     "function": "point",
     "period": "PT0S",
-    "period_int": 0,
     "platform": "0-20000-0-06036",
     "platform_name": "[dksin] Sindal",
+    "format": "ODIM",
+    "radar_meta": {
+      "format_version": "H5rad 3.0",
+      "object": "PVOL",
+      "beamwH": 0.95,
+      "beamwV": 0.95,
+      "pulsewidth": 0.8,
+      "frequency": "5624624484.052533",
+      "elangle": 8.393634097222165,
+      "nbins": 475,
+      "nrays": 360,
+      "a1gate": 0,
+      "rstart": 0.5,
+      "rscale": 500.0,
+      "product": "SCAN"
+    },
     "content": {
       "encoding": "utf-8",
       "standard_name": "ZDR",
       "unit": "text",
-      "size": 177,
-      "value": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5"
+      "size": 1,
+      "value": "0"
     },
-    "hmsl": 109.0
+    "period_int": 0
   },
   "links": [
     {
@@ -2910,6 +4069,13 @@
       "rel": "service-desc",
       "type": "application/vnd.oai.openapi+json;version=3.0",
       "title": "Open Radar Data"
+    },
+    {
+      "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5",
+      "length": 177,
+      "rel": "items",
+      "title": "Default link, to data.",
+      "type": "application/x-odim"
     }
   ]
 }
@@ -2930,22 +4096,37 @@
     "Conventions": "CF-1.8",
     "summary": "Radar data from OPERA network.",
     "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
-    "radar_meta": "{'format': 'ODIM', 'format_version': 'H5rad 3.0', 'object': 'PVOL', 'beamwH': '0.95', 'beamwV': '0.95', 'frequency': '5624624484.052533', 'elangle': '8.393634097222165', 'nbins': '475', 'nrays': '360', 'rscale': '500.0', 'product': 'SCAN'}",
     "naming_authority": "eu.eumetnet",
     "level": 839,
+    "hamsl": 109.0,
     "function": "point",
     "period": "PT0S",
-    "period_int": 0,
     "platform": "0-20000-0-06036",
     "platform_name": "[dksin] Sindal",
+    "format": "ODIM",
+    "radar_meta": {
+      "format_version": "H5rad 3.0",
+      "object": "PVOL",
+      "beamwH": 0.95,
+      "beamwV": 0.95,
+      "pulsewidth": 0.8,
+      "frequency": "5624624484.052533",
+      "elangle": 8.393634097222165,
+      "nbins": 475,
+      "nrays": 360,
+      "a1gate": 0,
+      "rstart": 0.5,
+      "rscale": 500.0,
+      "product": "SCAN"
+    },
     "content": {
       "encoding": "utf-8",
       "standard_name": "RHOHV",
       "unit": "text",
-      "size": 177,
-      "value": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5"
+      "size": 1,
+      "value": "0"
     },
-    "hmsl": 109.0
+    "period_int": 0
   },
   "links": [
     {
@@ -2965,6 +4146,13 @@
       "rel": "service-desc",
       "type": "application/vnd.oai.openapi+json;version=3.0",
       "title": "Open Radar Data"
+    },
+    {
+      "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5",
+      "length": 177,
+      "rel": "items",
+      "title": "Default link, to data.",
+      "type": "application/x-odim"
     }
   ]
 }
@@ -2985,22 +4173,37 @@
     "Conventions": "CF-1.8",
     "summary": "Radar data from OPERA network.",
     "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
-    "radar_meta": "{'format': 'ODIM', 'format_version': 'H5rad 3.0', 'object': 'PVOL', 'beamwH': '0.95', 'beamwV': '0.95', 'frequency': '5624624484.052533', 'elangle': '8.393634097222165', 'nbins': '475', 'nrays': '360', 'rscale': '500.0', 'product': 'SCAN'}",
     "naming_authority": "eu.eumetnet",
     "level": 839,
+    "hamsl": 109.0,
     "function": "point",
     "period": "PT0S",
-    "period_int": 0,
     "platform": "0-20000-0-06036",
     "platform_name": "[dksin] Sindal",
+    "format": "ODIM",
+    "radar_meta": {
+      "format_version": "H5rad 3.0",
+      "object": "PVOL",
+      "beamwH": 0.95,
+      "beamwV": 0.95,
+      "pulsewidth": 0.8,
+      "frequency": "5624624484.052533",
+      "elangle": 8.393634097222165,
+      "nbins": 475,
+      "nrays": 360,
+      "a1gate": 0,
+      "rstart": 0.5,
+      "rscale": 500.0,
+      "product": "SCAN"
+    },
     "content": {
       "encoding": "utf-8",
       "standard_name": "PHIDP",
       "unit": "text",
-      "size": 177,
-      "value": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5"
+      "size": 1,
+      "value": "0"
     },
-    "hmsl": 109.0
+    "period_int": 0
   },
   "links": [
     {
@@ -3020,6 +4223,13 @@
       "rel": "service-desc",
       "type": "application/vnd.oai.openapi+json;version=3.0",
       "title": "Open Radar Data"
+    },
+    {
+      "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5",
+      "length": 177,
+      "rel": "items",
+      "title": "Default link, to data.",
+      "type": "application/x-odim"
     }
   ]
 }
@@ -3040,22 +4250,37 @@
     "Conventions": "CF-1.8",
     "summary": "Radar data from OPERA network.",
     "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
-    "radar_meta": "{'format': 'ODIM', 'format_version': 'H5rad 3.0', 'object': 'PVOL', 'beamwH': '0.95', 'beamwV': '0.95', 'frequency': '5624624484.052533', 'elangle': '8.393634097222165', 'nbins': '475', 'nrays': '360', 'rscale': '500.0', 'product': 'SCAN'}",
     "naming_authority": "eu.eumetnet",
     "level": 839,
+    "hamsl": 109.0,
     "function": "point",
     "period": "PT0S",
-    "period_int": 0,
     "platform": "0-20000-0-06036",
     "platform_name": "[dksin] Sindal",
+    "format": "ODIM",
+    "radar_meta": {
+      "format_version": "H5rad 3.0",
+      "object": "PVOL",
+      "beamwH": 0.95,
+      "beamwV": 0.95,
+      "pulsewidth": 0.8,
+      "frequency": "5624624484.052533",
+      "elangle": 8.393634097222165,
+      "nbins": 475,
+      "nrays": 360,
+      "a1gate": 0,
+      "rstart": 0.5,
+      "rscale": 500.0,
+      "product": "SCAN"
+    },
     "content": {
       "encoding": "utf-8",
       "standard_name": "LDR",
       "unit": "text",
-      "size": 177,
-      "value": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5"
+      "size": 1,
+      "value": "0"
     },
-    "hmsl": 109.0
+    "period_int": 0
   },
   "links": [
     {
@@ -3075,6 +4300,13 @@
       "rel": "service-desc",
       "type": "application/vnd.oai.openapi+json;version=3.0",
       "title": "Open Radar Data"
+    },
+    {
+      "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5",
+      "length": 177,
+      "rel": "items",
+      "title": "Default link, to data.",
+      "type": "application/x-odim"
     }
   ]
 }
@@ -3095,22 +4327,37 @@
     "Conventions": "CF-1.8",
     "summary": "Radar data from OPERA network.",
     "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
-    "radar_meta": "{'format': 'ODIM', 'format_version': 'H5rad 3.0', 'object': 'PVOL', 'beamwH': '0.95', 'beamwV': '0.95', 'frequency': '5624624484.052533', 'elangle': '9.997468722222147', 'nbins': '475', 'nrays': '360', 'rscale': '500.0', 'product': 'SCAN'}",
     "naming_authority": "eu.eumetnet",
     "level": 1000,
+    "hamsl": 109.0,
     "function": "point",
     "period": "PT0S",
-    "period_int": 0,
     "platform": "0-20000-0-06036",
     "platform_name": "[dksin] Sindal",
+    "format": "ODIM",
+    "radar_meta": {
+      "format_version": "H5rad 3.0",
+      "object": "PVOL",
+      "beamwH": 0.95,
+      "beamwV": 0.95,
+      "pulsewidth": 0.8,
+      "frequency": "5624624484.052533",
+      "elangle": 9.997468722222147,
+      "nbins": 475,
+      "nrays": 360,
+      "a1gate": 0,
+      "rstart": 0.5,
+      "rscale": 500.0,
+      "product": "SCAN"
+    },
     "content": {
       "encoding": "utf-8",
       "standard_name": "DBZH",
       "unit": "text",
-      "size": 177,
-      "value": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5"
+      "size": 1,
+      "value": "0"
     },
-    "hmsl": 109.0
+    "period_int": 0
   },
   "links": [
     {
@@ -3130,6 +4377,13 @@
       "rel": "service-desc",
       "type": "application/vnd.oai.openapi+json;version=3.0",
       "title": "Open Radar Data"
+    },
+    {
+      "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5",
+      "length": 177,
+      "rel": "items",
+      "title": "Default link, to data.",
+      "type": "application/x-odim"
     }
   ]
 }
@@ -3150,22 +4404,37 @@
     "Conventions": "CF-1.8",
     "summary": "Radar data from OPERA network.",
     "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
-    "radar_meta": "{'format': 'ODIM', 'format_version': 'H5rad 3.0', 'object': 'PVOL', 'beamwH': '0.95', 'beamwV': '0.95', 'frequency': '5624624484.052533', 'elangle': '9.997468722222147', 'nbins': '475', 'nrays': '360', 'rscale': '500.0', 'product': 'SCAN'}",
     "naming_authority": "eu.eumetnet",
     "level": 1000,
+    "hamsl": 109.0,
     "function": "point",
     "period": "PT0S",
-    "period_int": 0,
     "platform": "0-20000-0-06036",
     "platform_name": "[dksin] Sindal",
+    "format": "ODIM",
+    "radar_meta": {
+      "format_version": "H5rad 3.0",
+      "object": "PVOL",
+      "beamwH": 0.95,
+      "beamwV": 0.95,
+      "pulsewidth": 0.8,
+      "frequency": "5624624484.052533",
+      "elangle": 9.997468722222147,
+      "nbins": 475,
+      "nrays": 360,
+      "a1gate": 0,
+      "rstart": 0.5,
+      "rscale": 500.0,
+      "product": "SCAN"
+    },
     "content": {
       "encoding": "utf-8",
       "standard_name": "VRAD",
       "unit": "text",
-      "size": 177,
-      "value": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5"
+      "size": 1,
+      "value": "0"
     },
-    "hmsl": 109.0
+    "period_int": 0
   },
   "links": [
     {
@@ -3185,6 +4454,13 @@
       "rel": "service-desc",
       "type": "application/vnd.oai.openapi+json;version=3.0",
       "title": "Open Radar Data"
+    },
+    {
+      "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5",
+      "length": 177,
+      "rel": "items",
+      "title": "Default link, to data.",
+      "type": "application/x-odim"
     }
   ]
 }
@@ -3205,22 +4481,37 @@
     "Conventions": "CF-1.8",
     "summary": "Radar data from OPERA network.",
     "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
-    "radar_meta": "{'format': 'ODIM', 'format_version': 'H5rad 3.0', 'object': 'PVOL', 'beamwH': '0.95', 'beamwV': '0.95', 'frequency': '5624624484.052533', 'elangle': '9.997468722222147', 'nbins': '475', 'nrays': '360', 'rscale': '500.0', 'product': 'SCAN'}",
     "naming_authority": "eu.eumetnet",
     "level": 1000,
+    "hamsl": 109.0,
     "function": "point",
     "period": "PT0S",
-    "period_int": 0,
     "platform": "0-20000-0-06036",
     "platform_name": "[dksin] Sindal",
+    "format": "ODIM",
+    "radar_meta": {
+      "format_version": "H5rad 3.0",
+      "object": "PVOL",
+      "beamwH": 0.95,
+      "beamwV": 0.95,
+      "pulsewidth": 0.8,
+      "frequency": "5624624484.052533",
+      "elangle": 9.997468722222147,
+      "nbins": 475,
+      "nrays": 360,
+      "a1gate": 0,
+      "rstart": 0.5,
+      "rscale": 500.0,
+      "product": "SCAN"
+    },
     "content": {
       "encoding": "utf-8",
       "standard_name": "TH",
       "unit": "text",
-      "size": 177,
-      "value": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5"
+      "size": 1,
+      "value": "0"
     },
-    "hmsl": 109.0
+    "period_int": 0
   },
   "links": [
     {
@@ -3240,6 +4531,13 @@
       "rel": "service-desc",
       "type": "application/vnd.oai.openapi+json;version=3.0",
       "title": "Open Radar Data"
+    },
+    {
+      "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5",
+      "length": 177,
+      "rel": "items",
+      "title": "Default link, to data.",
+      "type": "application/x-odim"
     }
   ]
 }
@@ -3260,22 +4558,37 @@
     "Conventions": "CF-1.8",
     "summary": "Radar data from OPERA network.",
     "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
-    "radar_meta": "{'format': 'ODIM', 'format_version': 'H5rad 3.0', 'object': 'PVOL', 'beamwH': '0.95', 'beamwV': '0.95', 'frequency': '5624624484.052533', 'elangle': '9.997468722222147', 'nbins': '475', 'nrays': '360', 'rscale': '500.0', 'product': 'SCAN'}",
     "naming_authority": "eu.eumetnet",
     "level": 1000,
+    "hamsl": 109.0,
     "function": "point",
     "period": "PT0S",
-    "period_int": 0,
     "platform": "0-20000-0-06036",
     "platform_name": "[dksin] Sindal",
+    "format": "ODIM",
+    "radar_meta": {
+      "format_version": "H5rad 3.0",
+      "object": "PVOL",
+      "beamwH": 0.95,
+      "beamwV": 0.95,
+      "pulsewidth": 0.8,
+      "frequency": "5624624484.052533",
+      "elangle": 9.997468722222147,
+      "nbins": 475,
+      "nrays": 360,
+      "a1gate": 0,
+      "rstart": 0.5,
+      "rscale": 500.0,
+      "product": "SCAN"
+    },
     "content": {
       "encoding": "utf-8",
       "standard_name": "WRAD",
       "unit": "text",
-      "size": 177,
-      "value": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5"
+      "size": 1,
+      "value": "0"
     },
-    "hmsl": 109.0
+    "period_int": 0
   },
   "links": [
     {
@@ -3295,6 +4608,13 @@
       "rel": "service-desc",
       "type": "application/vnd.oai.openapi+json;version=3.0",
       "title": "Open Radar Data"
+    },
+    {
+      "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5",
+      "length": 177,
+      "rel": "items",
+      "title": "Default link, to data.",
+      "type": "application/x-odim"
     }
   ]
 }
@@ -3315,22 +4635,37 @@
     "Conventions": "CF-1.8",
     "summary": "Radar data from OPERA network.",
     "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
-    "radar_meta": "{'format': 'ODIM', 'format_version': 'H5rad 3.0', 'object': 'PVOL', 'beamwH': '0.95', 'beamwV': '0.95', 'frequency': '5624624484.052533', 'elangle': '9.997468722222147', 'nbins': '475', 'nrays': '360', 'rscale': '500.0', 'product': 'SCAN'}",
     "naming_authority": "eu.eumetnet",
     "level": 1000,
+    "hamsl": 109.0,
     "function": "point",
     "period": "PT0S",
-    "period_int": 0,
     "platform": "0-20000-0-06036",
     "platform_name": "[dksin] Sindal",
+    "format": "ODIM",
+    "radar_meta": {
+      "format_version": "H5rad 3.0",
+      "object": "PVOL",
+      "beamwH": 0.95,
+      "beamwV": 0.95,
+      "pulsewidth": 0.8,
+      "frequency": "5624624484.052533",
+      "elangle": 9.997468722222147,
+      "nbins": 475,
+      "nrays": 360,
+      "a1gate": 0,
+      "rstart": 0.5,
+      "rscale": 500.0,
+      "product": "SCAN"
+    },
     "content": {
       "encoding": "utf-8",
       "standard_name": "ZDR",
       "unit": "text",
-      "size": 177,
-      "value": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5"
+      "size": 1,
+      "value": "0"
     },
-    "hmsl": 109.0
+    "period_int": 0
   },
   "links": [
     {
@@ -3350,6 +4685,13 @@
       "rel": "service-desc",
       "type": "application/vnd.oai.openapi+json;version=3.0",
       "title": "Open Radar Data"
+    },
+    {
+      "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5",
+      "length": 177,
+      "rel": "items",
+      "title": "Default link, to data.",
+      "type": "application/x-odim"
     }
   ]
 }
@@ -3370,22 +4712,37 @@
     "Conventions": "CF-1.8",
     "summary": "Radar data from OPERA network.",
     "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
-    "radar_meta": "{'format': 'ODIM', 'format_version': 'H5rad 3.0', 'object': 'PVOL', 'beamwH': '0.95', 'beamwV': '0.95', 'frequency': '5624624484.052533', 'elangle': '9.997468722222147', 'nbins': '475', 'nrays': '360', 'rscale': '500.0', 'product': 'SCAN'}",
     "naming_authority": "eu.eumetnet",
     "level": 1000,
+    "hamsl": 109.0,
     "function": "point",
     "period": "PT0S",
-    "period_int": 0,
     "platform": "0-20000-0-06036",
     "platform_name": "[dksin] Sindal",
+    "format": "ODIM",
+    "radar_meta": {
+      "format_version": "H5rad 3.0",
+      "object": "PVOL",
+      "beamwH": 0.95,
+      "beamwV": 0.95,
+      "pulsewidth": 0.8,
+      "frequency": "5624624484.052533",
+      "elangle": 9.997468722222147,
+      "nbins": 475,
+      "nrays": 360,
+      "a1gate": 0,
+      "rstart": 0.5,
+      "rscale": 500.0,
+      "product": "SCAN"
+    },
     "content": {
       "encoding": "utf-8",
       "standard_name": "RHOHV",
       "unit": "text",
-      "size": 177,
-      "value": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5"
+      "size": 1,
+      "value": "0"
     },
-    "hmsl": 109.0
+    "period_int": 0
   },
   "links": [
     {
@@ -3405,6 +4762,13 @@
       "rel": "service-desc",
       "type": "application/vnd.oai.openapi+json;version=3.0",
       "title": "Open Radar Data"
+    },
+    {
+      "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5",
+      "length": 177,
+      "rel": "items",
+      "title": "Default link, to data.",
+      "type": "application/x-odim"
     }
   ]
 }
@@ -3425,22 +4789,37 @@
     "Conventions": "CF-1.8",
     "summary": "Radar data from OPERA network.",
     "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
-    "radar_meta": "{'format': 'ODIM', 'format_version': 'H5rad 3.0', 'object': 'PVOL', 'beamwH': '0.95', 'beamwV': '0.95', 'frequency': '5624624484.052533', 'elangle': '9.997468722222147', 'nbins': '475', 'nrays': '360', 'rscale': '500.0', 'product': 'SCAN'}",
     "naming_authority": "eu.eumetnet",
     "level": 1000,
+    "hamsl": 109.0,
     "function": "point",
     "period": "PT0S",
-    "period_int": 0,
     "platform": "0-20000-0-06036",
     "platform_name": "[dksin] Sindal",
+    "format": "ODIM",
+    "radar_meta": {
+      "format_version": "H5rad 3.0",
+      "object": "PVOL",
+      "beamwH": 0.95,
+      "beamwV": 0.95,
+      "pulsewidth": 0.8,
+      "frequency": "5624624484.052533",
+      "elangle": 9.997468722222147,
+      "nbins": 475,
+      "nrays": 360,
+      "a1gate": 0,
+      "rstart": 0.5,
+      "rscale": 500.0,
+      "product": "SCAN"
+    },
     "content": {
       "encoding": "utf-8",
       "standard_name": "PHIDP",
       "unit": "text",
-      "size": 177,
-      "value": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5"
+      "size": 1,
+      "value": "0"
     },
-    "hmsl": 109.0
+    "period_int": 0
   },
   "links": [
     {
@@ -3460,6 +4839,13 @@
       "rel": "service-desc",
       "type": "application/vnd.oai.openapi+json;version=3.0",
       "title": "Open Radar Data"
+    },
+    {
+      "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5",
+      "length": 177,
+      "rel": "items",
+      "title": "Default link, to data.",
+      "type": "application/x-odim"
     }
   ]
 }
@@ -3480,22 +4866,37 @@
     "Conventions": "CF-1.8",
     "summary": "Radar data from OPERA network.",
     "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
-    "radar_meta": "{'format': 'ODIM', 'format_version': 'H5rad 3.0', 'object': 'PVOL', 'beamwH': '0.95', 'beamwV': '0.95', 'frequency': '5624624484.052533', 'elangle': '9.997468722222147', 'nbins': '475', 'nrays': '360', 'rscale': '500.0', 'product': 'SCAN'}",
     "naming_authority": "eu.eumetnet",
     "level": 1000,
+    "hamsl": 109.0,
     "function": "point",
     "period": "PT0S",
-    "period_int": 0,
     "platform": "0-20000-0-06036",
     "platform_name": "[dksin] Sindal",
+    "format": "ODIM",
+    "radar_meta": {
+      "format_version": "H5rad 3.0",
+      "object": "PVOL",
+      "beamwH": 0.95,
+      "beamwV": 0.95,
+      "pulsewidth": 0.8,
+      "frequency": "5624624484.052533",
+      "elangle": 9.997468722222147,
+      "nbins": 475,
+      "nrays": 360,
+      "a1gate": 0,
+      "rstart": 0.5,
+      "rscale": 500.0,
+      "product": "SCAN"
+    },
     "content": {
       "encoding": "utf-8",
       "standard_name": "LDR",
       "unit": "text",
-      "size": 177,
-      "value": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5"
+      "size": 1,
+      "value": "0"
     },
-    "hmsl": 109.0
+    "period_int": 0
   },
   "links": [
     {
@@ -3515,6 +4916,13 @@
       "rel": "service-desc",
       "type": "application/vnd.oai.openapi+json;version=3.0",
       "title": "Open Radar Data"
+    },
+    {
+      "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5",
+      "length": 177,
+      "rel": "items",
+      "title": "Default link, to data.",
+      "type": "application/x-odim"
     }
   ]
 }
@@ -3535,22 +4943,37 @@
     "Conventions": "CF-1.8",
     "summary": "Radar data from OPERA network.",
     "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
-    "radar_meta": "{'format': 'ODIM', 'format_version': 'H5rad 3.0', 'object': 'PVOL', 'beamwH': '0.95', 'beamwV': '0.95', 'frequency': '5624624484.052533', 'elangle': '12.963907638888934', 'nbins': '475', 'nrays': '360', 'rscale': '500.0', 'product': 'SCAN'}",
     "naming_authority": "eu.eumetnet",
     "level": 1296,
+    "hamsl": 109.0,
     "function": "point",
     "period": "PT0S",
-    "period_int": 0,
     "platform": "0-20000-0-06036",
     "platform_name": "[dksin] Sindal",
+    "format": "ODIM",
+    "radar_meta": {
+      "format_version": "H5rad 3.0",
+      "object": "PVOL",
+      "beamwH": 0.95,
+      "beamwV": 0.95,
+      "pulsewidth": 0.8,
+      "frequency": "5624624484.052533",
+      "elangle": 12.963907638888934,
+      "nbins": 475,
+      "nrays": 360,
+      "a1gate": 0,
+      "rstart": 0.5,
+      "rscale": 500.0,
+      "product": "SCAN"
+    },
     "content": {
       "encoding": "utf-8",
       "standard_name": "DBZH",
       "unit": "text",
-      "size": 177,
-      "value": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5"
+      "size": 1,
+      "value": "0"
     },
-    "hmsl": 109.0
+    "period_int": 0
   },
   "links": [
     {
@@ -3570,6 +4993,13 @@
       "rel": "service-desc",
       "type": "application/vnd.oai.openapi+json;version=3.0",
       "title": "Open Radar Data"
+    },
+    {
+      "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5",
+      "length": 177,
+      "rel": "items",
+      "title": "Default link, to data.",
+      "type": "application/x-odim"
     }
   ]
 }
@@ -3590,22 +5020,37 @@
     "Conventions": "CF-1.8",
     "summary": "Radar data from OPERA network.",
     "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
-    "radar_meta": "{'format': 'ODIM', 'format_version': 'H5rad 3.0', 'object': 'PVOL', 'beamwH': '0.95', 'beamwV': '0.95', 'frequency': '5624624484.052533', 'elangle': '12.963907638888934', 'nbins': '475', 'nrays': '360', 'rscale': '500.0', 'product': 'SCAN'}",
     "naming_authority": "eu.eumetnet",
     "level": 1296,
+    "hamsl": 109.0,
     "function": "point",
     "period": "PT0S",
-    "period_int": 0,
     "platform": "0-20000-0-06036",
     "platform_name": "[dksin] Sindal",
+    "format": "ODIM",
+    "radar_meta": {
+      "format_version": "H5rad 3.0",
+      "object": "PVOL",
+      "beamwH": 0.95,
+      "beamwV": 0.95,
+      "pulsewidth": 0.8,
+      "frequency": "5624624484.052533",
+      "elangle": 12.963907638888934,
+      "nbins": 475,
+      "nrays": 360,
+      "a1gate": 0,
+      "rstart": 0.5,
+      "rscale": 500.0,
+      "product": "SCAN"
+    },
     "content": {
       "encoding": "utf-8",
       "standard_name": "VRAD",
       "unit": "text",
-      "size": 177,
-      "value": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5"
+      "size": 1,
+      "value": "0"
     },
-    "hmsl": 109.0
+    "period_int": 0
   },
   "links": [
     {
@@ -3625,6 +5070,13 @@
       "rel": "service-desc",
       "type": "application/vnd.oai.openapi+json;version=3.0",
       "title": "Open Radar Data"
+    },
+    {
+      "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5",
+      "length": 177,
+      "rel": "items",
+      "title": "Default link, to data.",
+      "type": "application/x-odim"
     }
   ]
 }
@@ -3645,22 +5097,37 @@
     "Conventions": "CF-1.8",
     "summary": "Radar data from OPERA network.",
     "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
-    "radar_meta": "{'format': 'ODIM', 'format_version': 'H5rad 3.0', 'object': 'PVOL', 'beamwH': '0.95', 'beamwV': '0.95', 'frequency': '5624624484.052533', 'elangle': '12.963907638888934', 'nbins': '475', 'nrays': '360', 'rscale': '500.0', 'product': 'SCAN'}",
     "naming_authority": "eu.eumetnet",
     "level": 1296,
+    "hamsl": 109.0,
     "function": "point",
     "period": "PT0S",
-    "period_int": 0,
     "platform": "0-20000-0-06036",
     "platform_name": "[dksin] Sindal",
+    "format": "ODIM",
+    "radar_meta": {
+      "format_version": "H5rad 3.0",
+      "object": "PVOL",
+      "beamwH": 0.95,
+      "beamwV": 0.95,
+      "pulsewidth": 0.8,
+      "frequency": "5624624484.052533",
+      "elangle": 12.963907638888934,
+      "nbins": 475,
+      "nrays": 360,
+      "a1gate": 0,
+      "rstart": 0.5,
+      "rscale": 500.0,
+      "product": "SCAN"
+    },
     "content": {
       "encoding": "utf-8",
       "standard_name": "TH",
       "unit": "text",
-      "size": 177,
-      "value": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5"
+      "size": 1,
+      "value": "0"
     },
-    "hmsl": 109.0
+    "period_int": 0
   },
   "links": [
     {
@@ -3680,6 +5147,13 @@
       "rel": "service-desc",
       "type": "application/vnd.oai.openapi+json;version=3.0",
       "title": "Open Radar Data"
+    },
+    {
+      "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5",
+      "length": 177,
+      "rel": "items",
+      "title": "Default link, to data.",
+      "type": "application/x-odim"
     }
   ]
 }
@@ -3700,22 +5174,37 @@
     "Conventions": "CF-1.8",
     "summary": "Radar data from OPERA network.",
     "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
-    "radar_meta": "{'format': 'ODIM', 'format_version': 'H5rad 3.0', 'object': 'PVOL', 'beamwH': '0.95', 'beamwV': '0.95', 'frequency': '5624624484.052533', 'elangle': '12.963907638888934', 'nbins': '475', 'nrays': '360', 'rscale': '500.0', 'product': 'SCAN'}",
     "naming_authority": "eu.eumetnet",
     "level": 1296,
+    "hamsl": 109.0,
     "function": "point",
     "period": "PT0S",
-    "period_int": 0,
     "platform": "0-20000-0-06036",
     "platform_name": "[dksin] Sindal",
+    "format": "ODIM",
+    "radar_meta": {
+      "format_version": "H5rad 3.0",
+      "object": "PVOL",
+      "beamwH": 0.95,
+      "beamwV": 0.95,
+      "pulsewidth": 0.8,
+      "frequency": "5624624484.052533",
+      "elangle": 12.963907638888934,
+      "nbins": 475,
+      "nrays": 360,
+      "a1gate": 0,
+      "rstart": 0.5,
+      "rscale": 500.0,
+      "product": "SCAN"
+    },
     "content": {
       "encoding": "utf-8",
       "standard_name": "WRAD",
       "unit": "text",
-      "size": 177,
-      "value": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5"
+      "size": 1,
+      "value": "0"
     },
-    "hmsl": 109.0
+    "period_int": 0
   },
   "links": [
     {
@@ -3735,6 +5224,13 @@
       "rel": "service-desc",
       "type": "application/vnd.oai.openapi+json;version=3.0",
       "title": "Open Radar Data"
+    },
+    {
+      "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5",
+      "length": 177,
+      "rel": "items",
+      "title": "Default link, to data.",
+      "type": "application/x-odim"
     }
   ]
 }
@@ -3755,22 +5251,37 @@
     "Conventions": "CF-1.8",
     "summary": "Radar data from OPERA network.",
     "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
-    "radar_meta": "{'format': 'ODIM', 'format_version': 'H5rad 3.0', 'object': 'PVOL', 'beamwH': '0.95', 'beamwV': '0.95', 'frequency': '5624624484.052533', 'elangle': '12.963907638888934', 'nbins': '475', 'nrays': '360', 'rscale': '500.0', 'product': 'SCAN'}",
     "naming_authority": "eu.eumetnet",
     "level": 1296,
+    "hamsl": 109.0,
     "function": "point",
     "period": "PT0S",
-    "period_int": 0,
     "platform": "0-20000-0-06036",
     "platform_name": "[dksin] Sindal",
+    "format": "ODIM",
+    "radar_meta": {
+      "format_version": "H5rad 3.0",
+      "object": "PVOL",
+      "beamwH": 0.95,
+      "beamwV": 0.95,
+      "pulsewidth": 0.8,
+      "frequency": "5624624484.052533",
+      "elangle": 12.963907638888934,
+      "nbins": 475,
+      "nrays": 360,
+      "a1gate": 0,
+      "rstart": 0.5,
+      "rscale": 500.0,
+      "product": "SCAN"
+    },
     "content": {
       "encoding": "utf-8",
       "standard_name": "ZDR",
       "unit": "text",
-      "size": 177,
-      "value": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5"
+      "size": 1,
+      "value": "0"
     },
-    "hmsl": 109.0
+    "period_int": 0
   },
   "links": [
     {
@@ -3790,6 +5301,13 @@
       "rel": "service-desc",
       "type": "application/vnd.oai.openapi+json;version=3.0",
       "title": "Open Radar Data"
+    },
+    {
+      "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5",
+      "length": 177,
+      "rel": "items",
+      "title": "Default link, to data.",
+      "type": "application/x-odim"
     }
   ]
 }
@@ -3810,22 +5328,37 @@
     "Conventions": "CF-1.8",
     "summary": "Radar data from OPERA network.",
     "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
-    "radar_meta": "{'format': 'ODIM', 'format_version': 'H5rad 3.0', 'object': 'PVOL', 'beamwH': '0.95', 'beamwV': '0.95', 'frequency': '5624624484.052533', 'elangle': '12.963907638888934', 'nbins': '475', 'nrays': '360', 'rscale': '500.0', 'product': 'SCAN'}",
     "naming_authority": "eu.eumetnet",
     "level": 1296,
+    "hamsl": 109.0,
     "function": "point",
     "period": "PT0S",
-    "period_int": 0,
     "platform": "0-20000-0-06036",
     "platform_name": "[dksin] Sindal",
+    "format": "ODIM",
+    "radar_meta": {
+      "format_version": "H5rad 3.0",
+      "object": "PVOL",
+      "beamwH": 0.95,
+      "beamwV": 0.95,
+      "pulsewidth": 0.8,
+      "frequency": "5624624484.052533",
+      "elangle": 12.963907638888934,
+      "nbins": 475,
+      "nrays": 360,
+      "a1gate": 0,
+      "rstart": 0.5,
+      "rscale": 500.0,
+      "product": "SCAN"
+    },
     "content": {
       "encoding": "utf-8",
       "standard_name": "RHOHV",
       "unit": "text",
-      "size": 177,
-      "value": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5"
+      "size": 1,
+      "value": "0"
     },
-    "hmsl": 109.0
+    "period_int": 0
   },
   "links": [
     {
@@ -3845,6 +5378,13 @@
       "rel": "service-desc",
       "type": "application/vnd.oai.openapi+json;version=3.0",
       "title": "Open Radar Data"
+    },
+    {
+      "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5",
+      "length": 177,
+      "rel": "items",
+      "title": "Default link, to data.",
+      "type": "application/x-odim"
     }
   ]
 }
@@ -3865,22 +5405,37 @@
     "Conventions": "CF-1.8",
     "summary": "Radar data from OPERA network.",
     "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
-    "radar_meta": "{'format': 'ODIM', 'format_version': 'H5rad 3.0', 'object': 'PVOL', 'beamwH': '0.95', 'beamwV': '0.95', 'frequency': '5624624484.052533', 'elangle': '12.963907638888934', 'nbins': '475', 'nrays': '360', 'rscale': '500.0', 'product': 'SCAN'}",
     "naming_authority": "eu.eumetnet",
     "level": 1296,
+    "hamsl": 109.0,
     "function": "point",
     "period": "PT0S",
-    "period_int": 0,
     "platform": "0-20000-0-06036",
     "platform_name": "[dksin] Sindal",
+    "format": "ODIM",
+    "radar_meta": {
+      "format_version": "H5rad 3.0",
+      "object": "PVOL",
+      "beamwH": 0.95,
+      "beamwV": 0.95,
+      "pulsewidth": 0.8,
+      "frequency": "5624624484.052533",
+      "elangle": 12.963907638888934,
+      "nbins": 475,
+      "nrays": 360,
+      "a1gate": 0,
+      "rstart": 0.5,
+      "rscale": 500.0,
+      "product": "SCAN"
+    },
     "content": {
       "encoding": "utf-8",
       "standard_name": "PHIDP",
       "unit": "text",
-      "size": 177,
-      "value": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5"
+      "size": 1,
+      "value": "0"
     },
-    "hmsl": 109.0
+    "period_int": 0
   },
   "links": [
     {
@@ -3900,6 +5455,13 @@
       "rel": "service-desc",
       "type": "application/vnd.oai.openapi+json;version=3.0",
       "title": "Open Radar Data"
+    },
+    {
+      "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5",
+      "length": 177,
+      "rel": "items",
+      "title": "Default link, to data.",
+      "type": "application/x-odim"
     }
   ]
 }
@@ -3920,22 +5482,37 @@
     "Conventions": "CF-1.8",
     "summary": "Radar data from OPERA network.",
     "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
-    "radar_meta": "{'format': 'ODIM', 'format_version': 'H5rad 3.0', 'object': 'PVOL', 'beamwH': '0.95', 'beamwV': '0.95', 'frequency': '5624624484.052533', 'elangle': '12.963907638888934', 'nbins': '475', 'nrays': '360', 'rscale': '500.0', 'product': 'SCAN'}",
     "naming_authority": "eu.eumetnet",
     "level": 1296,
+    "hamsl": 109.0,
     "function": "point",
     "period": "PT0S",
-    "period_int": 0,
     "platform": "0-20000-0-06036",
     "platform_name": "[dksin] Sindal",
+    "format": "ODIM",
+    "radar_meta": {
+      "format_version": "H5rad 3.0",
+      "object": "PVOL",
+      "beamwH": 0.95,
+      "beamwV": 0.95,
+      "pulsewidth": 0.8,
+      "frequency": "5624624484.052533",
+      "elangle": 12.963907638888934,
+      "nbins": 475,
+      "nrays": 360,
+      "a1gate": 0,
+      "rstart": 0.5,
+      "rscale": 500.0,
+      "product": "SCAN"
+    },
     "content": {
       "encoding": "utf-8",
       "standard_name": "LDR",
       "unit": "text",
-      "size": 177,
-      "value": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5"
+      "size": 1,
+      "value": "0"
     },
-    "hmsl": 109.0
+    "period_int": 0
   },
   "links": [
     {
@@ -3955,6 +5532,13 @@
       "rel": "service-desc",
       "type": "application/vnd.oai.openapi+json;version=3.0",
       "title": "Open Radar Data"
+    },
+    {
+      "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5",
+      "length": 177,
+      "rel": "items",
+      "title": "Default link, to data.",
+      "type": "application/x-odim"
     }
   ]
 }
@@ -3975,22 +5559,37 @@
     "Conventions": "CF-1.8",
     "summary": "Radar data from OPERA network.",
     "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
-    "radar_meta": "{'format': 'ODIM', 'format_version': 'H5rad 3.0', 'object': 'PVOL', 'beamwH': '0.95', 'beamwV': '0.95', 'frequency': '5624624484.052533', 'elangle': '15.007292361111238', 'nbins': '475', 'nrays': '360', 'rscale': '500.0', 'product': 'SCAN'}",
     "naming_authority": "eu.eumetnet",
     "level": 1501,
+    "hamsl": 109.0,
     "function": "point",
     "period": "PT0S",
-    "period_int": 0,
     "platform": "0-20000-0-06036",
     "platform_name": "[dksin] Sindal",
+    "format": "ODIM",
+    "radar_meta": {
+      "format_version": "H5rad 3.0",
+      "object": "PVOL",
+      "beamwH": 0.95,
+      "beamwV": 0.95,
+      "pulsewidth": 0.8,
+      "frequency": "5624624484.052533",
+      "elangle": 15.007292361111238,
+      "nbins": 475,
+      "nrays": 360,
+      "a1gate": 0,
+      "rstart": 0.5,
+      "rscale": 500.0,
+      "product": "SCAN"
+    },
     "content": {
       "encoding": "utf-8",
       "standard_name": "DBZH",
       "unit": "text",
-      "size": 177,
-      "value": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5"
+      "size": 1,
+      "value": "0"
     },
-    "hmsl": 109.0
+    "period_int": 0
   },
   "links": [
     {
@@ -4010,6 +5609,13 @@
       "rel": "service-desc",
       "type": "application/vnd.oai.openapi+json;version=3.0",
       "title": "Open Radar Data"
+    },
+    {
+      "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5",
+      "length": 177,
+      "rel": "items",
+      "title": "Default link, to data.",
+      "type": "application/x-odim"
     }
   ]
 }
@@ -4030,22 +5636,37 @@
     "Conventions": "CF-1.8",
     "summary": "Radar data from OPERA network.",
     "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
-    "radar_meta": "{'format': 'ODIM', 'format_version': 'H5rad 3.0', 'object': 'PVOL', 'beamwH': '0.95', 'beamwV': '0.95', 'frequency': '5624624484.052533', 'elangle': '15.007292361111238', 'nbins': '475', 'nrays': '360', 'rscale': '500.0', 'product': 'SCAN'}",
     "naming_authority": "eu.eumetnet",
     "level": 1501,
+    "hamsl": 109.0,
     "function": "point",
     "period": "PT0S",
-    "period_int": 0,
     "platform": "0-20000-0-06036",
     "platform_name": "[dksin] Sindal",
+    "format": "ODIM",
+    "radar_meta": {
+      "format_version": "H5rad 3.0",
+      "object": "PVOL",
+      "beamwH": 0.95,
+      "beamwV": 0.95,
+      "pulsewidth": 0.8,
+      "frequency": "5624624484.052533",
+      "elangle": 15.007292361111238,
+      "nbins": 475,
+      "nrays": 360,
+      "a1gate": 0,
+      "rstart": 0.5,
+      "rscale": 500.0,
+      "product": "SCAN"
+    },
     "content": {
       "encoding": "utf-8",
       "standard_name": "VRAD",
       "unit": "text",
-      "size": 177,
-      "value": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5"
+      "size": 1,
+      "value": "0"
     },
-    "hmsl": 109.0
+    "period_int": 0
   },
   "links": [
     {
@@ -4065,6 +5686,13 @@
       "rel": "service-desc",
       "type": "application/vnd.oai.openapi+json;version=3.0",
       "title": "Open Radar Data"
+    },
+    {
+      "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5",
+      "length": 177,
+      "rel": "items",
+      "title": "Default link, to data.",
+      "type": "application/x-odim"
     }
   ]
 }
@@ -4085,22 +5713,37 @@
     "Conventions": "CF-1.8",
     "summary": "Radar data from OPERA network.",
     "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
-    "radar_meta": "{'format': 'ODIM', 'format_version': 'H5rad 3.0', 'object': 'PVOL', 'beamwH': '0.95', 'beamwV': '0.95', 'frequency': '5624624484.052533', 'elangle': '15.007292361111238', 'nbins': '475', 'nrays': '360', 'rscale': '500.0', 'product': 'SCAN'}",
     "naming_authority": "eu.eumetnet",
     "level": 1501,
+    "hamsl": 109.0,
     "function": "point",
     "period": "PT0S",
-    "period_int": 0,
     "platform": "0-20000-0-06036",
     "platform_name": "[dksin] Sindal",
+    "format": "ODIM",
+    "radar_meta": {
+      "format_version": "H5rad 3.0",
+      "object": "PVOL",
+      "beamwH": 0.95,
+      "beamwV": 0.95,
+      "pulsewidth": 0.8,
+      "frequency": "5624624484.052533",
+      "elangle": 15.007292361111238,
+      "nbins": 475,
+      "nrays": 360,
+      "a1gate": 0,
+      "rstart": 0.5,
+      "rscale": 500.0,
+      "product": "SCAN"
+    },
     "content": {
       "encoding": "utf-8",
       "standard_name": "TH",
       "unit": "text",
-      "size": 177,
-      "value": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5"
+      "size": 1,
+      "value": "0"
     },
-    "hmsl": 109.0
+    "period_int": 0
   },
   "links": [
     {
@@ -4120,6 +5763,13 @@
       "rel": "service-desc",
       "type": "application/vnd.oai.openapi+json;version=3.0",
       "title": "Open Radar Data"
+    },
+    {
+      "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5",
+      "length": 177,
+      "rel": "items",
+      "title": "Default link, to data.",
+      "type": "application/x-odim"
     }
   ]
 }
@@ -4140,22 +5790,37 @@
     "Conventions": "CF-1.8",
     "summary": "Radar data from OPERA network.",
     "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
-    "radar_meta": "{'format': 'ODIM', 'format_version': 'H5rad 3.0', 'object': 'PVOL', 'beamwH': '0.95', 'beamwV': '0.95', 'frequency': '5624624484.052533', 'elangle': '15.007292361111238', 'nbins': '475', 'nrays': '360', 'rscale': '500.0', 'product': 'SCAN'}",
     "naming_authority": "eu.eumetnet",
     "level": 1501,
+    "hamsl": 109.0,
     "function": "point",
     "period": "PT0S",
-    "period_int": 0,
     "platform": "0-20000-0-06036",
     "platform_name": "[dksin] Sindal",
+    "format": "ODIM",
+    "radar_meta": {
+      "format_version": "H5rad 3.0",
+      "object": "PVOL",
+      "beamwH": 0.95,
+      "beamwV": 0.95,
+      "pulsewidth": 0.8,
+      "frequency": "5624624484.052533",
+      "elangle": 15.007292361111238,
+      "nbins": 475,
+      "nrays": 360,
+      "a1gate": 0,
+      "rstart": 0.5,
+      "rscale": 500.0,
+      "product": "SCAN"
+    },
     "content": {
       "encoding": "utf-8",
       "standard_name": "WRAD",
       "unit": "text",
-      "size": 177,
-      "value": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5"
+      "size": 1,
+      "value": "0"
     },
-    "hmsl": 109.0
+    "period_int": 0
   },
   "links": [
     {
@@ -4175,6 +5840,13 @@
       "rel": "service-desc",
       "type": "application/vnd.oai.openapi+json;version=3.0",
       "title": "Open Radar Data"
+    },
+    {
+      "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5",
+      "length": 177,
+      "rel": "items",
+      "title": "Default link, to data.",
+      "type": "application/x-odim"
     }
   ]
 }
@@ -4195,22 +5867,37 @@
     "Conventions": "CF-1.8",
     "summary": "Radar data from OPERA network.",
     "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
-    "radar_meta": "{'format': 'ODIM', 'format_version': 'H5rad 3.0', 'object': 'PVOL', 'beamwH': '0.95', 'beamwV': '0.95', 'frequency': '5624624484.052533', 'elangle': '15.007292361111238', 'nbins': '475', 'nrays': '360', 'rscale': '500.0', 'product': 'SCAN'}",
     "naming_authority": "eu.eumetnet",
     "level": 1501,
+    "hamsl": 109.0,
     "function": "point",
     "period": "PT0S",
-    "period_int": 0,
     "platform": "0-20000-0-06036",
     "platform_name": "[dksin] Sindal",
+    "format": "ODIM",
+    "radar_meta": {
+      "format_version": "H5rad 3.0",
+      "object": "PVOL",
+      "beamwH": 0.95,
+      "beamwV": 0.95,
+      "pulsewidth": 0.8,
+      "frequency": "5624624484.052533",
+      "elangle": 15.007292361111238,
+      "nbins": 475,
+      "nrays": 360,
+      "a1gate": 0,
+      "rstart": 0.5,
+      "rscale": 500.0,
+      "product": "SCAN"
+    },
     "content": {
       "encoding": "utf-8",
       "standard_name": "ZDR",
       "unit": "text",
-      "size": 177,
-      "value": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5"
+      "size": 1,
+      "value": "0"
     },
-    "hmsl": 109.0
+    "period_int": 0
   },
   "links": [
     {
@@ -4230,6 +5917,13 @@
       "rel": "service-desc",
       "type": "application/vnd.oai.openapi+json;version=3.0",
       "title": "Open Radar Data"
+    },
+    {
+      "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5",
+      "length": 177,
+      "rel": "items",
+      "title": "Default link, to data.",
+      "type": "application/x-odim"
     }
   ]
 }
@@ -4250,22 +5944,37 @@
     "Conventions": "CF-1.8",
     "summary": "Radar data from OPERA network.",
     "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
-    "radar_meta": "{'format': 'ODIM', 'format_version': 'H5rad 3.0', 'object': 'PVOL', 'beamwH': '0.95', 'beamwV': '0.95', 'frequency': '5624624484.052533', 'elangle': '15.007292361111238', 'nbins': '475', 'nrays': '360', 'rscale': '500.0', 'product': 'SCAN'}",
     "naming_authority": "eu.eumetnet",
     "level": 1501,
+    "hamsl": 109.0,
     "function": "point",
     "period": "PT0S",
-    "period_int": 0,
     "platform": "0-20000-0-06036",
     "platform_name": "[dksin] Sindal",
+    "format": "ODIM",
+    "radar_meta": {
+      "format_version": "H5rad 3.0",
+      "object": "PVOL",
+      "beamwH": 0.95,
+      "beamwV": 0.95,
+      "pulsewidth": 0.8,
+      "frequency": "5624624484.052533",
+      "elangle": 15.007292361111238,
+      "nbins": 475,
+      "nrays": 360,
+      "a1gate": 0,
+      "rstart": 0.5,
+      "rscale": 500.0,
+      "product": "SCAN"
+    },
     "content": {
       "encoding": "utf-8",
       "standard_name": "RHOHV",
       "unit": "text",
-      "size": 177,
-      "value": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5"
+      "size": 1,
+      "value": "0"
     },
-    "hmsl": 109.0
+    "period_int": 0
   },
   "links": [
     {
@@ -4285,6 +5994,13 @@
       "rel": "service-desc",
       "type": "application/vnd.oai.openapi+json;version=3.0",
       "title": "Open Radar Data"
+    },
+    {
+      "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5",
+      "length": 177,
+      "rel": "items",
+      "title": "Default link, to data.",
+      "type": "application/x-odim"
     }
   ]
 }
@@ -4305,22 +6021,37 @@
     "Conventions": "CF-1.8",
     "summary": "Radar data from OPERA network.",
     "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
-    "radar_meta": "{'format': 'ODIM', 'format_version': 'H5rad 3.0', 'object': 'PVOL', 'beamwH': '0.95', 'beamwV': '0.95', 'frequency': '5624624484.052533', 'elangle': '15.007292361111238', 'nbins': '475', 'nrays': '360', 'rscale': '500.0', 'product': 'SCAN'}",
     "naming_authority": "eu.eumetnet",
     "level": 1501,
+    "hamsl": 109.0,
     "function": "point",
     "period": "PT0S",
-    "period_int": 0,
     "platform": "0-20000-0-06036",
     "platform_name": "[dksin] Sindal",
+    "format": "ODIM",
+    "radar_meta": {
+      "format_version": "H5rad 3.0",
+      "object": "PVOL",
+      "beamwH": 0.95,
+      "beamwV": 0.95,
+      "pulsewidth": 0.8,
+      "frequency": "5624624484.052533",
+      "elangle": 15.007292361111238,
+      "nbins": 475,
+      "nrays": 360,
+      "a1gate": 0,
+      "rstart": 0.5,
+      "rscale": 500.0,
+      "product": "SCAN"
+    },
     "content": {
       "encoding": "utf-8",
       "standard_name": "PHIDP",
       "unit": "text",
-      "size": 177,
-      "value": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5"
+      "size": 1,
+      "value": "0"
     },
-    "hmsl": 109.0
+    "period_int": 0
   },
   "links": [
     {
@@ -4340,6 +6071,13 @@
       "rel": "service-desc",
       "type": "application/vnd.oai.openapi+json;version=3.0",
       "title": "Open Radar Data"
+    },
+    {
+      "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5",
+      "length": 177,
+      "rel": "items",
+      "title": "Default link, to data.",
+      "type": "application/x-odim"
     }
   ]
 }
@@ -4360,22 +6098,37 @@
     "Conventions": "CF-1.8",
     "summary": "Radar data from OPERA network.",
     "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
-    "radar_meta": "{'format': 'ODIM', 'format_version': 'H5rad 3.0', 'object': 'PVOL', 'beamwH': '0.95', 'beamwV': '0.95', 'frequency': '5624624484.052533', 'elangle': '15.007292361111238', 'nbins': '475', 'nrays': '360', 'rscale': '500.0', 'product': 'SCAN'}",
     "naming_authority": "eu.eumetnet",
     "level": 1501,
+    "hamsl": 109.0,
     "function": "point",
     "period": "PT0S",
-    "period_int": 0,
     "platform": "0-20000-0-06036",
     "platform_name": "[dksin] Sindal",
+    "format": "ODIM",
+    "radar_meta": {
+      "format_version": "H5rad 3.0",
+      "object": "PVOL",
+      "beamwH": 0.95,
+      "beamwV": 0.95,
+      "pulsewidth": 0.8,
+      "frequency": "5624624484.052533",
+      "elangle": 15.007292361111238,
+      "nbins": 475,
+      "nrays": 360,
+      "a1gate": 0,
+      "rstart": 0.5,
+      "rscale": 500.0,
+      "product": "SCAN"
+    },
     "content": {
       "encoding": "utf-8",
       "standard_name": "LDR",
       "unit": "text",
-      "size": 177,
-      "value": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5"
+      "size": 1,
+      "value": "0"
     },
-    "hmsl": 109.0
+    "period_int": 0
   },
   "links": [
     {
@@ -4395,6 +6148,13 @@
       "rel": "service-desc",
       "type": "application/vnd.oai.openapi+json;version=3.0",
       "title": "Open Radar Data"
+    },
+    {
+      "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/DK/dksin/PVOL/dksin@20241008T0730@0.48_0.65_0.96_1.47_2.37_4.81_8.39_10.0_12.96_15.01@DBZH_LDR_PHIDP_RHOHV_TH_VRAD_WRAD_ZDR.h5",
+      "length": 177,
+      "rel": "items",
+      "title": "Default link, to data.",
+      "type": "application/x-odim"
     }
   ]
 }

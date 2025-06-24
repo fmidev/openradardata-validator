@@ -15,22 +15,36 @@
     "Conventions": "CF-1.8",
     "summary": "Radar data from OPERA network.",
     "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
-    "radar_meta": "{'format': 'ODIM', 'format_version': 'H5rad 2.3', 'object': 'SCAN', 'beamwH': '0.9500000439584255', 'beamwV': '0.9500000439584255', 'frequency': '5624624484.052533', 'elangle': '0.0', 'nbins': '300', 'nrays': '360', 'rscale': '1000.0', 'product': 'SCAN'}",
     "naming_authority": "eu.eumetnet",
     "level": 0,
+    "hamsl": 1097.0,
     "function": "point",
     "period": "PT15S",
-    "period_int": 15,
     "platform": "0-20000-0-08556",
     "platform_name": "[ptprt] Porto",
+    "format": "ODIM",
+    "radar_meta": {
+      "format_version": "H5rad 2.3",
+      "object": "SCAN",
+      "beamwH": 0.9500000439584255,
+      "beamwV": 0.9500000439584255,
+      "frequency": "5624624484.052533",
+      "elangle": 0.0,
+      "nbins": 300,
+      "nrays": 360,
+      "a1gate": 280,
+      "rstart": 0.0,
+      "rscale": 1000.0,
+      "product": "SCAN"
+    },
     "content": {
       "encoding": "utf-8",
       "standard_name": "TH",
       "unit": "text",
-      "size": 105,
-      "value": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/PT/ptprt/SCAN/ptprt@20241008T0510@0.0@DBZH_TH_VRADH.h5"
+      "size": 1,
+      "value": "0"
     },
-    "hmsl": 1097.0
+    "period_int": 15
   },
   "links": [
     {
@@ -50,6 +64,13 @@
       "rel": "service-desc",
       "type": "application/vnd.oai.openapi+json;version=3.0",
       "title": "Open Radar Data"
+    },
+    {
+      "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/PT/ptprt/SCAN/ptprt@20241008T0510@0.0@DBZH_TH_VRADH.h5",
+      "length": 105,
+      "rel": "items",
+      "title": "Default link, to data.",
+      "type": "application/x-odim"
     }
   ]
 }
@@ -70,22 +91,36 @@
     "Conventions": "CF-1.8",
     "summary": "Radar data from OPERA network.",
     "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
-    "radar_meta": "{'format': 'ODIM', 'format_version': 'H5rad 2.3', 'object': 'SCAN', 'beamwH': '0.9500000439584255', 'beamwV': '0.9500000439584255', 'frequency': '5624624484.052533', 'elangle': '0.0', 'nbins': '300', 'nrays': '360', 'rscale': '1000.0', 'product': 'SCAN'}",
     "naming_authority": "eu.eumetnet",
     "level": 0,
+    "hamsl": 1097.0,
     "function": "point",
     "period": "PT15S",
-    "period_int": 15,
     "platform": "0-20000-0-08556",
     "platform_name": "[ptprt] Porto",
+    "format": "ODIM",
+    "radar_meta": {
+      "format_version": "H5rad 2.3",
+      "object": "SCAN",
+      "beamwH": 0.9500000439584255,
+      "beamwV": 0.9500000439584255,
+      "frequency": "5624624484.052533",
+      "elangle": 0.0,
+      "nbins": 300,
+      "nrays": 360,
+      "a1gate": 280,
+      "rstart": 0.0,
+      "rscale": 1000.0,
+      "product": "SCAN"
+    },
     "content": {
       "encoding": "utf-8",
       "standard_name": "DBZH",
       "unit": "text",
-      "size": 105,
-      "value": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/PT/ptprt/SCAN/ptprt@20241008T0510@0.0@DBZH_TH_VRADH.h5"
+      "size": 1,
+      "value": "0"
     },
-    "hmsl": 1097.0
+    "period_int": 15
   },
   "links": [
     {
@@ -105,6 +140,13 @@
       "rel": "service-desc",
       "type": "application/vnd.oai.openapi+json;version=3.0",
       "title": "Open Radar Data"
+    },
+    {
+      "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/PT/ptprt/SCAN/ptprt@20241008T0510@0.0@DBZH_TH_VRADH.h5",
+      "length": 105,
+      "rel": "items",
+      "title": "Default link, to data.",
+      "type": "application/x-odim"
     }
   ]
 }
@@ -125,22 +167,36 @@
     "Conventions": "CF-1.8",
     "summary": "Radar data from OPERA network.",
     "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
-    "radar_meta": "{'format': 'ODIM', 'format_version': 'H5rad 2.3', 'object': 'SCAN', 'beamwH': '0.9500000439584255', 'beamwV': '0.9500000439584255', 'frequency': '5624624484.052533', 'elangle': '0.0', 'nbins': '300', 'nrays': '360', 'rscale': '1000.0', 'product': 'SCAN'}",
     "naming_authority": "eu.eumetnet",
     "level": 0,
+    "hamsl": 1097.0,
     "function": "point",
     "period": "PT15S",
-    "period_int": 15,
     "platform": "0-20000-0-08556",
     "platform_name": "[ptprt] Porto",
+    "format": "ODIM",
+    "radar_meta": {
+      "format_version": "H5rad 2.3",
+      "object": "SCAN",
+      "beamwH": 0.9500000439584255,
+      "beamwV": 0.9500000439584255,
+      "frequency": "5624624484.052533",
+      "elangle": 0.0,
+      "nbins": 300,
+      "nrays": 360,
+      "a1gate": 280,
+      "rstart": 0.0,
+      "rscale": 1000.0,
+      "product": "SCAN"
+    },
     "content": {
       "encoding": "utf-8",
       "standard_name": "VRADH",
       "unit": "text",
-      "size": 105,
-      "value": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/PT/ptprt/SCAN/ptprt@20241008T0510@0.0@DBZH_TH_VRADH.h5"
+      "size": 1,
+      "value": "0"
     },
-    "hmsl": 1097.0
+    "period_int": 15
   },
   "links": [
     {
@@ -160,6 +216,13 @@
       "rel": "service-desc",
       "type": "application/vnd.oai.openapi+json;version=3.0",
       "title": "Open Radar Data"
+    },
+    {
+      "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/PT/ptprt/SCAN/ptprt@20241008T0510@0.0@DBZH_TH_VRADH.h5",
+      "length": 105,
+      "rel": "items",
+      "title": "Default link, to data.",
+      "type": "application/x-odim"
     }
   ]
 }

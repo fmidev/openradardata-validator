@@ -8,21 +8,21 @@
         "Conventions": "CF-1.8",
         "summary": "Radar data from OPERA network.",
         "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
-        "radar_meta": {},
         "naming_authority": "eu.eumetnet",
         "level": 0,
         "hamsl": 0.0,
         "function": "point",
         "period": "PT0S",
-        "period_int": 0,
         "platform": "",
         "platform_name": "",
+        "format": "",
+        "radar_meta": {},
         "content": {
             "encoding": "utf-8",
             "standard_name": "",
-            "unit": "",
-            "size": 0,
-            "value": ""
+            "unit": "text",
+            "size": 1,
+            "value": "0"
         }
     },
     "links": [

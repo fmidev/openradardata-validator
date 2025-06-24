@@ -93,29 +93,21 @@ python3 ./odim2ordmsg.py /path_to_ODIM_file/ODIM_file.h5
 ```
 ## Schema validator
 
-The upload_schema validation has two parts:
-- **Entire schema validation**: validates the whole schema.
-- **Radar metadata validation**: validates the `radar_meta` attribute, which contains radar product parameters such as elevation, PRF, vawelenght, etc. The `radar_meta` string value is a JSON object for flexibility, following the ODIM standard. It must include the mandatory format key which represents the file format.
-
 Run the schema validator
 ```shell
-python3 ./ord_validator.py ./examples/json/example_2_pttrc_SCAN_elevation_0.0_quantities_DBZH_TH_VRADH.json
+python3 ./ord_validator.py ./examples/odim/T_PAZA43_C_LPMG_20241008051005.h5.json
 ```
 The output:
 ```shell
-Schemas: ['./schemas/openradardata-spec.json', './schemas/openradardata-radar_meta-spec.json', './examples/json/example_2_pttrc_SCAN_elevation_0.0_quantities_DBZH_TH_VRADH.json']
+./examples/odim/T_PAZA43_C_LPMG_20241008051005.h5.json
+Schemas: ['./schemas/openradardata-spec.json', './examples/odim/T_PAZA43_C_LPMG_20241008051005.h5.json']
 Read Openradar schema: ./schemas/openradardata-spec.json
-Read Meta schema: ./schemas/openradardata-radar_meta-spec.json
-Read msg: ./examples/json/example_2_pttrc_SCAN_elevation_0.0_quantities_DBZH_TH_VRADH.json
-Validation OK: 2024-10-08T05:30:05Z 0-20000-0-08516     0       TH
-Meta Validation OK
-Validation OK: 2024-10-08T05:30:05Z 0-20000-0-08516     0       DBZH
-Meta Validation OK
-Validation OK: 2024-10-08T05:30:05Z 0-20000-0-08516     0       VRADH
-Meta Validation OK
+Read msg: ./examples/odim/T_PAZA43_C_LPMG_20241008051005.h5.json
+Validation OK: 2024-10-08T05:10:05Z 0-20000-0-08556     0       TH
+Validation OK: 2024-10-08T05:10:05Z 0-20000-0-08556     0       DBZH
+Validation OK: 2024-10-08T05:10:05Z 0-20000-0-08556     0       VRADH
 ```
 Where:
 - ```Schemas```: list of shemas, first two are the validator schemas
-- ```Read...```: reads the validator schemas
+- ```Read...```: reads the (validator) schemas
 - ```Validation OK```: validates the each measure in the `json_upload_schema` and prints the `date` `level` and `quantity`
-- ```Meta Validation OK```: validates the `radar_meta` attribute

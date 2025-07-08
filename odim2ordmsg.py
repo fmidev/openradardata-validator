@@ -307,7 +307,7 @@ def odim_openradar_msgmem(odim_content, size, test_schema_path):
 
         if object == "PVOL" or object == "SCAN":
             if elangle is not None:
-                level = int(round(elangle, 2) * 100)
+                level = round(elangle, 2)
                 if elangle not in s3_key_level:
                     s3_key_level.append(elangle)
 
@@ -342,7 +342,7 @@ def odim_openradar_msgmem(odim_content, size, test_schema_path):
                             s3_key_level.append(prodpar)
                 case "VIL":
                     if prodpar is not None:
-                        level = prodpar[1] * 100
+                        level = prodpar[1]
                         for vp in prodpar:
                             if vp not in s3_key_level:
                                 s3_key_level.append(vp)

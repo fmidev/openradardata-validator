@@ -32,7 +32,13 @@ if __name__ == "__main__":
                     print("Read msg: {0}".format(file_name))
                     for msg in data:
                         jsonschema.validate(instance=msg, schema=schema)
-                        print("Validation OK: {0} {1}\t{2}\t{3}".format(msg["properties"]["datetime"], msg["properties"]["platform"], msg["properties"]["level"], msg["properties"]["content"]["standard_name"]))
+                        start_datetime_str = ""
+                        if "datetime" in msg["properties"]:
+                            start_datetime_str = msg["properties"]["datetime"]
+                        else:
+                            if "start_datetime" in msg["properties"]:
+                                start_datetime_str = msg["properties"]["start_datetime"]
+                        print("Validation OK: {0} {1}\t{2}\t{3}".format(start_datetime_str, msg["properties"]["platform"], msg["properties"]["level"], msg["properties"]["content"]["standard_name"]))
             else:
                 print("File not exists: {0}".format(file_name))
                 exit(1)

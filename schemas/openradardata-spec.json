@@ -209,27 +209,40 @@
                         },
                         "object": {
                             "type": "string",
-                            "description": "Type of data",
+                            "description": 
+                                "Object type: Polar volume, Cartesian volume, Polar scan, Single polar ray, Azimuthal object, Elevational object, 2-D cartesian image, Cartesian composite image(s), 2-D vertical cross section(s), 1-D vertical profile, Embedded graphical image",
                             "enum": [
                                 "COMP",
                                 "PVOL",
-                                "SCAN"
+                                "SCAN",
+                                "RAY",
+                                "AZIM",
+                                "ELEV",
+                                "IMAGE",
+                                "COMP",
+                                "XSEC",
+                                "VP",
+                                "PIC"
                             ]
+                        },
+                        "source": {
+                            "type": "string",
+                            "description": "Variable-length string containing pairs of identifier types and their values, separated by a colon."
                         },
                         "projdef": {
                             "type": "string",
                             "description": "The projection definition arguments, described above, which can be used with PROJ.4. See the PROJ.4 documentation for usage. Longitude/Latitude coordinates are normalized to the WGS-84 ellipsoid and geodetic datum."
                         },
                         "xsize": {
-                            "type": ["string", "number"],
+                            "type": ["string", "integer"],
                             "description": "Number of pixels in the X dimension"
                         },
                         "ysize": {
-                            "type": ["string", "number"],
+                            "type": ["string", "integer"],
                             "description": "Number of pixels in the Y dimension"
                         },
                         "zsize": {
-                            "type": ["string", "number"],
+                            "type": ["string", "integer"],
                             "description": "Number of vertical layers. Only used for three-dimensional products."
                         },
                         "xscale": {
@@ -280,13 +293,29 @@
                             "type": ["string", "number"],
                             "description": "Longitude of the lower right corner of the lower right pixel"
                         },
+                        "extension": {
+                            "type": "string",
+                            "description": "Name of the extensions of /what/version Name of the acquisition task or product"
+                        },
+                        "task": {
+                            "type": "string",
+                            "description": "Name of the acquisition task or product generator"
+                        },
+                        "task_args": {
+                            "type": "string",
+                            "description": "Task arguments"
+                        },
+                        "system": {
+                            "type": "string",
+                            "description": "Radar system"
+                        },
                         "elangle": {
                             "type": ["string", "number"],
                             "description": "Antenna elevation angle above the horizon"
                         },
                         "nbins": {
-                            "type": ["string", "number"],
-                            "description": "Number of range bins in each ra"
+                            "type": ["string", "integer"],
+                            "description": "Number of range bins in each ray"
                         },
                         "rstart": {
                             "type": ["string", "number"],
@@ -297,11 +326,11 @@
                             "description": "The distance between two successive range bins"
                         },
                         "nrays": {
-                            "type": ["string", "number"],
+                            "type": ["string", "integer"],
                             "description": "Number of azimuth or elevation gates (rays) in the object"
                         },
                         "a1gate": {
-                            "type": ["string", "number"],
+                            "type": ["string", "integer"],
                             "description": "Index of the first azimuth gate radiated in the scan"
                         },
                         "product": {
@@ -329,6 +358,61 @@
                                 "QUAL"
                             ]
                         },
+                        "startaz": {
+                            "type": ["string", "number"],
+                            "description": "The azimuth angle of the start of the first gate in the sector [degrees]"
+                        },
+                        "stopaz": {
+                            "type": ["string", "number"],
+                            "description": "The azimuth angle of the end of the last gate in the sector [degrees]"
+                        },
+                        "startel": {
+                            "type": ["string", "number"],
+                            "description": "The elevation angle of the start of the first gate in the sector [degrees]"
+                        },
+                        "stopel": {
+                            "type": ["string", "number"],
+                            "description": "The elevation angle of the end of the last gate in the sector [degrees]"
+                        },
+                        "TXtype": {
+                            "type": "string",
+                            "description": 
+                                "Transmitter type",
+                            "enum": [
+                                "magnetron",
+                                "klystron",
+                                "solid state"
+                            ]
+                        },
+                        "poltype": {
+                            "type": "string",
+                            "description": "Polarization type of the radar",
+                            "enum": [
+                                "single",
+                                "simultaneous-dual",
+                                "switched-dual"
+                            ]
+                        },
+                        "polmode": {
+                            "type": "string",
+                            "description": "Current polarity mode",
+                            "enum": [
+                                "LDR-H",
+                                "single-H",
+                                "LDR-V",
+                                "single-V",
+                                "simultaneous-dual",
+                                "switched-dual"
+                            ]
+                        },
+                        "software": {
+                            "type": "string",
+                            "description": "Radar Software"
+                        },
+                        "sw_version": {
+                            "type": "string",
+                            "description": "Software version in string format, e.g. “5.1” or “8.11.6.2”"
+                        },
                         "zr_a": {
                             "type": ["string", "number"],
                             "description": "Z-R constant a in Z = a Rb , applicable to any product containing reflectivity or precipitation data"
@@ -336,6 +420,44 @@
                         "zr_b": {
                             "type": ["string", "number"],
                             "description": "Z-R exponent b in Z = a Rb , applicable to any product containing reflectivity or precipitation data"
+                        },
+                        "zr_a_A": {
+                            "type": "string",
+                            "description": "zr_a_A"
+                        },
+                        "zr_b_A": {
+                            "type": "string",
+                            "description": "zr_b_A"
+                        },
+                        "kr_a": {
+                            "type": ["string", "number"],
+                            "description": "KDP -R constant a in R = a*KDP^b"
+                        },
+                        "kr_a_A": {
+                            "type": "string",
+                            "description": "kr_a_A"
+                        },
+                        "simulated": {
+                            "type": "string",
+                            "description": "True” if data are simulated, otherwise “False”."
+                        },
+                        "platform_type": {
+                            "type": "string",
+                            "description": "Platform type",
+                            "enum": [
+                                "fixed",
+                                "vehicle",
+                                "ship",
+                                "aircraft",
+                                "aircraft_fore",
+                                "aircraft_aft",
+                                "aircraft_tai",
+                                "aircraft_belly",
+                                "aircraft_roof",
+                                "aircraft_nose",
+                                "satellite_orbit",
+                                "satellite_geostat"
+                            ]
                         },
                         "frequency": {
                             "type": ["string", "number"],
@@ -364,6 +486,130 @@
                         "pulsewidth": {
                             "type": ["string", "number"],
                             "description": "Pulsewidth in seconds"
+                        },
+                        "antspeed": {
+                            "type": ["string", "number"],
+                            "description": "Antenna speed (positive for clockwise and ascending, negative for counter-clockwise and descending) [degrees/s]"
+                        },
+                        "RXbandwith": {
+                            "type": ["string", "number"],
+                            "description": "Bandwidth that the receiver is set to when operating the radar with the above mentioned pulsewidth"
+                        },
+                        "prt": {
+                            "type": "string",
+                            "description": "Pulse repetition time. For staggered prt, also see prt_ratio. The size of this one-dimensional array corresponds with the value of where/nrays for that dataset."
+                        },
+                        "prt_ratio": {
+                            "type": "string",
+                            "description": "Ratio of prt/prt2. For dual/staggered prt mode. The size of this one-dimensional array corresponds with the value of where/nrays for that dataset."
+                        },
+                        "TXlossH": {
+                            "type": ["string", "number"],
+                            "description": "Total loss in the transmission chain for horizontally-polarized signals, defined as the losses that occur between the calibration reference plane and the feed horn, inclusive"
+                        },
+                        "TXlossV": {
+                            "type": ["string", "number"],
+                            "description": "Total loss in the transmission chain for vertically-polarized signals, defined as the losses that occur between the calibration reference plane and the feed horn, inclusive"
+                        },
+                        "injectlossH": {
+                            "type": ["string", "number"],
+                            "description": "Total loss between the calibration reference plane and the test signal generator for horizontally-polarized signals"
+                        },
+                        "injectlossV": {
+                            "type": ["string", "number"],
+                            "description": "Total loss between the calibration reference plane and the test signal generator for vertically-polarized signals"
+                        },
+                        "RXlossH": {
+                            "type": ["string", "number"],
+                            "description": "Total loss in the receiving chain for horizontally-polarized signals, defined as the losses that occur between the antenna reference point and the receiver, inclusive."
+                        },
+                        "RXlossV": {
+                            "type": ["string", "number"],
+                            "description": "Total loss in the receiving chain for vertically-polarized signals, defined as the losses that occur between the antenna reference point and the receiver, inclusive"
+                        },
+                        "radomelossH": {
+                            "type": ["string", "number"],
+                            "description": "One-way dry radome loss for horizontally-polarized signals"
+                        },
+                        "radomelossV": {
+                            "type": ["string", "number"],
+                            "description": "One-way dry radome loss for vertically-polarized signals"
+                        },
+                        "antgainH": {
+                            "type": ["string", "number"],
+                            "description": "Antenna gain for horizontally-polarized signals"
+                        },
+                        "antgainV": {
+                            "type": ["string", "number"],
+                            "description": "Antenna gain for vertically-polarized signals"
+                        },
+                        "gasattn": {
+                            "type": ["string", "number"],
+                            "description": "Gaseous specific attenuation assumed by the radar processor (zero if no gaseous attenuation is assumed)"
+                        },
+                        "radconstH": {
+                            "type": ["string", "number"],
+                            "description": "Radar constant for the horizontal channel."
+                        },
+                        "radconstV": {
+                            "type": ["string", "number"],
+                            "description": "Radar constant for the vertical channel"
+                        },
+                        "nomTXpower": {
+                            "type": ["string", "number"],
+                            "description": "Nominal transmitted peak power at the output of the transmitter (magnetron/klystron output flange)"
+                        },
+                        "TXpower": {
+                            "type": ["string", "number"],
+                            "description": "Transmitted peak power at the calibration reference plane. The values given are average powers over all transmitted pulses in each azimuth gate. The size of this one-dimensional array corresponds with the value of where/nrays for that dataset"
+                        },
+                        "powerdiff": {
+                            "type": ["string", "number"],
+                            "description": "Power difference between transmitted horizontally and vertically-polarized signals at the the feed horn"
+                        },
+                        "phasediff": {
+                            "type": ["string", "number"],
+                            "description": "Phase difference between transmitted horizontally and vertically-polarized signals as determined from the first valid range bins"
+                        },
+                        "NI": {
+                            "type": ["string", "number"],
+                            "description": "Unambiguous velocity (Nyquist) interval"
+                        },
+                        "Vsamples": {
+                            "type": ["string", "number"],
+                            "description": "Number of samples used for radial velocity measurements"
+                        },
+                        "scan_index": {
+                            "type": ["string", "integer"],
+                            "description": "Which scan this is in the temporal sequence (starting with 1) of the total number of scans comprising the volume"
+                        },
+                        "scan_count": {
+                            "type": ["string", "integer"],
+                            "description": "The total number of scans comprising the volume"
+                        },
+                        "scan_optimized": {
+                            "type": "string",
+                            "description": "Scan optimized for quantity"
+                        },
+                        "astart": {
+                            "type": ["string", "number"],
+                            "description": "Azimuthal offset from 0◦ of the start of the first ray in the sweep. This value is positive where the gate starts clockwise after 0◦, and it will be negative if it starts before 0◦. In either case, the value must be no larger than half a ray’s width"
+                        },
+                        "azmethod": {
+                            "type": "string",
+                            "description": "How raw data in azimuth are processed to arrive at the given value"
+                        },
+                        "elmethod": {
+                            "type": "string",
+                            "description": "How raw data in elevation are processed to arrive at the given value"
+                        },
+                        "binmethod": {
+                            "type": "string",
+                            "description": "How raw data in range are processed to arrive at the given value"
+                        },
+                        "azmethod_avg": {
+                            "type": ["string", "integer"],
+                            "description": "How many original data elements in range are averaged to arrive at the given value"
                         }
                     },
                     "additionalProperties": {

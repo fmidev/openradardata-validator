@@ -10,3 +10,6 @@ dependencies = ["numpy", "pandas", "h5py", "jsonschema"]
 
 [dependency-groups]
 dev = ["isort", "mypy", "pylint", "pytest"]
+
+[tool.setuptools.package-data]
+"*" = ["*.*"]

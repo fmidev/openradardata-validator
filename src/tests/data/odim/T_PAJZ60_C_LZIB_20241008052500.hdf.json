@@ -1,913 +1,902 @@
 [
-{
-  "id": "",
-  "version": "v4.0",
-  "type": "Feature",
-  "geometry": {
-    "type": "Point",
-    "coordinates": {
-      "lat": 49.27167,
-      "lon": 19.24935
-    }
+  {
+    "id": "",
+    "version": "v4.0",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": {
+        "lat": 49.27167,
+        "lon": 19.24935
+      }
+    },
+    "properties": {
+      "datetime": "2024-10-08T05:25:03Z",
+      "Conventions": "CF-1.8",
+      "summary": "Radar data from OPERA network.",
+      "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
+      "naming_authority": "eu.eumetnet",
+      "level": 0.0,
+      "hamsl": 1425.0,
+      "function": "point",
+      "period": "PT20S",
+      "platform": "0-20000-0-11887",
+      "platform_name": "[skkub]",
+      "format": "ODIM",
+      "radar_meta": {
+        "format_version": "H5rad 2.1",
+        "object": "PVOL",
+        "pulsewidth": 0.83,
+        "beamwH": 0.917,
+        "frequency": "5625679958.716457",
+        "elangle": 0.0,
+        "nbins": 960,
+        "nrays": 360,
+        "a1gate": 68,
+        "rstart": 0.0,
+        "rscale": 250.0,
+        "product": "SCAN"
+      },
+      "content": {
+        "encoding": "utf-8",
+        "standard_name": "TH",
+        "unit": "text",
+        "size": 1,
+        "value": "0"
+      },
+      "period_int": 20
+    },
+    "links": [
+      {
+        "href": "https://My-default-URL",
+        "rel": "canonical",
+        "type": "text/html",
+        "title": "EUMETNET Website"
+      },
+      {
+        "href": "https://www.eumetnet.eu/observations/weather-radar-network/",
+        "rel": "canonical",
+        "type": "text/html",
+        "title": "OPERA Website"
+      },
+      {
+        "href": "http://radar.meteogate.eu:8008/",
+        "rel": "service-desc",
+        "type": "application/vnd.oai.openapi+json;version=3.0",
+        "title": "Open Radar Data"
+      },
+      {
+        "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/SK/skkub/PVOL/skkub@20241008T0525@0.0_0.5_1.0_1.5_2.0_2.7_3.4_4.4_7.0_11.4_18.3_26.7@TH.h5",
+        "length": 141,
+        "rel": "items",
+        "title": "Default link, to data.",
+        "type": "application/x-odim"
+      }
+    ]
   },
-  "properties": {
-    "datetime": "2024-10-08T05:25:03Z",
-    "Conventions": "CF-1.8",
-    "summary": "Radar data from OPERA network.",
-    "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
-    "naming_authority": "eu.eumetnet",
-    "level": 0.0,
-    "hamsl": 1425.0,
-    "function": "point",
-    "period": "PT20S",
-    "platform": "0-20000-0-11887",
-    "platform_name": "[skkub]",
-    "format": "ODIM",
-    "radar_meta": {
-      "format_version": "H5rad 2.1",
-      "object": "PVOL",
-      "pulsewidth": 0.83,
-      "beamwH": 0.917,
-      "frequency": "5625679958.716457",
-      "elangle": 0.0,
-      "nbins": 960,
-      "nrays": 360,
-      "a1gate": 68,
-      "rstart": 0.0,
-      "rscale": 250.0,
-      "product": "SCAN"
+  {
+    "id": "",
+    "version": "v4.0",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": {
+        "lat": 49.27167,
+        "lon": 19.24935
+      }
     },
-    "content": {
-      "encoding": "utf-8",
-      "standard_name": "TH",
-      "unit": "text",
-      "size": 1,
-      "value": "0"
+    "properties": {
+      "datetime": "2024-10-08T05:25:26Z",
+      "Conventions": "CF-1.8",
+      "summary": "Radar data from OPERA network.",
+      "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
+      "naming_authority": "eu.eumetnet",
+      "level": 0.5,
+      "hamsl": 1425.0,
+      "function": "point",
+      "period": "PT19S",
+      "platform": "0-20000-0-11887",
+      "platform_name": "[skkub]",
+      "format": "ODIM",
+      "radar_meta": {
+        "format_version": "H5rad 2.1",
+        "object": "PVOL",
+        "pulsewidth": 0.83,
+        "beamwH": 0.917,
+        "frequency": "5625679958.716457",
+        "elangle": 0.5,
+        "nbins": 960,
+        "nrays": 360,
+        "a1gate": 111,
+        "rstart": 0.0,
+        "rscale": 250.0,
+        "product": "SCAN"
+      },
+      "content": {
+        "encoding": "utf-8",
+        "standard_name": "TH",
+        "unit": "text",
+        "size": 1,
+        "value": "0"
+      },
+      "period_int": 19
     },
-    "period_int": 20
+    "links": [
+      {
+        "href": "https://My-default-URL",
+        "rel": "canonical",
+        "type": "text/html",
+        "title": "EUMETNET Website"
+      },
+      {
+        "href": "https://www.eumetnet.eu/observations/weather-radar-network/",
+        "rel": "canonical",
+        "type": "text/html",
+        "title": "OPERA Website"
+      },
+      {
+        "href": "http://radar.meteogate.eu:8008/",
+        "rel": "service-desc",
+        "type": "application/vnd.oai.openapi+json;version=3.0",
+        "title": "Open Radar Data"
+      },
+      {
+        "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/SK/skkub/PVOL/skkub@20241008T0525@0.0_0.5_1.0_1.5_2.0_2.7_3.4_4.4_7.0_11.4_18.3_26.7@TH.h5",
+        "length": 141,
+        "rel": "items",
+        "title": "Default link, to data.",
+        "type": "application/x-odim"
+      }
+    ]
   },
-  "links": [
-    {
-      "href": "https://My-default-URL",
-      "rel": "canonical",
-      "type": "text/html",
-      "title": "EUMETNET Website"
+  {
+    "id": "",
+    "version": "v4.0",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": {
+        "lat": 49.27167,
+        "lon": 19.24935
+      }
     },
-    {
-      "href": "https://www.eumetnet.eu/observations/weather-radar-network/",
-      "rel": "canonical",
-      "type": "text/html",
-      "title": "OPERA Website"
+    "properties": {
+      "datetime": "2024-10-08T05:25:48Z",
+      "Conventions": "CF-1.8",
+      "summary": "Radar data from OPERA network.",
+      "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
+      "naming_authority": "eu.eumetnet",
+      "level": 1.0,
+      "hamsl": 1425.0,
+      "function": "point",
+      "period": "PT20S",
+      "platform": "0-20000-0-11887",
+      "platform_name": "[skkub]",
+      "format": "ODIM",
+      "radar_meta": {
+        "format_version": "H5rad 2.1",
+        "object": "PVOL",
+        "pulsewidth": 0.83,
+        "beamwH": 0.917,
+        "frequency": "5625679958.716457",
+        "elangle": 1.0,
+        "nbins": 960,
+        "nrays": 360,
+        "a1gate": 157,
+        "rstart": 0.0,
+        "rscale": 250.0,
+        "product": "SCAN"
+      },
+      "content": {
+        "encoding": "utf-8",
+        "standard_name": "TH",
+        "unit": "text",
+        "size": 1,
+        "value": "0"
+      },
+      "period_int": 20
     },
-    {
-      "href": "http://radar.meteogate.eu:8008/",
-      "rel": "service-desc",
-      "type": "application/vnd.oai.openapi+json;version=3.0",
-      "title": "Open Radar Data"
-    },
-    {
-      "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/SK/skkub/PVOL/skkub@20241008T0525@0.0_0.5_1.0_1.5_2.0_2.7_3.4_4.4_7.0_11.4_18.3_26.7@TH.h5",
-      "length": 141,
-      "rel": "items",
-      "title": "Default link, to data.",
-      "type": "application/x-odim"
-    }
-  ]
-}
-,
-{
-  "id": "",
-  "version": "v4.0",
-  "type": "Feature",
-  "geometry": {
-    "type": "Point",
-    "coordinates": {
-      "lat": 49.27167,
-      "lon": 19.24935
-    }
+    "links": [
+      {
+        "href": "https://My-default-URL",
+        "rel": "canonical",
+        "type": "text/html",
+        "title": "EUMETNET Website"
+      },
+      {
+        "href": "https://www.eumetnet.eu/observations/weather-radar-network/",
+        "rel": "canonical",
+        "type": "text/html",
+        "title": "OPERA Website"
+      },
+      {
+        "href": "http://radar.meteogate.eu:8008/",
+        "rel": "service-desc",
+        "type": "application/vnd.oai.openapi+json;version=3.0",
+        "title": "Open Radar Data"
+      },
+      {
+        "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/SK/skkub/PVOL/skkub@20241008T0525@0.0_0.5_1.0_1.5_2.0_2.7_3.4_4.4_7.0_11.4_18.3_26.7@TH.h5",
+        "length": 141,
+        "rel": "items",
+        "title": "Default link, to data.",
+        "type": "application/x-odim"
+      }
+    ]
   },
-  "properties": {
-    "datetime": "2024-10-08T05:25:26Z",
-    "Conventions": "CF-1.8",
-    "summary": "Radar data from OPERA network.",
-    "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
-    "naming_authority": "eu.eumetnet",
-    "level": 0.5,
-    "hamsl": 1425.0,
-    "function": "point",
-    "period": "PT19S",
-    "platform": "0-20000-0-11887",
-    "platform_name": "[skkub]",
-    "format": "ODIM",
-    "radar_meta": {
-      "format_version": "H5rad 2.1",
-      "object": "PVOL",
-      "pulsewidth": 0.83,
-      "beamwH": 0.917,
-      "frequency": "5625679958.716457",
-      "elangle": 0.5,
-      "nbins": 960,
-      "nrays": 360,
-      "a1gate": 111,
-      "rstart": 0.0,
-      "rscale": 250.0,
-      "product": "SCAN"
+  {
+    "id": "",
+    "version": "v4.0",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": {
+        "lat": 49.27167,
+        "lon": 19.24935
+      }
     },
-    "content": {
-      "encoding": "utf-8",
-      "standard_name": "TH",
-      "unit": "text",
-      "size": 1,
-      "value": "0"
+    "properties": {
+      "datetime": "2024-10-08T05:26:11Z",
+      "Conventions": "CF-1.8",
+      "summary": "Radar data from OPERA network.",
+      "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
+      "naming_authority": "eu.eumetnet",
+      "level": 1.5,
+      "hamsl": 1425.0,
+      "function": "point",
+      "period": "PT19S",
+      "platform": "0-20000-0-11887",
+      "platform_name": "[skkub]",
+      "format": "ODIM",
+      "radar_meta": {
+        "format_version": "H5rad 2.1",
+        "object": "PVOL",
+        "pulsewidth": 0.83,
+        "beamwH": 0.917,
+        "frequency": "5625679958.716457",
+        "elangle": 1.5,
+        "nbins": 960,
+        "nrays": 360,
+        "a1gate": 203,
+        "rstart": 0.0,
+        "rscale": 250.0,
+        "product": "SCAN"
+      },
+      "content": {
+        "encoding": "utf-8",
+        "standard_name": "TH",
+        "unit": "text",
+        "size": 1,
+        "value": "0"
+      },
+      "period_int": 19
     },
-    "period_int": 19
+    "links": [
+      {
+        "href": "https://My-default-URL",
+        "rel": "canonical",
+        "type": "text/html",
+        "title": "EUMETNET Website"
+      },
+      {
+        "href": "https://www.eumetnet.eu/observations/weather-radar-network/",
+        "rel": "canonical",
+        "type": "text/html",
+        "title": "OPERA Website"
+      },
+      {
+        "href": "http://radar.meteogate.eu:8008/",
+        "rel": "service-desc",
+        "type": "application/vnd.oai.openapi+json;version=3.0",
+        "title": "Open Radar Data"
+      },
+      {
+        "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/SK/skkub/PVOL/skkub@20241008T0525@0.0_0.5_1.0_1.5_2.0_2.7_3.4_4.4_7.0_11.4_18.3_26.7@TH.h5",
+        "length": 141,
+        "rel": "items",
+        "title": "Default link, to data.",
+        "type": "application/x-odim"
+      }
+    ]
   },
-  "links": [
-    {
-      "href": "https://My-default-URL",
-      "rel": "canonical",
-      "type": "text/html",
-      "title": "EUMETNET Website"
+  {
+    "id": "",
+    "version": "v4.0",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": {
+        "lat": 49.27167,
+        "lon": 19.24935
+      }
     },
-    {
-      "href": "https://www.eumetnet.eu/observations/weather-radar-network/",
-      "rel": "canonical",
-      "type": "text/html",
-      "title": "OPERA Website"
+    "properties": {
+      "datetime": "2024-10-08T05:26:33Z",
+      "Conventions": "CF-1.8",
+      "summary": "Radar data from OPERA network.",
+      "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
+      "naming_authority": "eu.eumetnet",
+      "level": 2.0,
+      "hamsl": 1425.0,
+      "function": "point",
+      "period": "PT20S",
+      "platform": "0-20000-0-11887",
+      "platform_name": "[skkub]",
+      "format": "ODIM",
+      "radar_meta": {
+        "format_version": "H5rad 2.1",
+        "object": "PVOL",
+        "pulsewidth": 0.83,
+        "beamwH": 0.917,
+        "frequency": "5625679958.716457",
+        "elangle": 2.0,
+        "nbins": 960,
+        "nrays": 360,
+        "a1gate": 248,
+        "rstart": 0.0,
+        "rscale": 250.0,
+        "product": "SCAN"
+      },
+      "content": {
+        "encoding": "utf-8",
+        "standard_name": "TH",
+        "unit": "text",
+        "size": 1,
+        "value": "0"
+      },
+      "period_int": 20
     },
-    {
-      "href": "http://radar.meteogate.eu:8008/",
-      "rel": "service-desc",
-      "type": "application/vnd.oai.openapi+json;version=3.0",
-      "title": "Open Radar Data"
-    },
-    {
-      "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/SK/skkub/PVOL/skkub@20241008T0525@0.0_0.5_1.0_1.5_2.0_2.7_3.4_4.4_7.0_11.4_18.3_26.7@TH.h5",
-      "length": 141,
-      "rel": "items",
-      "title": "Default link, to data.",
-      "type": "application/x-odim"
-    }
-  ]
-}
-,
-{
-  "id": "",
-  "version": "v4.0",
-  "type": "Feature",
-  "geometry": {
-    "type": "Point",
-    "coordinates": {
-      "lat": 49.27167,
-      "lon": 19.24935
-    }
+    "links": [
+      {
+        "href": "https://My-default-URL",
+        "rel": "canonical",
+        "type": "text/html",
+        "title": "EUMETNET Website"
+      },
+      {
+        "href": "https://www.eumetnet.eu/observations/weather-radar-network/",
+        "rel": "canonical",
+        "type": "text/html",
+        "title": "OPERA Website"
+      },
+      {
+        "href": "http://radar.meteogate.eu:8008/",
+        "rel": "service-desc",
+        "type": "application/vnd.oai.openapi+json;version=3.0",
+        "title": "Open Radar Data"
+      },
+      {
+        "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/SK/skkub/PVOL/skkub@20241008T0525@0.0_0.5_1.0_1.5_2.0_2.7_3.4_4.4_7.0_11.4_18.3_26.7@TH.h5",
+        "length": 141,
+        "rel": "items",
+        "title": "Default link, to data.",
+        "type": "application/x-odim"
+      }
+    ]
   },
-  "properties": {
-    "datetime": "2024-10-08T05:25:48Z",
-    "Conventions": "CF-1.8",
-    "summary": "Radar data from OPERA network.",
-    "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
-    "naming_authority": "eu.eumetnet",
-    "level": 1.0,
-    "hamsl": 1425.0,
-    "function": "point",
-    "period": "PT20S",
-    "platform": "0-20000-0-11887",
-    "platform_name": "[skkub]",
-    "format": "ODIM",
-    "radar_meta": {
-      "format_version": "H5rad 2.1",
-      "object": "PVOL",
-      "pulsewidth": 0.83,
-      "beamwH": 0.917,
-      "frequency": "5625679958.716457",
-      "elangle": 1.0,
-      "nbins": 960,
-      "nrays": 360,
-      "a1gate": 157,
-      "rstart": 0.0,
-      "rscale": 250.0,
-      "product": "SCAN"
+  {
+    "id": "",
+    "version": "v4.0",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": {
+        "lat": 49.27167,
+        "lon": 19.24935
+      }
     },
-    "content": {
-      "encoding": "utf-8",
-      "standard_name": "TH",
-      "unit": "text",
-      "size": 1,
-      "value": "0"
+    "properties": {
+      "datetime": "2024-10-08T05:26:56Z",
+      "Conventions": "CF-1.8",
+      "summary": "Radar data from OPERA network.",
+      "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
+      "naming_authority": "eu.eumetnet",
+      "level": 2.7,
+      "hamsl": 1425.0,
+      "function": "point",
+      "period": "PT20S",
+      "platform": "0-20000-0-11887",
+      "platform_name": "[skkub]",
+      "format": "ODIM",
+      "radar_meta": {
+        "format_version": "H5rad 2.1",
+        "object": "PVOL",
+        "pulsewidth": 0.83,
+        "beamwH": 0.917,
+        "frequency": "5625679958.716457",
+        "elangle": 2.7,
+        "nbins": 960,
+        "nrays": 360,
+        "a1gate": 292,
+        "rstart": 0.0,
+        "rscale": 250.0,
+        "product": "SCAN"
+      },
+      "content": {
+        "encoding": "utf-8",
+        "standard_name": "TH",
+        "unit": "text",
+        "size": 1,
+        "value": "0"
+      },
+      "period_int": 20
     },
-    "period_int": 20
+    "links": [
+      {
+        "href": "https://My-default-URL",
+        "rel": "canonical",
+        "type": "text/html",
+        "title": "EUMETNET Website"
+      },
+      {
+        "href": "https://www.eumetnet.eu/observations/weather-radar-network/",
+        "rel": "canonical",
+        "type": "text/html",
+        "title": "OPERA Website"
+      },
+      {
+        "href": "http://radar.meteogate.eu:8008/",
+        "rel": "service-desc",
+        "type": "application/vnd.oai.openapi+json;version=3.0",
+        "title": "Open Radar Data"
+      },
+      {
+        "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/SK/skkub/PVOL/skkub@20241008T0525@0.0_0.5_1.0_1.5_2.0_2.7_3.4_4.4_7.0_11.4_18.3_26.7@TH.h5",
+        "length": 141,
+        "rel": "items",
+        "title": "Default link, to data.",
+        "type": "application/x-odim"
+      }
+    ]
   },
-  "links": [
-    {
-      "href": "https://My-default-URL",
-      "rel": "canonical",
-      "type": "text/html",
-      "title": "EUMETNET Website"
+  {
+    "id": "",
+    "version": "v4.0",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": {
+        "lat": 49.27167,
+        "lon": 19.24935
+      }
     },
-    {
-      "href": "https://www.eumetnet.eu/observations/weather-radar-network/",
-      "rel": "canonical",
-      "type": "text/html",
-      "title": "OPERA Website"
+    "properties": {
+      "datetime": "2024-10-08T05:27:18Z",
+      "Conventions": "CF-1.8",
+      "summary": "Radar data from OPERA network.",
+      "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
+      "naming_authority": "eu.eumetnet",
+      "level": 3.4,
+      "hamsl": 1425.0,
+      "function": "point",
+      "period": "PT20S",
+      "platform": "0-20000-0-11887",
+      "platform_name": "[skkub]",
+      "format": "ODIM",
+      "radar_meta": {
+        "format_version": "H5rad 2.1",
+        "object": "PVOL",
+        "pulsewidth": 0.83,
+        "beamwH": 0.917,
+        "frequency": "5625679958.716457",
+        "elangle": 3.4,
+        "nbins": 960,
+        "nrays": 360,
+        "a1gate": 339,
+        "rstart": 0.0,
+        "rscale": 250.0,
+        "product": "SCAN"
+      },
+      "content": {
+        "encoding": "utf-8",
+        "standard_name": "TH",
+        "unit": "text",
+        "size": 1,
+        "value": "0"
+      },
+      "period_int": 20
     },
-    {
-      "href": "http://radar.meteogate.eu:8008/",
-      "rel": "service-desc",
-      "type": "application/vnd.oai.openapi+json;version=3.0",
-      "title": "Open Radar Data"
-    },
-    {
-      "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/SK/skkub/PVOL/skkub@20241008T0525@0.0_0.5_1.0_1.5_2.0_2.7_3.4_4.4_7.0_11.4_18.3_26.7@TH.h5",
-      "length": 141,
-      "rel": "items",
-      "title": "Default link, to data.",
-      "type": "application/x-odim"
-    }
-  ]
-}
-,
-{
-  "id": "",
-  "version": "v4.0",
-  "type": "Feature",
-  "geometry": {
-    "type": "Point",
-    "coordinates": {
-      "lat": 49.27167,
-      "lon": 19.24935
-    }
+    "links": [
+      {
+        "href": "https://My-default-URL",
+        "rel": "canonical",
+        "type": "text/html",
+        "title": "EUMETNET Website"
+      },
+      {
+        "href": "https://www.eumetnet.eu/observations/weather-radar-network/",
+        "rel": "canonical",
+        "type": "text/html",
+        "title": "OPERA Website"
+      },
+      {
+        "href": "http://radar.meteogate.eu:8008/",
+        "rel": "service-desc",
+        "type": "application/vnd.oai.openapi+json;version=3.0",
+        "title": "Open Radar Data"
+      },
+      {
+        "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/SK/skkub/PVOL/skkub@20241008T0525@0.0_0.5_1.0_1.5_2.0_2.7_3.4_4.4_7.0_11.4_18.3_26.7@TH.h5",
+        "length": 141,
+        "rel": "items",
+        "title": "Default link, to data.",
+        "type": "application/x-odim"
+      }
+    ]
   },
-  "properties": {
-    "datetime": "2024-10-08T05:26:11Z",
-    "Conventions": "CF-1.8",
-    "summary": "Radar data from OPERA network.",
-    "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
-    "naming_authority": "eu.eumetnet",
-    "level": 1.5,
-    "hamsl": 1425.0,
-    "function": "point",
-    "period": "PT19S",
-    "platform": "0-20000-0-11887",
-    "platform_name": "[skkub]",
-    "format": "ODIM",
-    "radar_meta": {
-      "format_version": "H5rad 2.1",
-      "object": "PVOL",
-      "pulsewidth": 0.83,
-      "beamwH": 0.917,
-      "frequency": "5625679958.716457",
-      "elangle": 1.5,
-      "nbins": 960,
-      "nrays": 360,
-      "a1gate": 203,
-      "rstart": 0.0,
-      "rscale": 250.0,
-      "product": "SCAN"
+  {
+    "id": "",
+    "version": "v4.0",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": {
+        "lat": 49.27167,
+        "lon": 19.24935
+      }
     },
-    "content": {
-      "encoding": "utf-8",
-      "standard_name": "TH",
-      "unit": "text",
-      "size": 1,
-      "value": "0"
+    "properties": {
+      "datetime": "2024-10-08T05:27:41Z",
+      "Conventions": "CF-1.8",
+      "summary": "Radar data from OPERA network.",
+      "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
+      "naming_authority": "eu.eumetnet",
+      "level": 4.4,
+      "hamsl": 1425.0,
+      "function": "point",
+      "period": "PT15S",
+      "platform": "0-20000-0-11887",
+      "platform_name": "[skkub]",
+      "format": "ODIM",
+      "radar_meta": {
+        "format_version": "H5rad 2.1",
+        "object": "PVOL",
+        "pulsewidth": 0.83,
+        "beamwH": 0.917,
+        "frequency": "5625679958.716457",
+        "elangle": 4.4,
+        "nbins": 833,
+        "nrays": 360,
+        "a1gate": 24,
+        "rstart": 0.0,
+        "rscale": 250.0,
+        "product": "SCAN"
+      },
+      "content": {
+        "encoding": "utf-8",
+        "standard_name": "TH",
+        "unit": "text",
+        "size": 1,
+        "value": "0"
+      },
+      "period_int": 15
     },
-    "period_int": 19
+    "links": [
+      {
+        "href": "https://My-default-URL",
+        "rel": "canonical",
+        "type": "text/html",
+        "title": "EUMETNET Website"
+      },
+      {
+        "href": "https://www.eumetnet.eu/observations/weather-radar-network/",
+        "rel": "canonical",
+        "type": "text/html",
+        "title": "OPERA Website"
+      },
+      {
+        "href": "http://radar.meteogate.eu:8008/",
+        "rel": "service-desc",
+        "type": "application/vnd.oai.openapi+json;version=3.0",
+        "title": "Open Radar Data"
+      },
+      {
+        "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/SK/skkub/PVOL/skkub@20241008T0525@0.0_0.5_1.0_1.5_2.0_2.7_3.4_4.4_7.0_11.4_18.3_26.7@TH.h5",
+        "length": 141,
+        "rel": "items",
+        "title": "Default link, to data.",
+        "type": "application/x-odim"
+      }
+    ]
   },
-  "links": [
-    {
-      "href": "https://My-default-URL",
-      "rel": "canonical",
-      "type": "text/html",
-      "title": "EUMETNET Website"
+  {
+    "id": "",
+    "version": "v4.0",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": {
+        "lat": 49.27167,
+        "lon": 19.24935
+      }
     },
-    {
-      "href": "https://www.eumetnet.eu/observations/weather-radar-network/",
-      "rel": "canonical",
-      "type": "text/html",
-      "title": "OPERA Website"
+    "properties": {
+      "datetime": "2024-10-08T05:27:58Z",
+      "Conventions": "CF-1.8",
+      "summary": "Radar data from OPERA network.",
+      "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
+      "naming_authority": "eu.eumetnet",
+      "level": 7.0,
+      "hamsl": 1425.0,
+      "function": "point",
+      "period": "PT14S",
+      "platform": "0-20000-0-11887",
+      "platform_name": "[skkub]",
+      "format": "ODIM",
+      "radar_meta": {
+        "format_version": "H5rad 2.1",
+        "object": "PVOL",
+        "pulsewidth": 0.83,
+        "beamwH": 0.917,
+        "frequency": "5625679958.716457",
+        "elangle": 7.0,
+        "nbins": 600,
+        "nrays": 360,
+        "a1gate": 87,
+        "rstart": 0.0,
+        "rscale": 250.0,
+        "product": "SCAN"
+      },
+      "content": {
+        "encoding": "utf-8",
+        "standard_name": "TH",
+        "unit": "text",
+        "size": 1,
+        "value": "0"
+      },
+      "period_int": 14
     },
-    {
-      "href": "http://radar.meteogate.eu:8008/",
-      "rel": "service-desc",
-      "type": "application/vnd.oai.openapi+json;version=3.0",
-      "title": "Open Radar Data"
-    },
-    {
-      "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/SK/skkub/PVOL/skkub@20241008T0525@0.0_0.5_1.0_1.5_2.0_2.7_3.4_4.4_7.0_11.4_18.3_26.7@TH.h5",
-      "length": 141,
-      "rel": "items",
-      "title": "Default link, to data.",
-      "type": "application/x-odim"
-    }
-  ]
-}
-,
-{
-  "id": "",
-  "version": "v4.0",
-  "type": "Feature",
-  "geometry": {
-    "type": "Point",
-    "coordinates": {
-      "lat": 49.27167,
-      "lon": 19.24935
-    }
+    "links": [
+      {
+        "href": "https://My-default-URL",
+        "rel": "canonical",
+        "type": "text/html",
+        "title": "EUMETNET Website"
+      },
+      {
+        "href": "https://www.eumetnet.eu/observations/weather-radar-network/",
+        "rel": "canonical",
+        "type": "text/html",
+        "title": "OPERA Website"
+      },
+      {
+        "href": "http://radar.meteogate.eu:8008/",
+        "rel": "service-desc",
+        "type": "application/vnd.oai.openapi+json;version=3.0",
+        "title": "Open Radar Data"
+      },
+      {
+        "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/SK/skkub/PVOL/skkub@20241008T0525@0.0_0.5_1.0_1.5_2.0_2.7_3.4_4.4_7.0_11.4_18.3_26.7@TH.h5",
+        "length": 141,
+        "rel": "items",
+        "title": "Default link, to data.",
+        "type": "application/x-odim"
+      }
+    ]
   },
-  "properties": {
-    "datetime": "2024-10-08T05:26:33Z",
-    "Conventions": "CF-1.8",
-    "summary": "Radar data from OPERA network.",
-    "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
-    "naming_authority": "eu.eumetnet",
-    "level": 2.0,
-    "hamsl": 1425.0,
-    "function": "point",
-    "period": "PT20S",
-    "platform": "0-20000-0-11887",
-    "platform_name": "[skkub]",
-    "format": "ODIM",
-    "radar_meta": {
-      "format_version": "H5rad 2.1",
-      "object": "PVOL",
-      "pulsewidth": 0.83,
-      "beamwH": 0.917,
-      "frequency": "5625679958.716457",
-      "elangle": 2.0,
-      "nbins": 960,
-      "nrays": 360,
-      "a1gate": 248,
-      "rstart": 0.0,
-      "rscale": 250.0,
-      "product": "SCAN"
+  {
+    "id": "",
+    "version": "v4.0",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": {
+        "lat": 49.27167,
+        "lon": 19.24935
+      }
     },
-    "content": {
-      "encoding": "utf-8",
-      "standard_name": "TH",
-      "unit": "text",
-      "size": 1,
-      "value": "0"
+    "properties": {
+      "datetime": "2024-10-08T05:28:16Z",
+      "Conventions": "CF-1.8",
+      "summary": "Radar data from OPERA network.",
+      "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
+      "naming_authority": "eu.eumetnet",
+      "level": 11.4,
+      "hamsl": 1425.0,
+      "function": "point",
+      "period": "PT15S",
+      "platform": "0-20000-0-11887",
+      "platform_name": "[skkub]",
+      "format": "ODIM",
+      "radar_meta": {
+        "format_version": "H5rad 2.1",
+        "object": "PVOL",
+        "pulsewidth": 0.83,
+        "beamwH": 0.917,
+        "frequency": "5625679958.716457",
+        "elangle": 11.4,
+        "nbins": 400,
+        "nrays": 360,
+        "a1gate": 144,
+        "rstart": 0.0,
+        "rscale": 250.0,
+        "product": "SCAN"
+      },
+      "content": {
+        "encoding": "utf-8",
+        "standard_name": "TH",
+        "unit": "text",
+        "size": 1,
+        "value": "0"
+      },
+      "period_int": 15
     },
-    "period_int": 20
+    "links": [
+      {
+        "href": "https://My-default-URL",
+        "rel": "canonical",
+        "type": "text/html",
+        "title": "EUMETNET Website"
+      },
+      {
+        "href": "https://www.eumetnet.eu/observations/weather-radar-network/",
+        "rel": "canonical",
+        "type": "text/html",
+        "title": "OPERA Website"
+      },
+      {
+        "href": "http://radar.meteogate.eu:8008/",
+        "rel": "service-desc",
+        "type": "application/vnd.oai.openapi+json;version=3.0",
+        "title": "Open Radar Data"
+      },
+      {
+        "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/SK/skkub/PVOL/skkub@20241008T0525@0.0_0.5_1.0_1.5_2.0_2.7_3.4_4.4_7.0_11.4_18.3_26.7@TH.h5",
+        "length": 141,
+        "rel": "items",
+        "title": "Default link, to data.",
+        "type": "application/x-odim"
+      }
+    ]
   },
-  "links": [
-    {
-      "href": "https://My-default-URL",
-      "rel": "canonical",
-      "type": "text/html",
-      "title": "EUMETNET Website"
+  {
+    "id": "",
+    "version": "v4.0",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": {
+        "lat": 49.27167,
+        "lon": 19.24935
+      }
     },
-    {
-      "href": "https://www.eumetnet.eu/observations/weather-radar-network/",
-      "rel": "canonical",
-      "type": "text/html",
-      "title": "OPERA Website"
+    "properties": {
+      "datetime": "2024-10-08T05:28:33Z",
+      "Conventions": "CF-1.8",
+      "summary": "Radar data from OPERA network.",
+      "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
+      "naming_authority": "eu.eumetnet",
+      "level": 18.3,
+      "hamsl": 1425.0,
+      "function": "point",
+      "period": "PT14S",
+      "platform": "0-20000-0-11887",
+      "platform_name": "[skkub]",
+      "format": "ODIM",
+      "radar_meta": {
+        "format_version": "H5rad 2.1",
+        "object": "PVOL",
+        "pulsewidth": 0.83,
+        "beamwH": 0.917,
+        "frequency": "5625679958.716457",
+        "elangle": 18.3,
+        "nbins": 300,
+        "nrays": 360,
+        "a1gate": 201,
+        "rstart": 0.0,
+        "rscale": 250.0,
+        "product": "SCAN"
+      },
+      "content": {
+        "encoding": "utf-8",
+        "standard_name": "TH",
+        "unit": "text",
+        "size": 1,
+        "value": "0"
+      },
+      "period_int": 14
     },
-    {
-      "href": "http://radar.meteogate.eu:8008/",
-      "rel": "service-desc",
-      "type": "application/vnd.oai.openapi+json;version=3.0",
-      "title": "Open Radar Data"
-    },
-    {
-      "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/SK/skkub/PVOL/skkub@20241008T0525@0.0_0.5_1.0_1.5_2.0_2.7_3.4_4.4_7.0_11.4_18.3_26.7@TH.h5",
-      "length": 141,
-      "rel": "items",
-      "title": "Default link, to data.",
-      "type": "application/x-odim"
-    }
-  ]
-}
-,
-{
-  "id": "",
-  "version": "v4.0",
-  "type": "Feature",
-  "geometry": {
-    "type": "Point",
-    "coordinates": {
-      "lat": 49.27167,
-      "lon": 19.24935
-    }
+    "links": [
+      {
+        "href": "https://My-default-URL",
+        "rel": "canonical",
+        "type": "text/html",
+        "title": "EUMETNET Website"
+      },
+      {
+        "href": "https://www.eumetnet.eu/observations/weather-radar-network/",
+        "rel": "canonical",
+        "type": "text/html",
+        "title": "OPERA Website"
+      },
+      {
+        "href": "http://radar.meteogate.eu:8008/",
+        "rel": "service-desc",
+        "type": "application/vnd.oai.openapi+json;version=3.0",
+        "title": "Open Radar Data"
+      },
+      {
+        "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/SK/skkub/PVOL/skkub@20241008T0525@0.0_0.5_1.0_1.5_2.0_2.7_3.4_4.4_7.0_11.4_18.3_26.7@TH.h5",
+        "length": 141,
+        "rel": "items",
+        "title": "Default link, to data.",
+        "type": "application/x-odim"
+      }
+    ]
   },
-  "properties": {
-    "datetime": "2024-10-08T05:26:56Z",
-    "Conventions": "CF-1.8",
-    "summary": "Radar data from OPERA network.",
-    "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
-    "naming_authority": "eu.eumetnet",
-    "level": 2.7,
-    "hamsl": 1425.0,
-    "function": "point",
-    "period": "PT20S",
-    "platform": "0-20000-0-11887",
-    "platform_name": "[skkub]",
-    "format": "ODIM",
-    "radar_meta": {
-      "format_version": "H5rad 2.1",
-      "object": "PVOL",
-      "pulsewidth": 0.83,
-      "beamwH": 0.917,
-      "frequency": "5625679958.716457",
-      "elangle": 2.7,
-      "nbins": 960,
-      "nrays": 360,
-      "a1gate": 292,
-      "rstart": 0.0,
-      "rscale": 250.0,
-      "product": "SCAN"
+  {
+    "id": "",
+    "version": "v4.0",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": {
+        "lat": 49.27167,
+        "lon": 19.24935
+      }
     },
-    "content": {
-      "encoding": "utf-8",
-      "standard_name": "TH",
-      "unit": "text",
-      "size": 1,
-      "value": "0"
+    "properties": {
+      "datetime": "2024-10-08T05:28:50Z",
+      "Conventions": "CF-1.8",
+      "summary": "Radar data from OPERA network.",
+      "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
+      "naming_authority": "eu.eumetnet",
+      "level": 26.7,
+      "hamsl": 1425.0,
+      "function": "point",
+      "period": "PT15S",
+      "platform": "0-20000-0-11887",
+      "platform_name": "[skkub]",
+      "format": "ODIM",
+      "radar_meta": {
+        "format_version": "H5rad 2.1",
+        "object": "PVOL",
+        "pulsewidth": 0.83,
+        "beamwH": 0.917,
+        "frequency": "5625679958.716457",
+        "elangle": 26.7,
+        "nbins": 160,
+        "nrays": 360,
+        "a1gate": 257,
+        "rstart": 0.0,
+        "rscale": 250.0,
+        "product": "SCAN"
+      },
+      "content": {
+        "encoding": "utf-8",
+        "standard_name": "TH",
+        "unit": "text",
+        "size": 1,
+        "value": "0"
+      },
+      "period_int": 15
     },
-    "period_int": 20
-  },
-  "links": [
-    {
-      "href": "https://My-default-URL",
-      "rel": "canonical",
-      "type": "text/html",
-      "title": "EUMETNET Website"
-    },
-    {
-      "href": "https://www.eumetnet.eu/observations/weather-radar-network/",
-      "rel": "canonical",
-      "type": "text/html",
-      "title": "OPERA Website"
-    },
-    {
-      "href": "http://radar.meteogate.eu:8008/",
-      "rel": "service-desc",
-      "type": "application/vnd.oai.openapi+json;version=3.0",
-      "title": "Open Radar Data"
-    },
-    {
-      "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/SK/skkub/PVOL/skkub@20241008T0525@0.0_0.5_1.0_1.5_2.0_2.7_3.4_4.4_7.0_11.4_18.3_26.7@TH.h5",
-      "length": 141,
-      "rel": "items",
-      "title": "Default link, to data.",
-      "type": "application/x-odim"
-    }
-  ]
-}
-,
-{
-  "id": "",
-  "version": "v4.0",
-  "type": "Feature",
-  "geometry": {
-    "type": "Point",
-    "coordinates": {
-      "lat": 49.27167,
-      "lon": 19.24935
-    }
-  },
-  "properties": {
-    "datetime": "2024-10-08T05:27:18Z",
-    "Conventions": "CF-1.8",
-    "summary": "Radar data from OPERA network.",
-    "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
-    "naming_authority": "eu.eumetnet",
-    "level": 3.4,
-    "hamsl": 1425.0,
-    "function": "point",
-    "period": "PT20S",
-    "platform": "0-20000-0-11887",
-    "platform_name": "[skkub]",
-    "format": "ODIM",
-    "radar_meta": {
-      "format_version": "H5rad 2.1",
-      "object": "PVOL",
-      "pulsewidth": 0.83,
-      "beamwH": 0.917,
-      "frequency": "5625679958.716457",
-      "elangle": 3.4,
-      "nbins": 960,
-      "nrays": 360,
-      "a1gate": 339,
-      "rstart": 0.0,
-      "rscale": 250.0,
-      "product": "SCAN"
-    },
-    "content": {
-      "encoding": "utf-8",
-      "standard_name": "TH",
-      "unit": "text",
-      "size": 1,
-      "value": "0"
-    },
-    "period_int": 20
-  },
-  "links": [
-    {
-      "href": "https://My-default-URL",
-      "rel": "canonical",
-      "type": "text/html",
-      "title": "EUMETNET Website"
-    },
-    {
-      "href": "https://www.eumetnet.eu/observations/weather-radar-network/",
-      "rel": "canonical",
-      "type": "text/html",
-      "title": "OPERA Website"
-    },
-    {
-      "href": "http://radar.meteogate.eu:8008/",
-      "rel": "service-desc",
-      "type": "application/vnd.oai.openapi+json;version=3.0",
-      "title": "Open Radar Data"
-    },
-    {
-      "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/SK/skkub/PVOL/skkub@20241008T0525@0.0_0.5_1.0_1.5_2.0_2.7_3.4_4.4_7.0_11.4_18.3_26.7@TH.h5",
-      "length": 141,
-      "rel": "items",
-      "title": "Default link, to data.",
-      "type": "application/x-odim"
-    }
-  ]
-}
-,
-{
-  "id": "",
-  "version": "v4.0",
-  "type": "Feature",
-  "geometry": {
-    "type": "Point",
-    "coordinates": {
-      "lat": 49.27167,
-      "lon": 19.24935
-    }
-  },
-  "properties": {
-    "datetime": "2024-10-08T05:27:41Z",
-    "Conventions": "CF-1.8",
-    "summary": "Radar data from OPERA network.",
-    "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
-    "naming_authority": "eu.eumetnet",
-    "level": 4.4,
-    "hamsl": 1425.0,
-    "function": "point",
-    "period": "PT15S",
-    "platform": "0-20000-0-11887",
-    "platform_name": "[skkub]",
-    "format": "ODIM",
-    "radar_meta": {
-      "format_version": "H5rad 2.1",
-      "object": "PVOL",
-      "pulsewidth": 0.83,
-      "beamwH": 0.917,
-      "frequency": "5625679958.716457",
-      "elangle": 4.4,
-      "nbins": 833,
-      "nrays": 360,
-      "a1gate": 24,
-      "rstart": 0.0,
-      "rscale": 250.0,
-      "product": "SCAN"
-    },
-    "content": {
-      "encoding": "utf-8",
-      "standard_name": "TH",
-      "unit": "text",
-      "size": 1,
-      "value": "0"
-    },
-    "period_int": 15
-  },
-  "links": [
-    {
-      "href": "https://My-default-URL",
-      "rel": "canonical",
-      "type": "text/html",
-      "title": "EUMETNET Website"
-    },
-    {
-      "href": "https://www.eumetnet.eu/observations/weather-radar-network/",
-      "rel": "canonical",
-      "type": "text/html",
-      "title": "OPERA Website"
-    },
-    {
-      "href": "http://radar.meteogate.eu:8008/",
-      "rel": "service-desc",
-      "type": "application/vnd.oai.openapi+json;version=3.0",
-      "title": "Open Radar Data"
-    },
-    {
-      "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/SK/skkub/PVOL/skkub@20241008T0525@0.0_0.5_1.0_1.5_2.0_2.7_3.4_4.4_7.0_11.4_18.3_26.7@TH.h5",
-      "length": 141,
-      "rel": "items",
-      "title": "Default link, to data.",
-      "type": "application/x-odim"
-    }
-  ]
-}
-,
-{
-  "id": "",
-  "version": "v4.0",
-  "type": "Feature",
-  "geometry": {
-    "type": "Point",
-    "coordinates": {
-      "lat": 49.27167,
-      "lon": 19.24935
-    }
-  },
-  "properties": {
-    "datetime": "2024-10-08T05:27:58Z",
-    "Conventions": "CF-1.8",
-    "summary": "Radar data from OPERA network.",
-    "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
-    "naming_authority": "eu.eumetnet",
-    "level": 7.0,
-    "hamsl": 1425.0,
-    "function": "point",
-    "period": "PT14S",
-    "platform": "0-20000-0-11887",
-    "platform_name": "[skkub]",
-    "format": "ODIM",
-    "radar_meta": {
-      "format_version": "H5rad 2.1",
-      "object": "PVOL",
-      "pulsewidth": 0.83,
-      "beamwH": 0.917,
-      "frequency": "5625679958.716457",
-      "elangle": 7.0,
-      "nbins": 600,
-      "nrays": 360,
-      "a1gate": 87,
-      "rstart": 0.0,
-      "rscale": 250.0,
-      "product": "SCAN"
-    },
-    "content": {
-      "encoding": "utf-8",
-      "standard_name": "TH",
-      "unit": "text",
-      "size": 1,
-      "value": "0"
-    },
-    "period_int": 14
-  },
-  "links": [
-    {
-      "href": "https://My-default-URL",
-      "rel": "canonical",
-      "type": "text/html",
-      "title": "EUMETNET Website"
-    },
-    {
-      "href": "https://www.eumetnet.eu/observations/weather-radar-network/",
-      "rel": "canonical",
-      "type": "text/html",
-      "title": "OPERA Website"
-    },
-    {
-      "href": "http://radar.meteogate.eu:8008/",
-      "rel": "service-desc",
-      "type": "application/vnd.oai.openapi+json;version=3.0",
-      "title": "Open Radar Data"
-    },
-    {
-      "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/SK/skkub/PVOL/skkub@20241008T0525@0.0_0.5_1.0_1.5_2.0_2.7_3.4_4.4_7.0_11.4_18.3_26.7@TH.h5",
-      "length": 141,
-      "rel": "items",
-      "title": "Default link, to data.",
-      "type": "application/x-odim"
-    }
-  ]
-}
-,
-{
-  "id": "",
-  "version": "v4.0",
-  "type": "Feature",
-  "geometry": {
-    "type": "Point",
-    "coordinates": {
-      "lat": 49.27167,
-      "lon": 19.24935
-    }
-  },
-  "properties": {
-    "datetime": "2024-10-08T05:28:16Z",
-    "Conventions": "CF-1.8",
-    "summary": "Radar data from OPERA network.",
-    "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
-    "naming_authority": "eu.eumetnet",
-    "level": 11.4,
-    "hamsl": 1425.0,
-    "function": "point",
-    "period": "PT15S",
-    "platform": "0-20000-0-11887",
-    "platform_name": "[skkub]",
-    "format": "ODIM",
-    "radar_meta": {
-      "format_version": "H5rad 2.1",
-      "object": "PVOL",
-      "pulsewidth": 0.83,
-      "beamwH": 0.917,
-      "frequency": "5625679958.716457",
-      "elangle": 11.4,
-      "nbins": 400,
-      "nrays": 360,
-      "a1gate": 144,
-      "rstart": 0.0,
-      "rscale": 250.0,
-      "product": "SCAN"
-    },
-    "content": {
-      "encoding": "utf-8",
-      "standard_name": "TH",
-      "unit": "text",
-      "size": 1,
-      "value": "0"
-    },
-    "period_int": 15
-  },
-  "links": [
-    {
-      "href": "https://My-default-URL",
-      "rel": "canonical",
-      "type": "text/html",
-      "title": "EUMETNET Website"
-    },
-    {
-      "href": "https://www.eumetnet.eu/observations/weather-radar-network/",
-      "rel": "canonical",
-      "type": "text/html",
-      "title": "OPERA Website"
-    },
-    {
-      "href": "http://radar.meteogate.eu:8008/",
-      "rel": "service-desc",
-      "type": "application/vnd.oai.openapi+json;version=3.0",
-      "title": "Open Radar Data"
-    },
-    {
-      "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/SK/skkub/PVOL/skkub@20241008T0525@0.0_0.5_1.0_1.5_2.0_2.7_3.4_4.4_7.0_11.4_18.3_26.7@TH.h5",
-      "length": 141,
-      "rel": "items",
-      "title": "Default link, to data.",
-      "type": "application/x-odim"
-    }
-  ]
-}
-,
-{
-  "id": "",
-  "version": "v4.0",
-  "type": "Feature",
-  "geometry": {
-    "type": "Point",
-    "coordinates": {
-      "lat": 49.27167,
-      "lon": 19.24935
-    }
-  },
-  "properties": {
-    "datetime": "2024-10-08T05:28:33Z",
-    "Conventions": "CF-1.8",
-    "summary": "Radar data from OPERA network.",
-    "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
-    "naming_authority": "eu.eumetnet",
-    "level": 18.3,
-    "hamsl": 1425.0,
-    "function": "point",
-    "period": "PT14S",
-    "platform": "0-20000-0-11887",
-    "platform_name": "[skkub]",
-    "format": "ODIM",
-    "radar_meta": {
-      "format_version": "H5rad 2.1",
-      "object": "PVOL",
-      "pulsewidth": 0.83,
-      "beamwH": 0.917,
-      "frequency": "5625679958.716457",
-      "elangle": 18.3,
-      "nbins": 300,
-      "nrays": 360,
-      "a1gate": 201,
-      "rstart": 0.0,
-      "rscale": 250.0,
-      "product": "SCAN"
-    },
-    "content": {
-      "encoding": "utf-8",
-      "standard_name": "TH",
-      "unit": "text",
-      "size": 1,
-      "value": "0"
-    },
-    "period_int": 14
-  },
-  "links": [
-    {
-      "href": "https://My-default-URL",
-      "rel": "canonical",
-      "type": "text/html",
-      "title": "EUMETNET Website"
-    },
-    {
-      "href": "https://www.eumetnet.eu/observations/weather-radar-network/",
-      "rel": "canonical",
-      "type": "text/html",
-      "title": "OPERA Website"
-    },
-    {
-      "href": "http://radar.meteogate.eu:8008/",
-      "rel": "service-desc",
-      "type": "application/vnd.oai.openapi+json;version=3.0",
-      "title": "Open Radar Data"
-    },
-    {
-      "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/SK/skkub/PVOL/skkub@20241008T0525@0.0_0.5_1.0_1.5_2.0_2.7_3.4_4.4_7.0_11.4_18.3_26.7@TH.h5",
-      "length": 141,
-      "rel": "items",
-      "title": "Default link, to data.",
-      "type": "application/x-odim"
-    }
-  ]
-}
-,
-{
-  "id": "",
-  "version": "v4.0",
-  "type": "Feature",
-  "geometry": {
-    "type": "Point",
-    "coordinates": {
-      "lat": 49.27167,
-      "lon": 19.24935
-    }
-  },
-  "properties": {
-    "datetime": "2024-10-08T05:28:50Z",
-    "Conventions": "CF-1.8",
-    "summary": "Radar data from OPERA network.",
-    "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
-    "naming_authority": "eu.eumetnet",
-    "level": 26.7,
-    "hamsl": 1425.0,
-    "function": "point",
-    "period": "PT15S",
-    "platform": "0-20000-0-11887",
-    "platform_name": "[skkub]",
-    "format": "ODIM",
-    "radar_meta": {
-      "format_version": "H5rad 2.1",
-      "object": "PVOL",
-      "pulsewidth": 0.83,
-      "beamwH": 0.917,
-      "frequency": "5625679958.716457",
-      "elangle": 26.7,
-      "nbins": 160,
-      "nrays": 360,
-      "a1gate": 257,
-      "rstart": 0.0,
-      "rscale": 250.0,
-      "product": "SCAN"
-    },
-    "content": {
-      "encoding": "utf-8",
-      "standard_name": "TH",
-      "unit": "text",
-      "size": 1,
-      "value": "0"
-    },
-    "period_int": 15
-  },
-  "links": [
-    {
-      "href": "https://My-default-URL",
-      "rel": "canonical",
-      "type": "text/html",
-      "title": "EUMETNET Website"
-    },
-    {
-      "href": "https://www.eumetnet.eu/observations/weather-radar-network/",
-      "rel": "canonical",
-      "type": "text/html",
-      "title": "OPERA Website"
-    },
-    {
-      "href": "http://radar.meteogate.eu:8008/",
-      "rel": "service-desc",
-      "type": "application/vnd.oai.openapi+json;version=3.0",
-      "title": "Open Radar Data"
-    },
-    {
-      "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/SK/skkub/PVOL/skkub@20241008T0525@0.0_0.5_1.0_1.5_2.0_2.7_3.4_4.4_7.0_11.4_18.3_26.7@TH.h5",
-      "length": 141,
-      "rel": "items",
-      "title": "Default link, to data.",
-      "type": "application/x-odim"
-    }
-  ]
-}
+    "links": [
+      {
+        "href": "https://My-default-URL",
+        "rel": "canonical",
+        "type": "text/html",
+        "title": "EUMETNET Website"
+      },
+      {
+        "href": "https://www.eumetnet.eu/observations/weather-radar-network/",
+        "rel": "canonical",
+        "type": "text/html",
+        "title": "OPERA Website"
+      },
+      {
+        "href": "http://radar.meteogate.eu:8008/",
+        "rel": "service-desc",
+        "type": "application/vnd.oai.openapi+json;version=3.0",
+        "title": "Open Radar Data"
+      },
+      {
+        "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/SK/skkub/PVOL/skkub@20241008T0525@0.0_0.5_1.0_1.5_2.0_2.7_3.4_4.4_7.0_11.4_18.3_26.7@TH.h5",
+        "length": 141,
+        "rel": "items",
+        "title": "Default link, to data.",
+        "type": "application/x-odim"
+      }
+    ]
+  }
 ]

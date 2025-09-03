@@ -1,11 +1,11 @@
 import json
 import os
 import pytest
-import pathlib
+from pathlib import Path
 
-from openradardata_validator.odim2ordmsg import odim2mqtt
+from openradardata_validator import odim2ordmsg
 
-current_filedir = pathlib.Path(__file__).parent.resolve()
+current_filedir = Path(__file__).parent.resolve()
 
 
 @pytest.mark.parametrize(
@@ -17,16 +17,8 @@ current_filedir = pathlib.Path(__file__).parent.resolve()
     ],
 )
 def test_odim2mqtt(filename: str):
-    msg = odim2mqtt(current_filedir / "data/odim" / filename)
-    first_msg = True
-    result = ["["]
-    for m in msg:
-        if first_msg:
-            first_msg = False
-        else:
-            result.append(",")
-        result.append(json.dumps(m, indent=2))
-    result.append("]")
-    output_text = "\n".join(result) + "\n"
-    with open(current_filedir / "data/odim" / f"{filename}.json") as reference_file:
+    output_text = odim2ordmsg.main(current_filedir / "data/odim" / filename)
+    with open(
+        current_filedir / "data/odim" / f"{filename}.json", encoding="utf-8"
+    ) as reference_file:
         assert reference_file.read() == output_text

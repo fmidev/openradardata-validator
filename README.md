@@ -68,41 +68,25 @@ COMP | 0 | Other composites: CMAX, HMAX, etc...
 ## Installation
 ### Clone the repo
 ```shell
-git clone https://github.com/EUMETNET/openradardata-validator.git
+pip install https://github.com/EUMETNET/openradardata-validator.git
 ```
-### Set python virtual envinronment
-Create new python3 envinronment
-```shell
-cd openradardata-validator
-python3 -m venv .venv
-source .venv/bin/activate
-```
-Install requirements
-```shell
-pip install --upgrade pip
-pip install -r ./requirements-odim.txt
-pip install -r ./requirements-validator.txt
-```
-Set env value
-```shell
-export ORD_VALIDATOR_DIR=/path_to_validator_dir/
-```
+
 ## Create shema
 ```shell
-python3 ./odim2ordmsg.py /path_to_ODIM_file/ODIM_file.h5
+python3 -m openradardata_validator odim2ordmsg ./src/tests/data/odim/T_PAZA43_C_LPMG_20241008051005.h5
 ```
 ## Schema validator
 
 Run the schema validator
 ```shell
-python3 ./ord_validator.py ./examples/odim/T_PAZA43_C_LPMG_20241008051005.h5.json
+python3 -m openradardata_validator ord_validator ./src/tests/data/odim/T_PAZA43_C_LPMG_20241008051005.h5.json
 ```
 The output:
 ```shell
-./examples/odim/T_PAZA43_C_LPMG_20241008051005.h5.json
-Schemas: ['./schemas/openradardata-spec.json', './examples/odim/T_PAZA43_C_LPMG_20241008051005.h5.json']
+./src/tests/data/odim/T_PAZA43_C_LPMG_20241008051005.h5.json
+Schemas: ['./schemas/openradardata-spec.json', './src/tests/data/odim/T_PAZA43_C_LPMG_20241008051005.h5.json']
 Read Openradar schema: ./schemas/openradardata-spec.json
-Read msg: ./examples/odim/T_PAZA43_C_LPMG_20241008051005.h5.json
+Read msg: ./src/tests/data/odim/T_PAZA43_C_LPMG_20241008051005.h5.json
 Validation OK: 2024-10-08T05:10:05Z 0-20000-0-08556     0       TH
 Validation OK: 2024-10-08T05:10:05Z 0-20000-0-08556     0       DBZH
 Validation OK: 2024-10-08T05:10:05Z 0-20000-0-08556     0       VRADH

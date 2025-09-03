@@ -3,16 +3,15 @@ import datetime
 import io
 import json
 import os
-import sys
 
 import h5py
 import numpy
 import pandas
-import pathlib
+from pathlib import Path
 
 from openradardata_validator.radar_cf import radar_cf
 
-current_filedir = pathlib.Path(__file__).parent.resolve()
+current_filedir = Path(__file__).parent.resolve()
 
 schema_dir = current_filedir / "schemas"
 radardb_dir = current_filedir / "stations"
@@ -98,7 +97,7 @@ def set_meta(m_dest: object, m_src: str, m_attrs: list, fmt: str = "str"):
                     m_dest[meta] = float(meta_val)
 
 
-def odim_openradar_msgmem(odim_content, size):
+def odim_openradar_msgmem(odim_content, size, schema_file):
     ret = []
     s3_key_dir = ""
     s3_key_fil = ""
@@ -109,7 +108,7 @@ def odim_openradar_msgmem(odim_content, size):
     if radars is None:
         radars = init_radars()
 
-    with open(test_schema_path, mode="r", encoding="utf-8") as default_schema:
+    with open(schema_file, mode="r", encoding="utf-8") as default_schema:
         def_msg = json.load(default_schema)
 
     # fb_up = io.BytesIO(odim_content)
@@ -440,7 +439,9 @@ def odim_openradar_msgmem(odim_content, size):
     return ret
 
 
-def build_all_json_payloads_from_odim(odim_content: object) -> list[str]:
+def build_all_json_payloads_from_odim(
+    odim_content: object, schema_file: str
+) -> list[str]:
     """
     This function creates the openradar-message-spec json schema(s) from an ODIM file.
 
@@ -455,43 +456,30 @@ def build_all_json_payloads_from_odim(odim_content: object) -> list[str]:
     """
     ret_str = []
 
-    msg_str_list = odim_openradar_msgmem(odim_content, len(odim_content))
+    msg_str_list = odim_openradar_msgmem(odim_content, len(odim_content), schema_file)
     for json_str in msg_str_list:
         json_odim_msg = json_str
         ret_str.append(copy.deepcopy(json_odim_msg))
     return ret_str
 
 
-def odim2mqtt(odim_file_path: str = "") -> list[str]:
+def odim2mqtt(odim_file_path: Path, schema_file: Path) -> str:
     with open(odim_file_path, "rb") as file:
         odim_content = file.read()
-    ret_str = odim_openradar_msgmem(odim_content, len(odim_content))
+    ret_str = odim_openradar_msgmem(odim_content, len(odim_content), schema_file)
     return ret_str
 
 
-if __name__ == "__main__":
+def main(filename: Path, schema_file: Path | None = None):
+    if schema_file is None:
+        schema_file = test_schema_path
+
     msg = ""
 
-    if len(sys.argv) > 1:
-        first_msg = True
-        for i, file_name in enumerate(sys.argv):
-            if i > 0:
-                if os.path.exists(file_name):
-                    msg = odim2mqtt(file_name)
-                    print("[")
-                    for m in msg:
-                        if first_msg:
-                            first_msg = False
-                        else:
-                            print(",")
-                        print(json.dumps(m, indent=2))
-                    print("]")
-                else:
-                    print("File not exists: {0}".format(file_name))
-                    exit(1)
-
+    if os.path.exists(filename):
+        msg = odim2mqtt(filename, schema_file)
+        result = [m for m in msg]
+        output_text = json.dumps(result, indent=2)
+        return output_text
     else:
-        print("Generate json meaasge from ODIM file")
-        print("Usage:   python3 ./odim2ordmsg.py [schema_file] ODIM_file")
-
-    exit(0)
+        raise FileNotFoundError(f"File does not exist: {filename}")

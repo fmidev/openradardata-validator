@@ -1,0 +1,227 @@
+[
+  {
+    "id": "",
+    "version": "v4.0",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": {
+        "lat": 38.73016946017742,
+        "lon": -27.32075991109015
+      }
+    },
+    "properties": {
+      "datetime": "2024-10-08T05:30:05Z",
+      "Conventions": "CF-1.8",
+      "summary": "Radar data from OPERA network.",
+      "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
+      "naming_authority": "eu.eumetnet",
+      "level": 0.0,
+      "hamsl": 1039.0,
+      "function": "point",
+      "period": "PT15S",
+      "platform": "0-20000-0-08516",
+      "platform_name": "[pttrc] Terceira",
+      "format": "ODIM",
+      "radar_meta": {
+        "format_version": "H5rad 2.3",
+        "object": "SCAN",
+        "beamwH": 0.9500000439584255,
+        "beamwV": 0.9500000439584255,
+        "frequency": "5624624484.052533",
+        "elangle": 0.0,
+        "nbins": 300,
+        "nrays": 360,
+        "a1gate": 201,
+        "rstart": 0.0,
+        "rscale": 1000.0,
+        "product": "SCAN"
+      },
+      "content": {
+        "encoding": "utf-8",
+        "standard_name": "TH",
+        "unit": "text",
+        "size": 1,
+        "value": "0"
+      },
+      "period_int": 15
+    },
+    "links": [
+      {
+        "href": "https://My-default-URL",
+        "rel": "canonical",
+        "type": "text/html",
+        "title": "EUMETNET Website"
+      },
+      {
+        "href": "https://www.eumetnet.eu/observations/weather-radar-network/",
+        "rel": "canonical",
+        "type": "text/html",
+        "title": "OPERA Website"
+      },
+      {
+        "href": "http://radar.meteogate.eu:8008/",
+        "rel": "service-desc",
+        "type": "application/vnd.oai.openapi+json;version=3.0",
+        "title": "Open Radar Data"
+      },
+      {
+        "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/PT/pttrc/SCAN/pttrc@20241008T0530@0.0@DBZH_TH_VRADH.h5",
+        "length": 105,
+        "rel": "items",
+        "title": "Default link, to data.",
+        "type": "application/x-odim"
+      }
+    ]
+  },
+  {
+    "id": "",
+    "version": "v4.0",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": {
+        "lat": 38.73016946017742,
+        "lon": -27.32075991109015
+      }
+    },
+    "properties": {
+      "datetime": "2024-10-08T05:30:05Z",
+      "Conventions": "CF-1.8",
+      "summary": "Radar data from OPERA network.",
+      "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
+      "naming_authority": "eu.eumetnet",
+      "level": 0.0,
+      "hamsl": 1039.0,
+      "function": "point",
+      "period": "PT15S",
+      "platform": "0-20000-0-08516",
+      "platform_name": "[pttrc] Terceira",
+      "format": "ODIM",
+      "radar_meta": {
+        "format_version": "H5rad 2.3",
+        "object": "SCAN",
+        "beamwH": 0.9500000439584255,
+        "beamwV": 0.9500000439584255,
+        "frequency": "5624624484.052533",
+        "elangle": 0.0,
+        "nbins": 300,
+        "nrays": 360,
+        "a1gate": 201,
+        "rstart": 0.0,
+        "rscale": 1000.0,
+        "product": "SCAN"
+      },
+      "content": {
+        "encoding": "utf-8",
+        "standard_name": "DBZH",
+        "unit": "text",
+        "size": 1,
+        "value": "0"
+      },
+      "period_int": 15
+    },
+    "links": [
+      {
+        "href": "https://My-default-URL",
+        "rel": "canonical",
+        "type": "text/html",
+        "title": "EUMETNET Website"
+      },
+      {
+        "href": "https://www.eumetnet.eu/observations/weather-radar-network/",
+        "rel": "canonical",
+        "type": "text/html",
+        "title": "OPERA Website"
+      },
+      {
+        "href": "http://radar.meteogate.eu:8008/",
+        "rel": "service-desc",
+        "type": "application/vnd.oai.openapi+json;version=3.0",
+        "title": "Open Radar Data"
+      },
+      {
+        "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/PT/pttrc/SCAN/pttrc@20241008T0530@0.0@DBZH_TH_VRADH.h5",
+        "length": 105,
+        "rel": "items",
+        "title": "Default link, to data.",
+        "type": "application/x-odim"
+      }
+    ]
+  },
+  {
+    "id": "",
+    "version": "v4.0",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": {
+        "lat": 38.73016946017742,
+        "lon": -27.32075991109015
+      }
+    },
+    "properties": {
+      "datetime": "2024-10-08T05:30:05Z",
+      "Conventions": "CF-1.8",
+      "summary": "Radar data from OPERA network.",
+      "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
+      "naming_authority": "eu.eumetnet",
+      "level": 0.0,
+      "hamsl": 1039.0,
+      "function": "point",
+      "period": "PT15S",
+      "platform": "0-20000-0-08516",
+      "platform_name": "[pttrc] Terceira",
+      "format": "ODIM",
+      "radar_meta": {
+        "format_version": "H5rad 2.3",
+        "object": "SCAN",
+        "beamwH": 0.9500000439584255,
+        "beamwV": 0.9500000439584255,
+        "frequency": "5624624484.052533",
+        "elangle": 0.0,
+        "nbins": 300,
+        "nrays": 360,
+        "a1gate": 201,
+        "rstart": 0.0,
+        "rscale": 1000.0,
+        "product": "SCAN"
+      },
+      "content": {
+        "encoding": "utf-8",
+        "standard_name": "VRADH",
+        "unit": "text",
+        "size": 1,
+        "value": "0"
+      },
+      "period_int": 15
+    },
+    "links": [
+      {
+        "href": "https://My-default-URL",
+        "rel": "canonical",
+        "type": "text/html",
+        "title": "EUMETNET Website"
+      },
+      {
+        "href": "https://www.eumetnet.eu/observations/weather-radar-network/",
+        "rel": "canonical",
+        "type": "text/html",
+        "title": "OPERA Website"
+      },
+      {
+        "href": "http://radar.meteogate.eu:8008/",
+        "rel": "service-desc",
+        "type": "application/vnd.oai.openapi+json;version=3.0",
+        "title": "Open Radar Data"
+      },
+      {
+        "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/PT/pttrc/SCAN/pttrc@20241008T0530@0.0@DBZH_TH_VRADH.h5",
+        "length": 105,
+        "rel": "items",
+        "title": "Default link, to data.",
+        "type": "application/x-odim"
+      }
+    ]
+  }
+]

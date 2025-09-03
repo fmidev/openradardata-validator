@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=42"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "openradardata_validator"
+version = "0.1"
+description = "Open radardata validator developed for the RODEO project"
+dependencies = ["numpy", "pandas", "h5py", "jsonschema"]
+
+[dependency-groups]
+dev = ["isort", "mypy", "pylint", "pytest"]
+
+[tool.setuptools.package-data]
+"*" = ["*.*"]

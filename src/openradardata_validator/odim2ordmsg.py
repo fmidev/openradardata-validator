@@ -3,21 +3,22 @@ import datetime
 import io
 import json
 import os
-import sys
 
 import h5py
 import numpy
 import pandas
+from pathlib import Path
 
-from src.radar_cf import radar_cf
+from openradardata_validator.radar_cf import radar_cf
 
-odr_validator_dir = os.getenv("ORD_VALIDATOR_DIR", ".")
-schema_dir = os.getenv("ORD_SCHEMA_DIR", odr_validator_dir + "/schemas")
-radardb_dir = os.getenv("ORD_STATIONS_DIR", odr_validator_dir + "/stations")
+current_filedir = Path(__file__).parent.resolve()
+
+schema_dir = current_filedir / "schemas"
+radardb_dir = current_filedir / "stations"
 
 default_wigos = "0-0-0-"
 default_wmo = "0-20000-0-"
-test_schema_path = schema_dir + "/odim_to_e_soh_message.json"
+test_schema_path = schema_dir / "odim_to_e_soh_message.json"
 default_url = "https://My-default-URL"
 
 S3_BUCKET_NAME = "My-S3-Bucket"
@@ -38,7 +39,7 @@ default_data_link = {
 }
 
 
-def init_radars(fname=radardb_dir + "/OPERA_RADARS.csv"):
+def init_radars(fname=radardb_dir / "OPERA_RADARS.csv"):
     # print("Init OPERA Radar database")
     ret = pandas.read_csv(fname, header=0, keep_default_na=False, dtype=radars_format)
     return ret
@@ -96,7 +97,7 @@ def set_meta(m_dest: object, m_src: str, m_attrs: list, fmt: str = "str"):
                     m_dest[meta] = float(meta_val)
 
 
-def odim_openradar_msgmem(odim_content, size, test_schema_path):
+def odim_openradar_msgmem(odim_content, size, schema_file):
     ret = []
     s3_key_dir = ""
     s3_key_fil = ""
@@ -107,7 +108,7 @@ def odim_openradar_msgmem(odim_content, size, test_schema_path):
     if radars is None:
         radars = init_radars()
 
-    with open(test_schema_path, mode="r", encoding="utf-8") as default_schema:
+    with open(schema_file, mode="r", encoding="utf-8") as default_schema:
         def_msg = json.load(default_schema)
 
     # fb_up = io.BytesIO(odim_content)
@@ -229,11 +230,17 @@ def odim_openradar_msgmem(odim_content, size, test_schema_path):
         # coords["hei"] = 0.0
         def_msg["geometry"]["coordinates"] = coords
         add_str_attrs = ["projdef"]
-        set_meta(def_msg["properties"]["radar_meta"], odim["where"], add_str_attrs, "str")
+        set_meta(
+            def_msg["properties"]["radar_meta"], odim["where"], add_str_attrs, "str"
+        )
         add_int_attrs = ["xsize", "ysize"]
-        set_meta(def_msg["properties"]["radar_meta"], odim["where"], add_int_attrs, "int")
+        set_meta(
+            def_msg["properties"]["radar_meta"], odim["where"], add_int_attrs, "int"
+        )
         add_float_attrs = ["xscale", "yscale"]
-        set_meta(def_msg["properties"]["radar_meta"], odim["where"], add_float_attrs, "float")
+        set_meta(
+            def_msg["properties"]["radar_meta"], odim["where"], add_float_attrs, "float"
+        )
     else:
         if object == "PVOL" or object == "SCAN":
             def_msg["properties"]["period_int"] = 300
@@ -261,7 +268,9 @@ def odim_openradar_msgmem(odim_content, size, test_schema_path):
                     "antspeed",
                     "pulsewidth",
                 ]
-                set_meta(def_msg["properties"]["radar_meta"], odim["how"], add_attrs, "float")
+                set_meta(
+                    def_msg["properties"]["radar_meta"], odim["how"], add_attrs, "float"
+                )
                 if "beamwidth" in def_msg["properties"]["radar_meta"]:
                     bw = def_msg["properties"]["radar_meta"]["beamwidth"]
                     def_msg["properties"]["radar_meta"]["beamwH"] = bw
@@ -430,7 +439,9 @@ def odim_openradar_msgmem(odim_content, size, test_schema_path):
     return ret
 
 
-def build_all_json_payloads_from_odim(odim_content: object) -> list[str]:
+def build_all_json_payloads_from_odim(
+    odim_content: object, schema_file: str
+) -> list[str]:
     """
     This function creates the openradar-message-spec json schema(s) from an ODIM file.
 
@@ -445,45 +456,30 @@ def build_all_json_payloads_from_odim(odim_content: object) -> list[str]:
     """
     ret_str = []
 
-    msg_str_list = odim_openradar_msgmem(
-        odim_content, len(odim_content), test_schema_path
-    )
+    msg_str_list = odim_openradar_msgmem(odim_content, len(odim_content), schema_file)
     for json_str in msg_str_list:
         json_odim_msg = json_str
         ret_str.append(copy.deepcopy(json_odim_msg))
     return ret_str
 
 
-def odim2mqtt(odim_file_path: str = "", test_schema_path: str = "") -> list[str]:
+def odim2mqtt(odim_file_path: Path, schema_file: Path) -> str:
     with open(odim_file_path, "rb") as file:
         odim_content = file.read()
-    ret_str = odim_openradar_msgmem(odim_content, len(odim_content), test_schema_path)
+    ret_str = odim_openradar_msgmem(odim_content, len(odim_content), schema_file)
     return ret_str
 
 
-if __name__ == "__main__":
+def main(filename: Path, schema_file: Path | None = None):
+    if schema_file is None:
+        schema_file = test_schema_path
+
     msg = ""
 
-    if len(sys.argv) > 1:
-        first_msg = True
-        for i, file_name in enumerate(sys.argv):
-            if i > 0:
-                if os.path.exists(file_name):
-                    msg = odim2mqtt(file_name, test_schema_path)
-                    print("[")
-                    for m in msg:
-                        if first_msg:
-                            first_msg = False
-                        else:
-                            print(",")
-                        print(json.dumps(m, indent=2))
-                    print("]")
-                else:
-                    print("File not exists: {0}".format(file_name))
-                    exit(1)
-
+    if os.path.exists(filename):
+        msg = odim2mqtt(filename, schema_file)
+        result = [m for m in msg]
+        output_text = json.dumps(result, indent=2)
+        return output_text
     else:
-        print("Generate json meaasge from ODIM file")
-        print("Usage:   python3 ./odim2ordmsg.py [schema_file] ODIM_file")
-
-    exit(0)
+        raise FileNotFoundError(f"File does not exist: {filename}")

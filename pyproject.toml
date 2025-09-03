@@ -9,7 +9,30 @@ description = "Open radardata validator developed for the RODEO project"
 dependencies = ["numpy", "pandas", "h5py", "jsonschema"]
 
 [dependency-groups]
-dev = ["isort", "mypy", "pylint", "pytest"]
+dev = ["black", "isort", "mypy", "pylint", "pytest"]
 
 [tool.setuptools.package-data]
 "*" = ["*.*"]
+
+[tool.black]
+target-version = ["py313"]
+
+[tool.isort]
+profile = "black"
+
+[tool.pylint.BASIC]
+good-names = "log"
+
+[tool.pylint.MASTER]
+disable = [
+    "C0114", # missing-module-docstring
+    "C0115", # missing-class-docstring
+    "C0116", # missing-function-docstring
+    "C0301", # line-too-long
+    "R0801", # duplicate-code
+    "R0917", # too-many-positional-arguments
+]
+
+[tool.mypy]
+strict = true
+ignore_missing_imports = true

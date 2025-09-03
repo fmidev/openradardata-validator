@@ -1,4 +1,3 @@
-import json
 import os
 from pathlib import Path
 
@@ -17,7 +16,7 @@ current_filedir = Path(__file__).parent.resolve()
         if file.endswith(".h5") or file.endswith(".hdf")
     ],
 )
-def test_odim2mqtt(filename: str):
+def test_odim2mqtt(filename: str) -> None:
     output_text = odim2ordmsg.main(current_filedir / "data/odim" / filename)
     with open(
         current_filedir / "data/odim" / f"{filename}.json", encoding="utf-8"

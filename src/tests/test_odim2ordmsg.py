@@ -1,7 +1,8 @@
 import json
 import os
-import pytest
 from pathlib import Path
+
+import pytest
 
 from openradardata_validator import odim2ordmsg
 

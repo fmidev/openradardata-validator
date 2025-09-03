@@ -1,13 +1,14 @@
 import copy
-import datetime
 import io
 import json
 import os
+from datetime import datetime
+from pathlib import Path
+from typing import Any
 
 import h5py
 import numpy
-import pandas
-from pathlib import Path
+import pandas as pd
 
 from openradardata_validator.radar_cf import radar_cf
 
@@ -16,17 +17,16 @@ current_filedir = Path(__file__).parent.resolve()
 schema_dir = current_filedir / "schemas"
 radardb_dir = current_filedir / "stations"
 
-default_wigos = "0-0-0-"
-default_wmo = "0-20000-0-"
+DEFAULT_WIGOS = "0-0-0-"
+DEFAULT_WMO = "0-20000-0-"
 test_schema_path = schema_dir / "odim_to_e_soh_message.json"
-default_url = "https://My-default-URL"
+DEFAULT_URL = "https://My-default-URL"
 
 S3_BUCKET_NAME = "My-S3-Bucket"
 S3_ACCESS_KEY = ""
 S3_SECRET_ACCESS_KEY = ""
 S3_ENDPOINT_URL = "https://My-Data-Server.com"
 
-radars = None
 # radars_format = {"WMO Code": "Int32" }
 radars_format = {"WIGOS Station Identifier": "str"}
 
@@ -39,13 +39,13 @@ default_data_link = {
 }
 
 
-def init_radars(fname=radardb_dir / "OPERA_RADARS.csv"):
+def init_radars(fname: Path = radardb_dir / "OPERA_RADARS.csv") -> pd.DataFrame:
     # print("Init OPERA Radar database")
-    ret = pandas.read_csv(fname, header=0, keep_default_na=False, dtype=radars_format)
+    ret = pd.read_csv(fname, header=0, keep_default_na=False, dtype=radars_format)
     return ret
 
 
-def get_attr(field: object, key: str):
+def get_attr(field: h5py.Group, key: str) -> Any:
     ret = None
     if key in field.attrs:
         ret = field.attrs[key]
@@ -56,7 +56,7 @@ def get_attr(field: object, key: str):
     return ret
 
 
-def get_attr_str(field: object, key: str) -> str:
+def get_attr_str(field: h5py.Group, key: str) -> str | None:
     ret = get_attr(field, key)
     if ret is None:
         return ret
@@ -64,27 +64,32 @@ def get_attr_str(field: object, key: str) -> str:
         return ret
     if isinstance(ret, numpy.number):
         return str(ret)
-    return ret.decode("utf-8")
+    return str(ret.decode("utf-8"))
 
 
-def find_source_type(source: str, id: str) -> str:
+def find_source_type(source: str, sid: str) -> str:
     ret = ""
     source_list = source.split(",")
     for source_element in source_list:
         s = source_element.split(":")
-        if s[0] == id:
+        if s[0] == sid:
             ret = s[1]
             break
     return ret
 
 
-def odim_datetime(odate, otime: bytes) -> datetime:
+def odim_datetime(odate: bytes, otime: bytes) -> datetime:
     dstr = (odate + otime).decode("utf-8")
-    dt = datetime.datetime.strptime(dstr, "%Y%m%d%H%M%S")
+    dt = datetime.strptime(dstr, "%Y%m%d%H%M%S")
     return dt
 
 
-def set_meta(m_dest: object, m_src: str, m_attrs: list, fmt: str = "str"):
+def set_meta(
+    m_dest: dict[str, str | int | float],
+    m_src: str,
+    m_attrs: list[str],
+    fmt: str = "str",
+) -> None:
     for meta in m_attrs:
         meta_val = get_attr_str(m_src, meta)
         if meta_val is not None and len(meta_val):
@@ -97,100 +102,60 @@ def set_meta(m_dest: object, m_src: str, m_attrs: list, fmt: str = "str"):
                     m_dest[meta] = float(meta_val)
 
 
-def odim_openradar_msgmem(odim_content, size, schema_file):
-    ret = []
+def odim_openradar_msgmem(
+    odim_content: bytes, schema_file: Path
+) -> list[dict[str, Any]]:
+    # pylint: disable=too-many-locals,too-many-branches,too-many-statements
+    ret: list[dict[str, Any]] = []
     s3_key_dir = ""
     s3_key_fil = ""
     s3_key_level = []
     s3_key_quan = []
 
-    global radars
-    if radars is None:
-        radars = init_radars()
-
     with open(schema_file, mode="r", encoding="utf-8") as default_schema:
         def_msg = json.load(default_schema)
 
-    # fb_up = io.BytesIO(odim_content)
     fb = io.BytesIO(odim_content)
-    try:
-        odim = h5py.File(fb)
-    except Exception as e:
-        print("ODIM IO ERROR: {0}".format(e))
-        return ret
 
-    # print("ODIM WHAT: {0}".format(odim["what"]))
-    # if "where" in odim:
-    #    print("ODIM WHERE: {0}".format(odim["where"]))
-    # if "how" in odim:
-    #    print("ODIM HOW: {0}".format(odim["how"]))
+    odim = h5py.File(fb)
 
     # datetime
     dt = odim_datetime(odim["what"].attrs["date"], odim["what"].attrs["time"])
     # TODO: import api.metadata_endpoints.py -> datetime_to_iso_string
     def_msg["properties"]["datetime"] = dt.isoformat() + "Z"
-    s3_key_dir += datetime.datetime.strftime(dt, "%Y/%m/%d/")
-    s3_key_fil += datetime.datetime.strftime(dt, "%Y%m%dT%H%M")
+    s3_key_dir += datetime.strftime(dt, "%Y/%m/%d/")
+    s3_key_fil += datetime.strftime(dt, "%Y%m%dT%H%M")
 
     # source
     source = get_attr_str(odim["what"], "source")
+    if source is None:
+        raise ValueError("ODIM file source attribute missing")
     wigos = find_source_type(source, "WIGOS")
     wmo = find_source_type(source, "WMO")
     nod = find_source_type(source, "NOD")
     org = find_source_type(source, "ORG")
     station = find_source_type(source, "PLC")
 
-    # # Old ODIM implementation, NOD is missing
-    # if len(nod) == 0 and org != "247":
-    #     radar_found = False
-    #     for i in range(1, len(radars)):
-    #         rad_wmo = radars["WMO Code"][i]
-    #         rad_wigos = radars["WIGOS Station Identifier"][i]
-    #         if len(rad_wmo) and int(rad_wmo) == int(wmo):
-    #             nod = radars["ODIM code"][i]
-    #             print("Found ODIM code: {0} [WMO: {1}]".format(nod, wmo))
-    #             radar_found = True
-    #         if len(rad_wigos) > 0 and rad_wigos == wigos:
-    #             nod = radars["ODIM code"][i]
-    #             print("Found ODIM code: {0} [WIGOS: {1}]".format(nod, wigos))
-    #             radar_found = True
-    #         if radar_found:
-    #             break
-
-    # Fill WIGOS, WMO, Station when missing
-    # for i in range(1, len(radars)):
-    #     if nod == radars["ODIM code"][i]:
-    #         # print("FOUND: {0} ".format(nod))
-    #         if isinstance(wmo, str) and len(wmo) == 0:
-    #             wmo = radars["WMO Code"][i]
-    #         if len(wigos) == 0:
-    #             rad_wigos = radars["WIGOS Station Identifier"][i]
-    #             if len(rad_wigos) != 0:
-    #                 wigos = rad_wigos
-    #         if len(station) == 0:
-    #             station = radars["Location"][i]
-    #         break
-
-    if len(wigos):
+    if wigos:
         def_msg["properties"]["platform"] = wigos
     else:
-        if len(wmo):
-            def_msg["properties"]["platform"] = default_wmo + wmo.zfill(5)
+        if wmo:
+            def_msg["properties"]["platform"] = DEFAULT_WMO + wmo.zfill(5)
         else:
-            if len(nod):
-                def_msg["properties"]["platform"] = default_wigos + nod
+            if nod:
+                def_msg["properties"]["platform"] = DEFAULT_WIGOS + nod
             else:
                 if org == "247":
                     def_msg["properties"]["platform"] = "0-20010-0-" + "OPERA"
                     def_msg["properties"]["platform_name"] = "OPERA"
 
-    if len(nod):
-        if len(station):
+    if nod:
+        if station:
             def_msg["properties"]["platform_name"] = "[" + nod + "]" + " " + station
         else:
             def_msg["properties"]["platform_name"] = "[" + nod + "]"
 
-    if len(nod):
+    if nod:
         s3_key_dir += str(nod)[:2].upper() + "/" + str(nod) + "/"
         s3_key_fil = str(nod) + "@" + s3_key_fil
     else:
@@ -203,13 +168,13 @@ def odim_openradar_msgmem(odim_content, size, schema_file):
             s3_key_dir += "Unknown/" + def_msg["properties"]["platform"] + "/"
             s3_key_fil = "Unknown" + "@" + s3_key_fil
 
-    object = get_attr_str(odim["what"], "object")
+    obj = get_attr_str(odim["what"], "object")
     form_version = get_attr_str(odim["what"], "version")
     def_msg["properties"]["format"] = "ODIM"
     def_msg["properties"]["radar_meta"]["format_version"] = form_version
-    def_msg["properties"]["radar_meta"]["object"] = str(object)
+    def_msg["properties"]["radar_meta"]["object"] = str(obj)
 
-    if object == "COMP":
+    if obj == "COMP":
         def_msg["geometry"] = {}
         # def_msg["geometry"]["type"] = "Polygon"
         def_msg["geometry"]["type"] = "Point"
@@ -242,7 +207,7 @@ def odim_openradar_msgmem(odim_content, size, schema_file):
             def_msg["properties"]["radar_meta"], odim["where"], add_float_attrs, "float"
         )
     else:
-        if object == "PVOL" or object == "SCAN":
+        if obj in ["PVOL", "SCAN"]:
             def_msg["properties"]["period_int"] = 300
             def_msg["properties"]["period"] = "PT300S"
             def_msg["geometry"] = {}
@@ -281,12 +246,12 @@ def odim_openradar_msgmem(odim_content, size, schema_file):
                     def_msg["properties"]["radar_meta"]["frequency"] = str(freq)
                     del def_msg["properties"]["radar_meta"]["wavelength"]
 
-    s3_key_dir += object + "/"
+    s3_key_dir += str(obj) + "/"
     dataset_index = 1
     dataset_key = "dataset" + str(dataset_index)
     level = 0
     ingest_list = []
-    while (dataset_key + "/what") in odim:
+    while dataset_key + "/what" in odim:
         dataset_msg = copy.deepcopy(def_msg)
 
         # print("DATASET WHAT: {0}".format(odim[dataset_key + "/what"]))
@@ -314,7 +279,7 @@ def odim_openradar_msgmem(odim_content, size, schema_file):
         # if dataset_key + "/how" in odim:
         #     print("DATASET HOW: {0}".format(odim[dataset_key + "/how"]))
 
-        if object == "PVOL" or object == "SCAN":
+        if obj in ["PVOL", "SCAN"]:
             if elangle is not None:
                 level = round(elangle, 2)
                 if elangle not in s3_key_level:
@@ -332,13 +297,13 @@ def odim_openradar_msgmem(odim_content, size, schema_file):
                     dataset_msg["properties"]["radar_meta"][meta] = float(meta_val)
 
         product = get_attr_str(odim[dataset_key + "/what"], "product")
-        if len(product):
+        if product:
             dataset_msg["properties"]["radar_meta"]["product"] = product
         prodpar = get_attr(odim[dataset_key + "/what"], "prodpar")
         if prodpar is not None:
             dataset_msg["properties"]["radar_meta"]["prodpar"] = str(prodpar)
 
-        if object == "COMP":
+        if obj == "COMP":
             match product:
                 case "CAPPI" | "PCAPPI" | "PPI" | "ETOP" | "EBASE" | "RHI":
                     if prodpar is None:
@@ -363,21 +328,16 @@ def odim_openradar_msgmem(odim_content, size, schema_file):
 
         data_index = 1
         data_key = "dataset" + str(dataset_index) + "/data" + str(data_index)
-        while (data_key + "/what") in odim:
-            # print("KEY: {0}".format(data_key))
-            # print("DATA WHAT: {0}".format(odim[data_key + "/what"]))
-            # if data_key + "/where" in odim:
-            #    print("DATA WHERE: {0}".format(odim[dataset_key + "/where"]))
-            # if data_key + "/how" in odim:
-            #    print("DATA HOW: {0}".format(odim[dataset_key + "/how"]))
+        while data_key + "/what" in odim:
 
             msg = copy.deepcopy(dataset_msg)
 
-            # gain = get_attr(odim[data_key + "/what"], "gain")
-            # offset = get_attr(odim[data_key + "/what"], "offset")
-
             if "quantity" in odim[data_key + "/what"].attrs:
-                quantity = odim[data_key + "/what"].attrs["quantity"].decode("utf-8")
+                quantity = (
+                    odim[data_key + "/what"]  # pylint: disable=no-member
+                    .attrs["quantity"]  # pylint: disable=no-member
+                    .decode("utf-8")  # pylint: disable=no-member
+                )
 
                 current_ingest = st.isoformat() + "Z_" + str(level) + "_" + quantity
                 if current_ingest in ingest_list:
@@ -433,53 +393,26 @@ def odim_openradar_msgmem(odim_content, size, schema_file):
     # S3 upload + error check
 
     # Update link
-    if len(default_url):
+    if len(DEFAULT_URL):
         for json_str in ret:
-            json_str["links"][0]["href"] = default_url
+            json_str["links"][0]["href"] = DEFAULT_URL
     return ret
 
 
-def build_all_json_payloads_from_odim(
-    odim_content: object, schema_file: str
-) -> list[str]:
-    """
-    This function creates the openradar-message-spec json schema(s) from an ODIM file.
-
-    ### Keyword arguments:
-    odim_file_path (str) -- An ODIM File Path
-
-    Returns:
-    str -- mqtt message(s)
-
-    Raises:
-    ---
-    """
-    ret_str = []
-
-    msg_str_list = odim_openradar_msgmem(odim_content, len(odim_content), schema_file)
-    for json_str in msg_str_list:
-        json_odim_msg = json_str
-        ret_str.append(copy.deepcopy(json_odim_msg))
-    return ret_str
-
-
-def odim2mqtt(odim_file_path: Path, schema_file: Path) -> str:
+def odim2mqtt(odim_file_path: Path, schema_file: Path) -> list[dict[str, Any]]:
     with open(odim_file_path, "rb") as file:
         odim_content = file.read()
-    ret_str = odim_openradar_msgmem(odim_content, len(odim_content), schema_file)
+    ret_str = odim_openradar_msgmem(odim_content, schema_file)
     return ret_str
 
 
-def main(filename: Path, schema_file: Path | None = None):
+def main(filename: Path, schema_file: Path | None = None) -> str:
     if schema_file is None:
         schema_file = test_schema_path
 
-    msg = ""
-
     if os.path.exists(filename):
         msg = odim2mqtt(filename, schema_file)
-        result = [m for m in msg]
-        output_text = json.dumps(result, indent=2)
+        output_text = json.dumps(msg, indent=2)
         return output_text
-    else:
-        raise FileNotFoundError(f"File does not exist: {filename}")
+
+    raise FileNotFoundError(f"File does not exist: {filename}")

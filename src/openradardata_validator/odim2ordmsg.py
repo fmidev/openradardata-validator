@@ -393,7 +393,7 @@ def odim_openradar_msgmem(
     # S3 upload + error check
 
     # Update link
-    if len(DEFAULT_URL):
+    if DEFAULT_URL:
         for json_str in ret:
             json_str["links"][0]["href"] = DEFAULT_URL
     return ret

@@ -1,0 +1,63 @@
+[
+  {
+    "id": "",
+    "version": "v4.0",
+    "type": "Feature",
+    "geometry": "null",
+    "properties": {
+      "datetime": "2025-03-25T12:20:00Z",
+      "Conventions": "CF-1.8",
+      "summary": "Radar data from OPERA network.",
+      "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
+      "naming_authority": "eu.eumetnet",
+      "level": 0,
+      "hamsl": 0.0,
+      "function": "point",
+      "period": "PT0S",
+      "platform": "",
+      "platform_name": "",
+      "format": "ODIM",
+      "radar_meta": {
+        "format_version": "H5rad 2.3",
+        "object": "RAD_NL25_ETH_NA",
+        "product": "ETOP",
+        "prodpar": "7.0"
+      },
+      "content": {
+        "encoding": "utf-8",
+        "standard_name": "HGHT",
+        "unit": "text",
+        "size": 1,
+        "value": "0"
+      },
+      "period_int": 0
+    },
+    "links": [
+      {
+        "href": "https:/eumetnet.eu/",
+        "rel": "canonical",
+        "type": "text/html",
+        "title": "EUMETNET Website"
+      },
+      {
+        "href": "https://www.eumetnet.eu/observations/weather-radar-network/",
+        "rel": "canonical",
+        "type": "text/html",
+        "title": "OPERA Website"
+      },
+      {
+        "href": "http://radar.meteogate.eu:8008/",
+        "rel": "service-desc",
+        "type": "application/vnd.oai.openapi+json;version=3.0",
+        "title": "Open Radar Data"
+      },
+      {
+        "href": "https://placeholder.url",
+        "length": 23,
+        "rel": "items",
+        "title": "Link to data",
+        "type": "application/x-odim"
+      }
+    ]
+  }
+]

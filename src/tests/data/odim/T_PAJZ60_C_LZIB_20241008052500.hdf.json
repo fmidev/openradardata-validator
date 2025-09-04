@@ -48,7 +48,7 @@
     },
     "links": [
       {
-        "href": "https://My-default-URL",
+        "href": "https:/eumetnet.eu/",
         "rel": "canonical",
         "type": "text/html",
         "title": "EUMETNET Website"
@@ -66,10 +66,10 @@
         "title": "Open Radar Data"
       },
       {
-        "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/SK/skkub/PVOL/skkub@20241008T0525@0.0_0.5_1.0_1.5_2.0_2.7_3.4_4.4_7.0_11.4_18.3_26.7@TH.h5",
-        "length": 141,
+        "href": "https://placeholder.url",
+        "length": 23,
         "rel": "items",
-        "title": "Default link, to data.",
+        "title": "Link to data",
         "type": "application/x-odim"
       }
     ]
@@ -123,7 +123,7 @@
     },
     "links": [
       {
-        "href": "https://My-default-URL",
+        "href": "https:/eumetnet.eu/",
         "rel": "canonical",
         "type": "text/html",
         "title": "EUMETNET Website"
@@ -141,10 +141,10 @@
         "title": "Open Radar Data"
       },
       {
-        "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/SK/skkub/PVOL/skkub@20241008T0525@0.0_0.5_1.0_1.5_2.0_2.7_3.4_4.4_7.0_11.4_18.3_26.7@TH.h5",
-        "length": 141,
+        "href": "https://placeholder.url",
+        "length": 23,
         "rel": "items",
-        "title": "Default link, to data.",
+        "title": "Link to data",
         "type": "application/x-odim"
       }
     ]
@@ -198,7 +198,7 @@
     },
     "links": [
       {
-        "href": "https://My-default-URL",
+        "href": "https:/eumetnet.eu/",
         "rel": "canonical",
         "type": "text/html",
         "title": "EUMETNET Website"
@@ -216,10 +216,10 @@
         "title": "Open Radar Data"
       },
       {
-        "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/SK/skkub/PVOL/skkub@20241008T0525@0.0_0.5_1.0_1.5_2.0_2.7_3.4_4.4_7.0_11.4_18.3_26.7@TH.h5",
-        "length": 141,
+        "href": "https://placeholder.url",
+        "length": 23,
         "rel": "items",
-        "title": "Default link, to data.",
+        "title": "Link to data",
         "type": "application/x-odim"
       }
     ]
@@ -273,7 +273,7 @@
     },
     "links": [
       {
-        "href": "https://My-default-URL",
+        "href": "https:/eumetnet.eu/",
         "rel": "canonical",
         "type": "text/html",
         "title": "EUMETNET Website"
@@ -291,10 +291,10 @@
         "title": "Open Radar Data"
       },
       {
-        "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/SK/skkub/PVOL/skkub@20241008T0525@0.0_0.5_1.0_1.5_2.0_2.7_3.4_4.4_7.0_11.4_18.3_26.7@TH.h5",
-        "length": 141,
+        "href": "https://placeholder.url",
+        "length": 23,
         "rel": "items",
-        "title": "Default link, to data.",
+        "title": "Link to data",
         "type": "application/x-odim"
       }
     ]
@@ -348,7 +348,7 @@
     },
     "links": [
       {
-        "href": "https://My-default-URL",
+        "href": "https:/eumetnet.eu/",
         "rel": "canonical",
         "type": "text/html",
         "title": "EUMETNET Website"
@@ -366,10 +366,10 @@
         "title": "Open Radar Data"
       },
       {
-        "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/SK/skkub/PVOL/skkub@20241008T0525@0.0_0.5_1.0_1.5_2.0_2.7_3.4_4.4_7.0_11.4_18.3_26.7@TH.h5",
-        "length": 141,
+        "href": "https://placeholder.url",
+        "length": 23,
         "rel": "items",
-        "title": "Default link, to data.",
+        "title": "Link to data",
         "type": "application/x-odim"
       }
     ]
@@ -423,7 +423,7 @@
     },
     "links": [
       {
-        "href": "https://My-default-URL",
+        "href": "https:/eumetnet.eu/",
         "rel": "canonical",
         "type": "text/html",
         "title": "EUMETNET Website"
@@ -441,10 +441,10 @@
         "title": "Open Radar Data"
       },
       {
-        "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/SK/skkub/PVOL/skkub@20241008T0525@0.0_0.5_1.0_1.5_2.0_2.7_3.4_4.4_7.0_11.4_18.3_26.7@TH.h5",
-        "length": 141,
+        "href": "https://placeholder.url",
+        "length": 23,
         "rel": "items",
-        "title": "Default link, to data.",
+        "title": "Link to data",
         "type": "application/x-odim"
       }
     ]
@@ -498,7 +498,7 @@
     },
     "links": [
       {
-        "href": "https://My-default-URL",
+        "href": "https:/eumetnet.eu/",
         "rel": "canonical",
         "type": "text/html",
         "title": "EUMETNET Website"
@@ -516,10 +516,10 @@
         "title": "Open Radar Data"
       },
       {
-        "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/SK/skkub/PVOL/skkub@20241008T0525@0.0_0.5_1.0_1.5_2.0_2.7_3.4_4.4_7.0_11.4_18.3_26.7@TH.h5",
-        "length": 141,
+        "href": "https://placeholder.url",
+        "length": 23,
         "rel": "items",
-        "title": "Default link, to data.",
+        "title": "Link to data",
         "type": "application/x-odim"
       }
     ]
@@ -573,7 +573,7 @@
     },
     "links": [
       {
-        "href": "https://My-default-URL",
+        "href": "https:/eumetnet.eu/",
         "rel": "canonical",
         "type": "text/html",
         "title": "EUMETNET Website"
@@ -591,10 +591,10 @@
         "title": "Open Radar Data"
       },
       {
-        "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/SK/skkub/PVOL/skkub@20241008T0525@0.0_0.5_1.0_1.5_2.0_2.7_3.4_4.4_7.0_11.4_18.3_26.7@TH.h5",
-        "length": 141,
+        "href": "https://placeholder.url",
+        "length": 23,
         "rel": "items",
-        "title": "Default link, to data.",
+        "title": "Link to data",
         "type": "application/x-odim"
       }
     ]
@@ -648,7 +648,7 @@
     },
     "links": [
       {
-        "href": "https://My-default-URL",
+        "href": "https:/eumetnet.eu/",
         "rel": "canonical",
         "type": "text/html",
         "title": "EUMETNET Website"
@@ -666,10 +666,10 @@
         "title": "Open Radar Data"
       },
       {
-        "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/SK/skkub/PVOL/skkub@20241008T0525@0.0_0.5_1.0_1.5_2.0_2.7_3.4_4.4_7.0_11.4_18.3_26.7@TH.h5",
-        "length": 141,
+        "href": "https://placeholder.url",
+        "length": 23,
         "rel": "items",
-        "title": "Default link, to data.",
+        "title": "Link to data",
         "type": "application/x-odim"
       }
     ]
@@ -723,7 +723,7 @@
     },
     "links": [
       {
-        "href": "https://My-default-URL",
+        "href": "https:/eumetnet.eu/",
         "rel": "canonical",
         "type": "text/html",
         "title": "EUMETNET Website"
@@ -741,10 +741,10 @@
         "title": "Open Radar Data"
       },
       {
-        "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/SK/skkub/PVOL/skkub@20241008T0525@0.0_0.5_1.0_1.5_2.0_2.7_3.4_4.4_7.0_11.4_18.3_26.7@TH.h5",
-        "length": 141,
+        "href": "https://placeholder.url",
+        "length": 23,
         "rel": "items",
-        "title": "Default link, to data.",
+        "title": "Link to data",
         "type": "application/x-odim"
       }
     ]
@@ -798,7 +798,7 @@
     },
     "links": [
       {
-        "href": "https://My-default-URL",
+        "href": "https:/eumetnet.eu/",
         "rel": "canonical",
         "type": "text/html",
         "title": "EUMETNET Website"
@@ -816,10 +816,10 @@
         "title": "Open Radar Data"
       },
       {
-        "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/SK/skkub/PVOL/skkub@20241008T0525@0.0_0.5_1.0_1.5_2.0_2.7_3.4_4.4_7.0_11.4_18.3_26.7@TH.h5",
-        "length": 141,
+        "href": "https://placeholder.url",
+        "length": 23,
         "rel": "items",
-        "title": "Default link, to data.",
+        "title": "Link to data",
         "type": "application/x-odim"
       }
     ]
@@ -873,7 +873,7 @@
     },
     "links": [
       {
-        "href": "https://My-default-URL",
+        "href": "https:/eumetnet.eu/",
         "rel": "canonical",
         "type": "text/html",
         "title": "EUMETNET Website"
@@ -891,10 +891,10 @@
         "title": "Open Radar Data"
       },
       {
-        "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/SK/skkub/PVOL/skkub@20241008T0525@0.0_0.5_1.0_1.5_2.0_2.7_3.4_4.4_7.0_11.4_18.3_26.7@TH.h5",
-        "length": 141,
+        "href": "https://placeholder.url",
+        "length": 23,
         "rel": "items",
-        "title": "Default link, to data.",
+        "title": "Link to data",
         "type": "application/x-odim"
       }
     ]

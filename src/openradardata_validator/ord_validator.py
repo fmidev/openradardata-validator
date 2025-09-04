@@ -9,7 +9,7 @@ current_filedir = Path(__file__).parent.resolve()
 schema_dir = current_filedir / "schemas"
 
 
-def main(filename: Path, schema_file: Path) -> None:
+def validate_ord_json(filename: Path, schema_file: Path | None = None) -> None:
     if schema_file is None:
         schema_file = schema_dir / "openradardata-spec.json"
 

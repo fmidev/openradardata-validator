@@ -2,7 +2,8 @@ import argparse
 from enum import Enum
 from pathlib import Path
 
-from openradardata_validator import odim2ordmsg, ord_validator
+from openradardata_validator.odim2ordmsg import create_json_from_odim
+from openradardata_validator.ord_validator import validate_ord_json
 
 
 class StartScript(Enum):
@@ -42,6 +43,8 @@ if __name__ == "__main__":
     cli_arguments = parse_cli_arguments()
     match cli_arguments.start_script[0]:
         case StartScript.ODIM_TO_ORD_MSG:
-            print(odim2ordmsg.main(cli_arguments.filename[0], cli_arguments.schema))
+            print(
+                create_json_from_odim(cli_arguments.filename[0], cli_arguments.schema)
+            )
         case StartScript.ORD_VALIDATOR:
-            ord_validator.main(cli_arguments.filename[0], cli_arguments.schema)
+            validate_ord_json(cli_arguments.filename[0], cli_arguments.schema)

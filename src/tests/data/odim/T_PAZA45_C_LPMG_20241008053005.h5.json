@@ -48,7 +48,7 @@
     },
     "links": [
       {
-        "href": "https://My-default-URL",
+        "href": "https:/eumetnet.eu/",
         "rel": "canonical",
         "type": "text/html",
         "title": "EUMETNET Website"
@@ -66,10 +66,10 @@
         "title": "Open Radar Data"
       },
       {
-        "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/PT/pttrc/SCAN/pttrc@20241008T0530@0.0@DBZH_TH_VRADH.h5",
-        "length": 105,
+        "href": "https://placeholder.url",
+        "length": 23,
         "rel": "items",
-        "title": "Default link, to data.",
+        "title": "Link to data",
         "type": "application/x-odim"
       }
     ]
@@ -123,7 +123,7 @@
     },
     "links": [
       {
-        "href": "https://My-default-URL",
+        "href": "https:/eumetnet.eu/",
         "rel": "canonical",
         "type": "text/html",
         "title": "EUMETNET Website"
@@ -141,10 +141,10 @@
         "title": "Open Radar Data"
       },
       {
-        "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/PT/pttrc/SCAN/pttrc@20241008T0530@0.0@DBZH_TH_VRADH.h5",
-        "length": 105,
+        "href": "https://placeholder.url",
+        "length": 23,
         "rel": "items",
-        "title": "Default link, to data.",
+        "title": "Link to data",
         "type": "application/x-odim"
       }
     ]
@@ -198,7 +198,7 @@
     },
     "links": [
       {
-        "href": "https://My-default-URL",
+        "href": "https:/eumetnet.eu/",
         "rel": "canonical",
         "type": "text/html",
         "title": "EUMETNET Website"
@@ -216,10 +216,10 @@
         "title": "Open Radar Data"
       },
       {
-        "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/PT/pttrc/SCAN/pttrc@20241008T0530@0.0@DBZH_TH_VRADH.h5",
-        "length": 105,
+        "href": "https://placeholder.url",
+        "length": 23,
         "rel": "items",
-        "title": "Default link, to data.",
+        "title": "Link to data",
         "type": "application/x-odim"
       }
     ]

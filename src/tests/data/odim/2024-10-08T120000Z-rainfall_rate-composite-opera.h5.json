@@ -52,7 +52,7 @@
     },
     "links": [
       {
-        "href": "https://My-default-URL",
+        "href": "https:/eumetnet.eu/",
         "rel": "canonical",
         "type": "text/html",
         "title": "EUMETNET Website"
@@ -70,10 +70,10 @@
         "title": "Open Radar Data"
       },
       {
-        "href": "https://My-Data-Server.com/My-S3-Bucket/2024/10/08/OPERA/COMP/OPERA@20241008T1200@0.0@RATE.h5",
-        "length": 93,
+        "href": "https://placeholder.url",
+        "length": 23,
         "rel": "items",
-        "title": "Default link, to data.",
+        "title": "Link to data",
         "type": "application/x-odim"
       }
     ]

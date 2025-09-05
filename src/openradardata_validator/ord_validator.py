@@ -1,15 +1,15 @@
 import json
-from pathlib import Path
-import jsonschema
 import os
+from pathlib import Path
 
+import jsonschema
 
 current_filedir = Path(__file__).parent.resolve()
 
 schema_dir = current_filedir / "schemas"
 
 
-def main(filename: Path, schema_file: Path):
+def main(filename: Path, schema_file: Path) -> None:
     if schema_file is None:
         schema_file = schema_dir / "openradardata-spec.json"
 
@@ -36,7 +36,7 @@ def main(filename: Path, schema_file: Path):
                 if "start_datetime" in msg["properties"]:
                     start_datetime_str = msg["properties"]["start_datetime"]
             print(
-                "Validation OK: {0} {1}\t{2}\t{3}".format(
+                "Validation OK: {0} {1}\t{2}\t{3}".format(  # pylint: disable=consider-using-f-string
                     start_datetime_str,
                     msg["properties"]["platform"],
                     msg["properties"]["level"],

@@ -6,45 +6,50 @@
     "geometry": {
       "type": "Point",
       "coordinates": {
-        "lat": 39.071359941735864,
-        "lon": -8.40012995526196
+        "lon": 4.9664270877838135,
+        "lat": 52.404982566833496
       }
     },
     "properties": {
-      "datetime": "2024-10-08T05:47:01Z",
+      "datetime": "2025-06-03T09:10:00Z",
       "Conventions": "CF-1.8",
       "summary": "Radar data from OPERA network.",
       "license": "http//spdx.org/licenses/CC-BY-4.0(CC-BY-4.0)",
       "naming_authority": "eu.eumetnet",
-      "level": 0.0,
-      "hamsl": 193.0,
+      "level": 7.0,
+      "hamsl": 0.0,
       "function": "point",
-      "period": "PT25S",
-      "platform": "0-20000-0-08550",
-      "platform_name": "[ptlis] Lisboa",
+      "period": "PT300S",
+      "platform": "0-528-0-nldcomp",
+      "platform_name": "",
       "format": "ODIM",
       "radar_meta": {
-        "format_version": "H5rad 2.3",
-        "object": "SCAN",
-        "beamwH": 0.973999947309494,
-        "beamwV": 0.973999947309494,
-        "frequency": "5635197086.466165",
-        "elangle": 0.0,
-        "nbins": 200,
-        "nrays": 360,
-        "a1gate": 314,
-        "rstart": 0.0,
-        "rscale": 500.0,
-        "product": "SCAN"
+        "format_version": "H5rad 2.4",
+        "object": "COMP",
+        "LL_lat": "49.36205291748047",
+        "LL_lon": "0.0",
+        "LR_lat": "48.89529800415039",
+        "LR_lon": "9.009279251098633",
+        "UL_lat": "55.973602294921875",
+        "UL_lon": "0.0",
+        "UR_lat": "55.38897705078125",
+        "UR_lon": "10.856429100036621",
+        "projdef": "+proj=stere +lat_0=90 +lon_0=0 +lat_ts=60 +a=6378140.0 +b=6356750.0 +x_0=0.0 +y_0=3649979.248046875 +units=m",
+        "xsize": 700,
+        "ysize": 765,
+        "xscale": 1000.0013113021851,
+        "yscale": -1000.0054836273193,
+        "product": "ETOP",
+        "prodpar": "7.0"
       },
       "content": {
         "encoding": "utf-8",
-        "standard_name": "VRADH",
+        "standard_name": "HGHT",
         "unit": "text",
         "size": 1,
         "value": "0"
       },
-      "period_int": 25
+      "period_int": 300
     },
     "links": [
       {

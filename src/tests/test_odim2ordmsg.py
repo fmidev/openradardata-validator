@@ -3,7 +3,8 @@ from pathlib import Path
 
 import pytest
 
-from openradardata_validator import odim2ordmsg
+from openradardata_validator.odim2ordmsg import create_json_from_odim
+
 
 current_filedir = Path(__file__).parent.resolve()
 
@@ -16,8 +17,10 @@ current_filedir = Path(__file__).parent.resolve()
         if file.endswith(".h5") or file.endswith(".hdf")
     ],
 )
-def test_odim2mqtt(filename: str) -> None:
-    output_text = odim2ordmsg.main(current_filedir / "data/odim" / filename)
+def test_create_json_from_odim(filename: str) -> None:
+    output_text = create_json_from_odim(
+        current_filedir / "data/odim" / filename, "https://placeholder.url"
+    )
     with open(
         current_filedir / "data/odim" / f"{filename}.json", encoding="utf-8"
     ) as reference_file:

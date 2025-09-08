@@ -73,7 +73,11 @@ def find_source_type(source: str, sid: str) -> str:
 
 
 def odim_datetime(odate: bytes, otime: bytes) -> datetime:
-    dstr = (odate + otime).decode("utf-8")
+    if isinstance(odate, bytes):
+        odate = odate.decode("utf-8")
+    if isinstance(otime, bytes):
+        otime = otime.decode("utf-8")
+    dstr = odate + otime
     dt = datetime.strptime(dstr, "%Y%m%d%H%M%S")
     return dt
 
@@ -306,7 +310,14 @@ def parse_odim_dataset(
     dataset_msg = copy.deepcopy(def_msg)
 
     level = parse_odim_dataset_where(odim, dataset_msg, dataset_key, level)
-    level = parse_odim_dataset_what(odim, dataset_msg, dataset_key, level)
+
+    # Prefer dataset level what; if not present use data1 level what
+    if f"{dataset_key}/what" in odim:
+        level = parse_odim_dataset_what(odim, dataset_msg, dataset_key, level)
+    elif f"{dataset_key}/data1/what" in odim:
+        level = parse_odim_dataset_what(odim, dataset_msg, dataset_key + "/data1", level)
+    else:
+        raise ValueError(f"ODIM dataset what group missing in {dataset_key} and {dataset_key}/data1")
     dataset_msg["properties"]["level"] = level
 
     data_index = 1
@@ -343,7 +354,8 @@ def odim_openradar_msgmem(
     dataset_index = 1
     ingest_list: list[str] = []
     ret: list[dict[str, Any]] = []
-    while f"dataset{dataset_index}/what" in odim:
+    while f"dataset{dataset_index}/data1" in odim:
+        # We will parse if data1 present
         ret.extend(
             parse_odim_dataset(odim, def_msg, f"dataset{dataset_index}", ingest_list)
         )

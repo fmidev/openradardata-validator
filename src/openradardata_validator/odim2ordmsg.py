@@ -47,6 +47,8 @@ def get_attr(field: h5py.Group, key: str) -> Any:
         if isinstance(ret, numpy.ndarray):
             if len(ret) == 1:
                 ret = ret[0]
+        elif isinstance(ret, bytes):
+            ret = ret.decode("utf-8")
     return ret
 
 
@@ -158,6 +160,8 @@ def parse_odim_object(odim: h5py.File, def_msg: dict[str, Any]) -> None:
 
         coords["lat"] /= 4
         coords["lon"] /= 4
+        coords["lat"] = float(f"{coords['lat']}")
+        coords["lon"] = float(f"{coords['lon']}")
         def_msg["properties"]["hamsl"] = 0.0
         # coords["hei"] = 0.0
         def_msg["geometry"]["coordinates"] = coords

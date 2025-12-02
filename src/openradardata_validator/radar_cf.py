@@ -97,3 +97,4 @@ radar_cf["BRDR"] = "BRDR"
 radar_cf["QIND"] = "QIND"
 
 radar_cf["CLASS"] = "CLASS"
+radar_cf["HCLASS"] = "CLASS"

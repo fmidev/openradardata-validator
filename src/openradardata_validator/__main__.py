@@ -2,7 +2,7 @@ import argparse
 from enum import Enum
 from pathlib import Path
 
-from openradardata_validator.odim2ordmsg import create_json_from_odim
+from openradardata_validator.odim2ordmsg import create_json_from_odim, create_json_from_multiple_odim
 from openradardata_validator.ord_validator import validate_ord_json
 
 
@@ -24,13 +24,13 @@ def parse_cli_arguments() -> argparse.Namespace:
     )
     cli_arguments_parser.add_argument(
         dest="schema",
-        nargs="?",
+        nargs="1",
         type=Path,
         help="Choose schema for usage in script",
     )
     cli_arguments_parser.add_argument(
         dest="filename",
-        nargs=1,
+        nargs="+",
         type=Path,
         help="Choose filename to apply script to",
     )
@@ -53,12 +53,21 @@ if __name__ == "__main__":
             if cli_arguments.data_link_href is None:
                 print("WARNING: No odim url supplied, using placeholder url")
                 cli_arguments.data_link_href = "https://placeholder.url"
-            print(
-                create_json_from_odim(
-                    cli_arguments.filename[0],
-                    cli_arguments.data_link_href,
-                    cli_arguments.schema,
+            if len(cli_arguments.filename) > 1:
+                print(
+                    create_json_from_multiple_odim(
+                        cli_arguments.filename,
+                        cli_arguments.data_link_href,
+                        cli_arguments.schema,
+                    )
                 )
-            )
+            else:
+                print(
+                    create_json_from_odim(
+                        cli_arguments.filename[0],
+                        cli_arguments.data_link_href,
+                        cli_arguments.schema,
+                    )
+                )
         case StartScript.ORD_VALIDATOR:
             validate_ord_json(cli_arguments.filename[0], cli_arguments.schema)

@@ -47,6 +47,8 @@ def get_attr(field: h5py.Group, key: str) -> Any:
     ret = None
     if key in field.attrs:
         ret = field.attrs[key]
+        if isinstance(ret, bytes):
+            ret = ret.decode("utf-8")
         # Array type workaround: return the first element if len == 1
         if isinstance(ret, numpy.ndarray):
             if len(ret) == 1:
@@ -449,3 +451,18 @@ def create_json_from_odim(
         return output_text
 
     raise FileNotFoundError(f"File does not exist: {filename}")
+
+
+def create_json_from_multiple_odim(filenames: list[Path], data_link_href: str, schema_file: Path | None = None) -> str:
+    if schema_file is None:
+        schema_file = test_schema_path
+
+    jsons = []
+    for filename in filenames:
+        if os.path.exists(filename):
+            msg = odim2mqtt(filename, data_link_href, schema_file)
+            jsons.extend(msg)
+        else:
+            raise FileNotFoundError(f"File does not exist: {filename}")
+    output_text = json.dumps(jsons, indent=2)
+    return output_text
